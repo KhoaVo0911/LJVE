@@ -1,10 +1,13 @@
+import "./App.css";
+// import { Layout } from "./components/layout";
 import HomePage from "./pages/home/homepage";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
+    <>
+      {/* <Layout></Layout> */}
       <HomePage />
-    </div>
+    </>
   );
 }
 
