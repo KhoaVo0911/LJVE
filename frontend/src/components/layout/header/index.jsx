@@ -10,7 +10,7 @@ export const AppHeader = () => {
           LJVE
         </div>
 
-        <div className="mt-8 ml-auto mr-20 flex space-x-7 ">
+        <div className="mt-8 ml-auto mr-10 flex space-x-7 px-4 py-3 ">
           <InformationIcon />
         </div>
       </div>
