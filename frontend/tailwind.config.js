@@ -12,6 +12,8 @@ module.exports = {
         neoBold: ['Neogrotesk-Bold', 'sans-serif'],
         neoAltBold: ['Neogrotesk-AltBold', 'sans-serif'],
         beauSans: ['BeauSans', 'sans-serif'],
+        beauSans: ['BeauSansBold', 'sans-serif'],
+        beauSansItalic: ['BeauSansItalic', 'sans-serif'],
       },
     },
   },
