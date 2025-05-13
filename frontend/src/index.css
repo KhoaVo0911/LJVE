@@ -119,3 +119,30 @@
   }
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/SVN-GilroyHeavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("./assets/fonts/SVN-GilroyLight.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neogrotesk-Bold";
+  src: url("./assets/fonts/Fontspring-DEMO-neogroteskess-bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neogrotesk-AltBold";
+  src: url("./assets/fonts/Fontspring-DEMO-neogroteskessalt-bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "BeauSans";
+  src: url("./assets/fonts/BT-BeauSans-Regular.ttf") format("truetype");
+}
+
+
+@tailwind utilities;
