@@ -9,7 +9,7 @@ export const InformationIcon = () => {
     <>
       <a href="https://www.instagram.com/_.mr.ljve._/">
         <img
-          src="assets/icons8-instagram-500.png"
+          src="https://img.icons8.com/ios/500/FFFFFF/instagram-new--v1.png"
           alt="Instagram"
           width={iconHeight}
           height={iconWidth}
@@ -17,7 +17,7 @@ export const InformationIcon = () => {
       </a>
       <a href="https://www.youtube.com/@KhangNguyenOrmine">
         <img
-          src="assets/icons8-youtube-384.png"
+          src="https://img.icons8.com/ios-glyphs/480/FFFFFF/youtube-play.png"
           alt="youtube-play"
           width={iconHeight}
           height={iconWidth}
@@ -32,7 +32,7 @@ export const InformationIcon = () => {
       </a>
       <a href="https://www.facebook.com/khang.nguyentuan.54/">
         <img
-          src="assets/icons8-facebook-500.png"
+          src="https://img.icons8.com/ios-glyphs/480/FFFFFF/facebook-new.png"
           width={iconHeight}
           height={iconWidth}
         />
