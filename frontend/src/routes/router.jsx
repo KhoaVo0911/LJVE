@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <Route path={routes.root} element={<Layout />} />
       <Route path={routes.home} element={<HomePage />} />
       <Route path={routes.about} element={<AboutPage />} />
-      <Route path={routes.journal} element={<JournalPage />} />
+      <Route path={routes.journals} element={<JournalPage />} />
       <Route path={routes.projects} element={<ProjectsPage />} />
     </Routes>
   );

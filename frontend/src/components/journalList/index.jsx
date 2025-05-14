@@ -16,8 +16,8 @@ export const JournalListPage = () => {
                 className="object-cover rounded-lg shadow-md w-[904px] h-[509px]"
               />
             </div>
-            <div className="flex flex-col items-start">
-              <div className="text-[64px] font-[Neogrotesk-AltBold] leading-relaxed mb-8">
+            <div className="flex flex-col items-start ml-20">
+              <div className="text-[60px] font-[Neogrotesk-AltBold] leading-relaxed mb-8">
                 {journal.title}
               </div>
 
@@ -27,7 +27,7 @@ export const JournalListPage = () => {
 
               <a
                 href="#"
-                className="text-[18px] font-[BeauSans] underline text-blue-500 cursor-pointer"
+                className="text-[18px] font-[BeauSans] underline text-white cursor-pointer"
               >
                 Read more
               </a>
