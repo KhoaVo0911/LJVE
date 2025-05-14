@@ -2,19 +2,19 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
+  NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import React from "react";
 import { Link } from "react-router-dom";
-import { path } from "@/constants/path";
+import routes from "@/hooks/routes";
 
 export const NavigationBar = () => {
   const navBarCustom = "font-[Gilroy-Light] text-white text-[24px] px-4";
-  // Map item name to path
   const items = [
-    { label: "Journal", to: path.journal },
-    { label: "About", to: path.about },
-    { label: "Home", to: path.home },
-    { label: "Projects", to: path.projects },
+    { label: "Journal", to: "/" + routes.journals },
+    { label: "About", to: "/" + routes.about },
+    { label: "Home", to: routes.home },
+    { label: "Projects", to: "/" + routes.projects },
   ];
 
   return (
@@ -23,11 +23,12 @@ export const NavigationBar = () => {
         {items.map((item, index) => (
           <React.Fragment key={item.label}>
             <NavigationMenuItem>
-              <Link to={item.to} className={navBarCustom}>
-                {item.label}
+              <Link to={item.to} legacyBehavior passHref>
+                <NavigationMenuLink className={navBarCustom}>
+                  {item.label}
+                </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            {/* Real horizontal line between items, skip after last */}
             {index < items.length - 1 && (
               <div
                 className="h-[1px] w-[48px] !bg-white mx-1 "

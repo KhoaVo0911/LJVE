@@ -2,7 +2,7 @@ import "./App.css";
 import { Layout } from "./components/layout";
 
 function App() {
-  return null;
+  return <Layout></Layout>;
 }
 
 export default App;
