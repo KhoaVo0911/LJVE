@@ -146,6 +146,11 @@
 }
 
 @font-face {
+  font-family: "Neogrotesk-NeoSCBlack";
+  src: url("./assets/fonts/Fontspring-DEMO-neogrotesksc-black.otf") format("truetype");
+}
+
+@font-face {
   font-family: "BeauSans";
   src: url("./assets/fonts/BT-BeauSans-Regular.ttf") format("truetype");
 }
@@ -159,6 +164,5 @@
   font-family: "beauSansItalic";
   src: url("./assets/fonts/BT-BeauSans-Italic.ttf") format("truetype");
 }
-
 
 @tailwind utilities;
