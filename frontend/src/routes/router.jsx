@@ -16,6 +16,11 @@ const AppRoutes = () => {
       <Route path={routes.about} element={<AboutPage />} />
       <Route path={routes.journals} element={<JournalPage />} />
       <Route path={routes.projects} element={<ProjectsPage />} />
+      <Route path={routes.documentary} element={<ProjectsPage />} />
+      <Route path={routes.musicVideo} element={<ProjectsPage />} />
+      <Route path={routes.original} element={<ProjectsPage />} />
+      <Route path={routes.shortFilm} element={<ProjectsPage />} />
+      <Route path={routes.commercial} element={<ProjectsPage />} />
     </Routes>
   );
 };
@@ -40,6 +45,28 @@ export const router = createBrowserRouter([
       {
         path: routes.projects,
         element: <ProjectsPage />,
+        // children: [
+        //   {
+        //     path: routes.documentary,
+        //     element: <JournalPage />,
+        //   },
+        //   {
+        //     path: routes.musicVideo,
+        //     element: <JournalPage />,
+        //   },
+        //   {
+        //     path: routes.original,
+        //     element: <JournalPage />,
+        //   },
+        //   {
+        //     path: routes.shortFilm,
+        //     element: <JournalPage />,
+        //   },
+        //   {
+        //     path: routes.commercial,
+        //     element: <JournalPage />,
+        //   },
+        // ],
       },
     ],
   },
