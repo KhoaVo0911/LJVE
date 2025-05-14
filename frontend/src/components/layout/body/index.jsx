@@ -1,12 +1,6 @@
-import { AboutPage } from "@/pages/about";
-import { HomePage } from "@/pages/home";
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 export const AppBody = () => {
-  return (
-    <>
-      {/* <AboutPage></AboutPage> */}
-      <HomePage></HomePage>
-    </>
-  );
+  return <Outlet />;
 };

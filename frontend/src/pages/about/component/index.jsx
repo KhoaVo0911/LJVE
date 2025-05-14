@@ -1,4 +1,4 @@
-import { CarouselPage } from "@/components/carousel";
+import { CarouselPage } from "../../../components/carousel";
 import { EmailDown, PhoneTelephone } from "@icon-park/react";
 import React from "react";
 

@@ -1,19 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-import routes from "../constants/routes";
-import { LoginPage } from "../pages/login";
-import RootRoute from "./RootRoute";
-import PageNotFound from "../pages/error/404";
+import { path } from "../constants/path";
+import { HomePage } from "../pages/home/index.jsx";
+import { AboutPage } from "../pages/about/index.jsx";
+import { JournalPage } from "../pages/journal/index";
+import { ProjectsPage } from "../pages/projects/index";
+import { Layout } from "../components/layout";
 
 export const router = createBrowserRouter([
   {
-    path: routes.root,
-    element: <RootRoute />,
-    errorElement: <PageNotFound />,
+    path: "/",
+    element: <Layout />,
     children: [
-      {
-        path: routes.login,
-        element: <LoginPage />,
-      },
+      { path: "", element: <HomePage /> },
+      { path: "about", element: <AboutPage /> },
+      { path: "journal", element: <JournalPage /> },
+      { path: "projects", element: <ProjectsPage /> },
     ],
   },
 ]);
