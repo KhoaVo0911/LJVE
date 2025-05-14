@@ -1,21 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        gilroy: ['Gilroy', 'sans-serif'],
-        gilroyLight: ['Gilroy-Light', 'sans-serif'],
-        neoBold: ['Neogrotesk-Bold', 'sans-serif'],
-        neoAltBold: ['Neogrotesk-AltBold', 'sans-serif'],
-        beauSans: ['BeauSans', 'sans-serif'],
-        beauSans: ['BeauSansBold', 'sans-serif'],
-        beauSansItalic: ['BeauSansItalic', 'sans-serif'],
+        oneFtV: ["VIPTrends", "sans-serif"],
+        gilroy: ["Gilroy", "sans-serif"],
+        gilroyLight: ["Gilroy-Light", "sans-serif"],
+        neoBold: ["Neogrotesk-Bold", "sans-serif"],
+        neoAltBold: ["Neogrotesk-AltBold", "sans-serif"],
+        beauSans: ["BeauSans", "sans-serif"],
+        beauSans: ["BeauSansBold", "sans-serif"],
+        beauSansItalic: ["BeauSansItalic", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
