@@ -7,6 +7,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 
 const components = [

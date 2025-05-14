@@ -1,5 +1,10 @@
 import React from "react";
+import { JournalListPage } from "@/components/journalList";
 
 export const JournalPage = () => {
-  return <div className="p-10 text-3xl font-bold">Journal Page</div>;
+  return (
+    <div className="ml-30 mr-30 mt-10">
+      <JournalListPage />
+    </div>
+  );
 };

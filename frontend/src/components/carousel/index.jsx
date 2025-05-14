@@ -8,9 +8,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { images } from "@/hooks/mockData";
+import Autoplay from "embla-carousel-autoplay";
+
 export function CarouselPage() {
   return (
-    <Carousel className="mt-10 h-[60vh] w-[300vh]">
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
+      className="mt-10 h-[60vh] w-[300vh]"
+    >
       <CarouselContent>
         {images.map((imageSrc, index) => (
           <CarouselItem key={index}>
@@ -20,7 +29,7 @@ export function CarouselPage() {
                   <img
                     src={imageSrc}
                     alt={`Slide ${index + 1}`}
-                    className="object-contain h-[50vh] w-[50vh]"
+                    className="object-contain h-[50vh] w-[80vh]"
                   />
                 </CardContent>
               </Card>
