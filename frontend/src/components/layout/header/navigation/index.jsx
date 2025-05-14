@@ -4,20 +4,29 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import React from "react";
+import { Link } from "react-router-dom";
+import { path } from "@/constants/path";
 
 export const NavigationBar = () => {
   const navBarCustom = "font-[Gilroy-Light] text-white text-[24px] px-4";
-  const items = ["Journal", "About", "Home", "Projects"];
+  // Map item name to path
+  const items = [
+    { label: "Journal", to: path.journal },
+    { label: "About", to: path.about },
+    { label: "Home", to: path.home },
+    { label: "Projects", to: path.projects },
+  ];
 
   return (
     <NavigationMenu>
       <NavigationMenuList className="flex items-center ">
         {items.map((item, index) => (
-          <React.Fragment key={item}>
+          <React.Fragment key={item.label}>
             <NavigationMenuItem>
-              <div className={navBarCustom}>{item}</div>
+              <Link to={item.to} className={navBarCustom}>
+                {item.label}
+              </Link>
             </NavigationMenuItem>
-
             {/* Real horizontal line between items, skip after last */}
             {index < items.length - 1 && (
               <div
