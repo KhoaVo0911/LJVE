@@ -78,16 +78,6 @@ const Home = () => {
           <VolumeNotice theme="outline" size="32" fill="#fff" />
         )}
       </button>
-
-      {/* Show Play Button if autoplay with sound failed */}
-      {autoplayError && (
-        <button
-          onClick={handleUserPlay}
-          className="fixed bottom-8 right-8 z-30 bg-white px-4 py-2 text-black rounded shadow"
-        >
-          Play Video with Sound
-        </button>
-      )}
     </div>
   );
 };
