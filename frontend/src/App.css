@@ -1,9 +1,6 @@
-* {
+.site {
   background-color: #000000;
   color: #ffffff;
-}
-
-.site {
   min-height: 100dvh;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -13,4 +10,10 @@
 :where(body) {
   hyphens: auto;
   overflow-wrap: break-word;
+}
+
+.navbar {
+  position: relative;
+  z-index: 3;
+  /* Ensure it's above the video and overlay */
 }

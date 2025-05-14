@@ -4,7 +4,8 @@ import { NavigationBar } from "./navigation";
 
 export const AppHeader = () => {
   return (
-    <header className="bg-black text-white px-6 py-4 font-[gilroy] relative">
+    // <header className="bg-black text-white px-6 py-4 font-[gilroy] relative">
+    <header className=" text-white px-6 py-4 font-[gilroy] relative z-10">
       <div className="flex justify-between items-start">
         <div className="absolute left-1/2 transform -translate-x-1/2 top-4 text-[96px] font-bold leading-none tracking-[11px]">
           LJVE
