@@ -1,6 +1,6 @@
 import React from "react";
-import { NavigationBar } from "./navigation";
 import { InformationIcon } from "../information";
+import { NavigationBar } from "./navigation";
 
 export const AppHeader = () => {
   return (
