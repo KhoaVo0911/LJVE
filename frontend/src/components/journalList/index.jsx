@@ -4,7 +4,7 @@ import React from "react";
 export const JournalListPage = () => {
   return (
     <>
-      <div className="text-[48px] font-[Neogrotesk-Bold] mb-20">JOURNALS</div>
+      <div className="text-[48px] font-[Neogrotesk-Bold] mb-20 tracking-[0.1em]">JOURNALS</div>
 
       {journalData.map((journal) => (
         <div key={journal.id} className="mb-20">
