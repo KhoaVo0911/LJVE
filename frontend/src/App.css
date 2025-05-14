@@ -1,4 +1,19 @@
-/* * {
+.site {
   background-color: #000000;
   color: #ffffff;
-} */
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+}
+
+:where(body) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.navbar {
+  position: relative;
+  z-index: 3;
+  /* Ensure it's above the video and overlay */
+}

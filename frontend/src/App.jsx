@@ -1,12 +1,10 @@
 import "./App.css";
-// import { Layout } from "./components/layout";
-import HomePage from "./pages/home/homepage";
+import { Layout } from "./components/layout";
 
 function App() {
   return (
     <>
-      {/* <Layout></Layout> */}
-      <HomePage />
+      <Layout></Layout>
     </>
   );
 }

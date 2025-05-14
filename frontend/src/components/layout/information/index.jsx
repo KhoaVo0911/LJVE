@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 export const InformationIcon = () => {
-  const iconHeight = 50;
-  const iconWidth = 50;
+  const iconHeight = 37;
+  const iconWidth = 37;
 
   return (
     <>

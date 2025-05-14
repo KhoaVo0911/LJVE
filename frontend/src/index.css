@@ -114,6 +114,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -122,6 +123,11 @@
 @font-face {
   font-family: "Gilroy";
   src: url("./assets/fonts/SVN-GilroyHeavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "VIPTrends";
+  src: url("./assets/fonts/1FTV-VIP-Trends.otf") format("truetype");
 }
 
 @font-face {
@@ -142,6 +148,16 @@
 @font-face {
   font-family: "BeauSans";
   src: url("./assets/fonts/BT-BeauSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BeauSansBold";
+  src: url("./assets/fonts/BT-BeauSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "beauSansItalic";
+  src: url("./assets/fonts/BT-BeauSans-Italic.ttf") format("truetype");
 }
 
 
