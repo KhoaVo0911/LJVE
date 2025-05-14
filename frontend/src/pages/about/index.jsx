@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutMePage } from "./component";
+import { AboutMePage } from "../../components/aboutMe";
 import { ServicePage } from "@/components/service";
 import { IdiomPage } from "@/components/idiom";
 
