@@ -98,3 +98,74 @@ export const listFilm = [
     year: 2025,
   },
 ];
+
+export const listProjects = [
+  {
+    id: 1,
+    title: "ALL PROJECTS",
+    subTitle: "WITHIN EVERY FRAME LIES A STORY",
+    slogan:
+      "I tackle every genre, from documentaries and music videos to commercials and experimental pieces. Bring your vision, and I’ll deliver polished, on-time videos that hit the mark every time.",
+    images: [
+      "/assets/459424739_1048003410336309_4209133926252165288_n.png",
+      "/assets/IMG_3556.jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "DOCUMENTARY",
+    subTitle: "ÉCLAIRER LA VÉRITÉ EN IMAGES AUTHENTIQUES.",
+    slogan:
+      "I capture raw, authentic moments that tell powerful stories. Whether it’s social issues or personal journeys, my visuals will immerse viewers and spark real emotion.",
+    images: null,
+  },
+  {
+    id: 3,
+    title: "MUSIC VIDEO",
+    subTitle: "QUANDO IL SUONO PRENDE FORMA VISIVA.",
+    slogan:
+      "Designed for indie artists craving a standout look. I craft creative concepts and dynamic cinematography so your song not only sounds great, but looks unforgettable.",
+    images: [
+      "/assets/459424739_1048003410336309_4209133926252165288_n.png",
+      "/assets/IMG_3556.jpg",
+    ],
+  },
+  {
+    id: 4,
+    title: "ORIGINAL",
+    subTitle: "LIBÉREZ L’IMPRÉVISIBLE",
+    slogan:
+      "For boundary-pushing, experimental work. I turn your boldest ideas into striking visuals, no limits, no holds barred, just pure creative exploration.",
+    images: [
+      "/assets/459424739_1048003410336309_4209133926252165288_n.png",
+      "/assets/IMG_3556.jpg",
+    ],
+  },
+  {
+    id: 5,
+    title: "SHORT FILM",
+    subTitle: "EMOZIONI INTENSE IN BREVI RACCONTI",
+    slogan:
+      "Ideal for filmmakers looking for same vision: concise storytelling packed with feeling. From script support to final grade, I’ll help you create memorable films on any budget.",
+    images: [
+      "/assets/459424739_1048003410336309_4209133926252165288_n.png",
+      "/assets/IMG_3556.jpg",
+    ],
+  },
+  {
+    id: 6,
+    title: "COMMERCIAL",
+    subTitle: "D’UN PRODUIT, UNE LÉGENDE",
+    slogan:
+      "Recall the moment you caught your favorite brand in a perfect way. That’s the power I bring to commercials: follow brand story and deliver it to audience with heart-touched story.",
+    images: [
+      "/assets/459424739_1048003410336309_4209133926252165288_n.png",
+      "/assets/IMG_3556.jpg",
+      "/assets/IMG_3556.jpg",
+      "/assets/IMG_3556.jpg",
+      "/assets/IMG_3556.jpg",
+      "/assets/IMG_3556.jpg",
+      "/assets/IMG_3556.jpg",
+    ],
+  },
+];
