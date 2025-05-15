@@ -25,18 +25,21 @@ export const NavigationBar = () => {
         {items.map((item, index) => (
           <React.Fragment key={item.label}>
             <NavigationMenuItem>
-              <NavLink to={item.to}>
-                {({ isActive }) => (
-                  <NavigationMenuLink
-                    className={`${navBarBaseClass} ${
-                      isActive ? "font-extrabold" : "font-normal"
-                    }`}
-                  >
-                    {item.label}
-                  </NavigationMenuLink>
-                )}
-              </NavLink>
+              <NavigationMenuLink asChild>
+                <NavLink to={item.to}>
+                  {({ isActive }) => (
+                    <span
+                      className={`${navBarBaseClass} ${
+                        isActive ? "font-extrabold" : "font-normal"
+                      }`}
+                    >
+                      {item.label}
+                    </span>
+                  )}
+                </NavLink>
+              </NavigationMenuLink>
             </NavigationMenuItem>
+
             {index < items.length - 1 && (
               <div
                 className="h-[1px] w-[48px] !bg-white mx-1"

@@ -1,3 +1,4 @@
+import routes from "@/hooks/routes";
 import { AboutPage } from "@/pages/about";
 import { HomePage } from "@/pages/home";
 import { JournalPage } from "@/pages/journal";
@@ -9,11 +10,11 @@ import FilmDetails from "@/components/filmdetails";
 export const AppBody = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/home" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/journals" element={<JournalPage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path={routes.root} element={<HomePage />} />
+      <Route path={routes.home} element={<HomePage />} />
+      <Route path={routes.about} element={<AboutPage />} />
+      <Route path={routes.journals} element={<JournalPage />} />
+      <Route path={`${routes.projects}/*`} element={<ProjectsPage />} />
       <Route path="/film/:id" element={<FilmDetails />} />
     </Routes>
   );
