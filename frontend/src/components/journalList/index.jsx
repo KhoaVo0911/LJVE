@@ -31,11 +31,11 @@ export const JournalListPage = () => {
               />
             </div>
             <div className="flex flex-col items-start ml-20">
-              <div className="text-[60px] font-[Neogrotesk-AltBold] leading-relaxed mb-8">
+              <div className="text-[60px] font-[Neogrotesk-AltBold] leading-relaxed mb-8 ">
                 {formatTitleWithSansQuotes(journal.title)}
               </div>
 
-              <div className="text-[18px] font-[BeauSans] leading-relaxed break-words mb-15">
+              <div className="text-[18px] font-[BeauSans] leading-relaxed break-words mb-15 text-justify">
                 {journal.description}
               </div>
 
