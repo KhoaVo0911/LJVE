@@ -11,7 +11,7 @@ export const ProjectsListPage = ({ images }) => {
                 key={index}
                 src={url}
                 alt={`Project ${index + 1}`}
-                className="rounded-lg w-[904px] h-[509px]"
+                className="rounded-lg w-[904px] h-[509px] object-cover object-center"
               />
             ))}
           </div>
