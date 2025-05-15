@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-video {
+.main video {
     position: fixed;
     /* <- changed */
     top: 0;

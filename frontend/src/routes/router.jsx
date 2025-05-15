@@ -7,12 +7,14 @@ import { ProjectsPage } from "@/pages/projects/index.jsx";
 import routes from "@/hooks/routes";
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "@/components/layout";
+import FilmDetails from "@/components/filmdetails";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path={routes.root} element={<Layout />} />
       <Route path={routes.home} element={<HomePage />} />
+      <Route path={routes.filmDetail} element={<FilmDetails />} />
       <Route path={routes.about} element={<AboutPage />} />
       <Route path={routes.journals} element={<JournalPage />} />
       <Route path={routes.projects} element={<ProjectsPage />} />
@@ -67,6 +69,10 @@ export const router = createBrowserRouter([
         //     element: <JournalPage />,
         //   },
         // ],
+      },
+      {
+        path: routes.filmDetail,
+        element: <FilmDetails />,
       },
     ],
   },
