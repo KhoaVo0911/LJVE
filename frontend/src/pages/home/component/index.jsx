@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import videoBg from "../../../assets/videoBg.mp4";
 import { listFilm } from "../../../hooks/mockData";
 import { VolumeMute, VolumeNotice } from "@icon-park/react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false); // default: sound on
+  const [isMuted, setIsMuted] = useState(false);
   const [autoplayError, setAutoplayError] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const playVideo = async () => {
@@ -18,7 +20,7 @@ const Home = () => {
         }
       } catch (err) {
         console.log("Autoplay failed:", err);
-        setAutoplayError(true); // show button if autoplay fails
+        setAutoplayError(true);
       }
     };
 
@@ -55,7 +57,11 @@ const Home = () => {
 
       <div className="absolute left-12 bottom-0 z-20 flex flex-col gap-2 items-start max-w-[1100px]">
         {listFilm.map((movie) => (
-          <div key={movie.id} className="relative mb-2 w-fit">
+          <div
+            key={movie.id}
+            className="relative mb-2 w-fit cursor-pointer hover:opacity-80 transition"
+            onClick={() => navigate(`/film/${movie.id}`)}
+          >
             <span className="absolute -top-4 right-0 translate-x-6 text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
               {movie.year}
             </span>
@@ -67,7 +73,7 @@ const Home = () => {
       </div>
 
       {/* Volume Toggle Button */}
-      <button
+      {/* <button
         onClick={toggleMute}
         className="fixed bottom-8 right-20 z-30 bg-transparent p-3 flex items-center justify-center hover:bg-opacity-60 transition"
         aria-label={isMuted ? "Unmute" : "Mute"}
@@ -77,7 +83,7 @@ const Home = () => {
         ) : (
           <VolumeNotice theme="outline" size="32" fill="#fff" />
         )}
-      </button>
+      </button> */}
     </div>
   );
 };
