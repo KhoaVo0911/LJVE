@@ -1,5 +1,18 @@
+import { ProjectsComponents } from "@/components/project";
+import { listProjects } from "@/hooks/mockData";
 import React from "react";
 
 export const CommercialPage = () => {
-  return <></>;
+  const allProject = listProjects[5];
+
+  return (
+    <>
+      <ProjectsComponents
+        title={allProject.title}
+        subTitle={allProject.subTitle}
+        slogan={allProject.slogan}
+        images={allProject.images}
+      ></ProjectsComponents>
+    </>
+  );
 };

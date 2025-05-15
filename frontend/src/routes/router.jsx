@@ -7,25 +7,13 @@ import { ProjectsPage } from "@/pages/projects/index.jsx";
 import routes from "@/hooks/routes";
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "@/components/layout";
+import { DocumentaryPage } from "@/pages/projects/documentary";
+import { MusicVideoPage } from "@/pages/projects/musicVideo";
+import { OriginalPage } from "@/pages/projects/original";
+import { ShortFilmPage } from "@/pages/projects/shortFilm";
+import { CommercialPage } from "@/pages/projects/commercial";
+import { AllProjectsPage } from "@/pages/projects/allProject";
 import FilmDetails from "@/components/filmdetails";
-
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path={routes.root} element={<Layout />} />
-      <Route path={routes.home} element={<HomePage />} />
-      <Route path={routes.filmDetail} element={<FilmDetails />} />
-      <Route path={routes.about} element={<AboutPage />} />
-      <Route path={routes.journals} element={<JournalPage />} />
-      <Route path={routes.projects} element={<ProjectsPage />} />
-      <Route path={routes.documentary} element={<ProjectsPage />} />
-      <Route path={routes.musicVideo} element={<ProjectsPage />} />
-      <Route path={routes.original} element={<ProjectsPage />} />
-      <Route path={routes.shortFilm} element={<ProjectsPage />} />
-      <Route path={routes.commercial} element={<ProjectsPage />} />
-    </Routes>
-  );
-};
 
 export const router = createBrowserRouter([
   {
@@ -45,37 +33,39 @@ export const router = createBrowserRouter([
         element: <JournalPage />,
       },
       {
-        path: routes.projects,
-        element: <ProjectsPage />,
-        // children: [
-        //   {
-        //     path: routes.documentary,
-        //     element: <JournalPage />,
-        //   },
-        //   {
-        //     path: routes.musicVideo,
-        //     element: <JournalPage />,
-        //   },
-        //   {
-        //     path: routes.original,
-        //     element: <JournalPage />,
-        //   },
-        //   {
-        //     path: routes.shortFilm,
-        //     element: <JournalPage />,
-        //   },
-        //   {
-        //     path: routes.commercial,
-        //     element: <JournalPage />,
-        //   },
-        // ],
-      },
-      {
         path: routes.filmDetail,
         element: <FilmDetails />,
+      },
+      {
+        path: routes.projects,
+        element: <ProjectsPage />,
+        children: [
+          {
+            path: routes.allProjects,
+            element: <AllProjectsPage />,
+          },
+          {
+            path: routes.documentary,
+            element: <DocumentaryPage />,
+          },
+          {
+            path: routes.musicVideo,
+            element: <MusicVideoPage />,
+          },
+          {
+            path: routes.original,
+            element: <OriginalPage />,
+          },
+          {
+            path: routes.shortFilm,
+            element: <ShortFilmPage />,
+          },
+          {
+            path: routes.commercial,
+            element: <CommercialPage />,
+          },
+        ],
       },
     ],
   },
 ]);
-
-export default AppRoutes;
