@@ -2,8 +2,8 @@ import { ProjectsComponents } from "@/components/project";
 import { listProjects } from "@/hooks/mockData";
 import React from "react";
 
-export const MusicVideoPage = () => {
-  const allProject = listProjects[2];
+export const AllProjectsPage = () => {
+  const allProject = listProjects[0];
 
   return (
     <>
