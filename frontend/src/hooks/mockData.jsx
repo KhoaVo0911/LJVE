@@ -250,26 +250,23 @@ export const filmDetails = [
       {
         section: "STARRING",
         items: [
-          {
-            label: null,
-            names: [
-              "Hải Ân Trần Hằng Nghi",
-              "Dương Ngô Thùy Tiên",
-              "Vy",
-              "De Ara Hiroshi/Hà Dương",
-            ],
-          },
+          { label: null, names: ["Hải An: Trần Hằng Nghi"] },
+          { label: null, names: ["Dương: Ngô Thùy Tiên"] },
+          { label: null, names: ["Vy: De Ara Hiroshi/Hà Dương"] },
+          { label: null, names: ["Content Creator: Phương Anh"] },
+          { label: null, names: ["Content Creator: Tiến Phú Music Posting"] },
+          { label: null, names: ["Content Creator: Meow Âm Nhạc"] },
         ],
       },
       {
         section: "PRODUCTION DEPARTMENT",
         items: [
-          { label: "Produced by", names: ["NHÓM GỎE NƯ JUICY"] },
-          { label: "Producer", names: ["Tiến Phú"] },
+          { label: "Produced by", names: ["NHỮNG CÔ EM JUICY"] },
+          { label: "Producer", names: ["Trần Tiến Phú"] },
           { label: "Creative Director", names: ["Nguyễn Nhựt Khánh"] },
           { label: "Script Writer", names: ["Phương Loan Nguyễn"] },
           { label: "1st Assistance Director", names: ["Phương Loan Nguyễn"] },
-          { label: "Line Producer", names: ["Qủi Rùa"] },
+          { label: "Line Producer", names: ["Qui Rùa"] },
         ],
       },
       {
@@ -290,7 +287,7 @@ export const filmDetails = [
       {
         section: "LIGHTING",
         items: [
-          { label: "Gaffer", names: ["Lam Trần", "Quý Hoà"] },
+          { label: "Gaffer", names: ["Lâm Trần", "Quy Hoà"] },
           { label: "Equipment", names: ["Phú Phương Nam"] },
         ],
       },
@@ -304,7 +301,7 @@ export const filmDetails = [
               "Minh Hoài",
               "Ngọc Thảo",
               "Trần Tiến Phú",
-              "Tô Đũ Nàng Dông",
+              "Đu Đủ Năng Động",
             ],
           },
         ],
@@ -329,12 +326,13 @@ export const filmDetails = [
           {
             label: "Set Designer",
             names: [
+              "Nguyễn Nhựt Khánh",
               "Bảo Hân",
               "Dewild",
               "Minh Hoài",
               "Minh Ngọc",
-              "Thảo Lạc",
-              "Toàn Lạc",
+              "Ngọc Thảo",
+              "Toàn Lê",
             ],
           },
         ],
@@ -344,7 +342,7 @@ export const filmDetails = [
         items: [
           { label: "Stylist", names: ["Nguyễn Nhựt Khánh"] },
           { label: "Makeup Artist", names: ["Phương Anh"] },
-          { label: "Wardrobe", names: ["Hương Dương"] },
+          { label: "Wardrobe", names: ["Hướng Dương"] },
         ],
       },
       {
@@ -364,13 +362,13 @@ export const filmDetails = [
             label: null,
             names: ["Nguyễn Trương Tấn Thông - khán giả quá khích 7"],
           },
-          { label: null, names: ["Sử Hữu Hiền - khán giả quá khích 8"] },
+          { label: null, names: ["Sử Hữu Hiển - khán giả quá khích 8"] },
           { label: null, names: ["Ngô Lê Hoàng Phúc - khán giả quá khích 9"] },
         ],
       },
       {
         section: "CATERING",
-        items: [{ label: null, names: ["Tiến Phú", "Nguyễn Cường"] }],
+        items: [{ label: null, names: ["Tiến Phú", "Nguyễn Cương"] }],
       },
     ],
   },
@@ -413,14 +411,16 @@ export const filmDetails = [
       },
       {
         section: "CAMERA DEPARTMENT",
+        items: [{ label: "Director of Photography", names: ["Bern"] }],
+      },
+      {
+        section: "CAMERA OPERATOR",
         items: [
-          { label: "Director of Photography", names: ["Bern"] },
-          { label: "Camera Operators", names: ["Lê Tiến Đạt"] },
-          { label: "Camera Operators", names: ["Phước Võ"] },
-          { label: "Camera Operators", names: ["Bern (ORMINE)"] },
+          { names: ["Lê Tiến Đạt"] },
+          { names: ["Phước Võ"] },
+          { names: ["Bern (ORMINE)"] },
           {
-            label: "Camera Operators",
-            names: ["LJVE NGUYEN (ORMINE)"],
+            names: ["LJVE NGUYEN"],
             italic: true,
           },
           { label: "Assistant Camera", names: ["Văn Thành Tiến"] },
