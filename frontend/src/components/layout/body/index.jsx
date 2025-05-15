@@ -4,6 +4,7 @@ import { JournalPage } from "@/pages/journal";
 import { ProjectsPage } from "@/pages/projects";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import FilmDetails from "@/components/filmdetails";
 
 export const AppBody = () => {
   return (
@@ -13,6 +14,7 @@ export const AppBody = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/journals" element={<JournalPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/film/:id" element={<FilmDetails />} />
     </Routes>
   );
 };
