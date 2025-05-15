@@ -7,38 +7,46 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { images } from "@/hooks/mockData";
+import { imagesAboutMe } from "@/hooks/mockData";
 import Autoplay from "embla-carousel-autoplay";
 
 export function CarouselPage() {
   return (
     <Carousel
-      plugins={[
-        Autoplay({
-          delay: 5000,
-        }),
-      ]}
-      className="mt-10 h-[60vh] w-[300vh]"
+      plugins={[Autoplay({ delay: 5000 })]}
+      className="
+        mt-10 
+        h-[60vh] 
+        w-[300vh] 
+        max-w-[90vw] 
+        sm:max-w-[80vw] 
+        md:max-w-[70vw] 
+        lg:max-w-[60vw] 
+        xl:max-w-[50vw] 
+        mx-auto
+      "
     >
-      <CarouselContent>
-        {images.map((imageSrc, index) => (
-          <CarouselItem key={index}>
-            <div>
-              <Card>
-                <CardContent className="flex items-center justify-center">
-                  <img
-                    src={imageSrc}
-                    alt={`Slide ${index + 1}`}
-                    className="object-contain h-[50vh] w-[80vh]"
-                  />
-                </CardContent>
-              </Card>
-            </div>
+      <CarouselContent className="h-full">
+        {imagesAboutMe.map((imageSrc, index) => (
+          <CarouselItem key={index} className="h-full">
+            <Card
+              className="bg-black border-black h-full w-full overflow-hidden p-0 m-0 "
+              style={{ borderRadius: "63px" }}
+            >
+              <CardContent className="h-full w-full p-0 m-0">
+                <img
+                  src={imageSrc}
+                  alt={`Slide ${index + 1}`}
+                  className="h-full w-full object-cover block"
+                  style={{ borderRadius: "63px" }}
+                />
+              </CardContent>
+            </Card>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="bg-white text-black" />
+      <CarouselNext className="bg-white text-black" />
     </Carousel>
   );
 }
