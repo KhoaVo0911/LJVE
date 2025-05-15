@@ -31,7 +31,9 @@ export const ProjectCategory = () => {
                 {({ isActive }) => (
                   <NavigationMenuLink
                     className={`${navBarBaseClass} ${
-                      isActive ? "font-extrabold" : "font-normal"
+                      isActive
+                        ? "font-normal text-white/60"
+                        : "font-extrabold text-white"
                     }`}
                   >
                     {item.label}
