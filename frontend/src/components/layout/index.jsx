@@ -5,7 +5,7 @@ import { AppBody } from "./body";
 
 export const Layout = () => {
   return (
-    <div class="site">
+    <div className="site">
       <AppHeader />
       <AppBody />
       <AppFooter />

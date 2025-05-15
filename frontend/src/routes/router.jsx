@@ -13,6 +13,7 @@ import { OriginalPage } from "@/pages/projects/original";
 import { ShortFilmPage } from "@/pages/projects/shortFilm";
 import { CommercialPage } from "@/pages/projects/commercial";
 import { AllProjectsPage } from "@/pages/projects/allProject";
+import FilmDetails from "@/components/filmdetails";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: routes.journals,
         element: <JournalPage />,
+      },
+      {
+        path: routes.filmDetail,
+        element: <FilmDetails />,
       },
       {
         path: routes.projects,
@@ -64,4 +69,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-
