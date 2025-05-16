@@ -150,8 +150,8 @@ import { AspectRatio } from "../ui/aspect-ratio";
 const specialItalicLabels = ["Gaffer", "SFX", "Editor", "Colorist"];
 
 const FilmDetails = () => {
-  const { id } = useParams();
-  const film = filmDetails.find((f) => String(f.id) === String(id));
+  const { slug } = useParams();
+  const film = filmDetails.find((f) => f.slug === slug);
 
   if (!film)
     return (

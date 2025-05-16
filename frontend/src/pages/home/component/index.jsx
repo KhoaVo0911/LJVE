@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import videoBg from "../../../assets/videoBg.mp4";
-import { listFilm } from "../../../hooks/mockData";
+import { listFilm, filmDetails } from "../../../hooks/mockData";
 import { VolumeMute, VolumeNotice } from "@icon-park/react";
 import { useNavigate } from "react-router-dom";
 
@@ -45,6 +45,12 @@ const Home = () => {
     }
   };
 
+  // Map id to slug for navigation
+  const idToSlug = {};
+  filmDetails.forEach((film) => {
+    idToSlug[film.id] = film.slug;
+  });
+
   return (
     <div className="relative w-full h-full overflow-hidden font-[VIPTrends]">
       <video
@@ -60,7 +66,12 @@ const Home = () => {
           <div
             key={movie.id}
             className="relative mb-2 w-fit cursor-pointer hover:opacity-80 transition"
-            onClick={() => navigate(`/film/${movie.id}`)}
+            onClick={() => {
+              const slug = idToSlug[movie.id];
+              if (slug) {
+                navigate(`/film/${slug}`);
+              }
+            }}
           >
             <span className="absolute -top-4 right-0 translate-x-6 text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
               {movie.year}

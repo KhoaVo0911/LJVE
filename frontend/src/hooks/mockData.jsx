@@ -190,6 +190,7 @@ export const filmDetails = [
   {
     id: 1,
     name: "THIM",
+    slug: "thim",
     genre: "Short Film",
     video: "/assets/film/thim/video1.mp4",
     images: [
@@ -398,6 +399,7 @@ export const filmDetails = [
   {
     id: 2,
     name: "KIM CHI NU",
+    slug: "kimchinu",
     genre: "Short Film",
     video: "/assets/film/kimchinu/video1.mp4",
     images: [
@@ -537,6 +539,7 @@ export const filmDetails = [
   {
     id: 3,
     name: "CRTLZ",
+    slug: "ctrlz",
     genre: "Short Film",
     video: "/assets/film/ctrlz/video1.mp4",
     images: [
@@ -723,6 +726,7 @@ export const filmDetails = [
   {
     id: 4,
     name: "NEU LUC DO",
+    slug: "neulucdo",
     genre: "MV Cover",
     video: "/assets/film/neulucdo/video1.mp4",
     images: [
@@ -801,6 +805,7 @@ export const filmDetails = [
   {
     id: 5,
     name: "EYESME",
+    slug: "eyesme",
     genre: "Commercial",
     video: "/assets/film/eyesme/video1.mp4",
     images: [
