@@ -13,7 +13,7 @@ export const AboutMePage = () => {
             </div>
           </div>
           <div className="flex-1">
-            <div className="text-[18px] font-[BeauSans] leading-relaxed max-w-[90%] whitespace-pre-line break-words hyphens-none">
+            <div className="text-[18px] font-[BeauSans] leading-relaxed max-w-[210vh] whitespace-pre-line break-words hyphens-none text-justify mr-30">
               I’m Nguyen Tuan Khang, a Vietnamese cinematographer based in
               Saigon. My work explores the intersection between emotional
               storytelling and visual precision, where every frame is designed
