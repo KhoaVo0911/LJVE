@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Mapping thủ công giữa banner và id phim
 const bannerToFilmSlug = {
   "/assets/film/allProjects/7.jpg": "thim",
   "/assets/film/allProjects/12.jpg": "kimchinu",
   "/assets/film/allProjects/6.jpg": "ctrlz",
   "/assets/film/allProjects/5.jpg": "neulucdo",
   "/assets/film/allProjects/3.jpg": "eyesme",
+  "/assets/film/allProjects/2.jpg": "qlmt",
+  "/assets/film/allProjects/4.jpg": "khong",
   // ...
 };
 
