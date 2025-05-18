@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import videoBg from "../../../assets/videoBg.mp4";
-import { listFilm } from "../../../hooks/mockData";
-import { VolumeMute, VolumeNotice } from "@icon-park/react";
+import { listFilm, filmDetails } from "../../../hooks/mockData";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(false);
-  const [autoplayError, setAutoplayError] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,23 +25,10 @@ const Home = () => {
     playVideo();
   }, [isMuted]);
 
-  const handleUserPlay = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = false;
-      videoRef.current.volume = 1.0;
-      videoRef.current.play();
-      setIsMuted(false);
-      setAutoplayError(false);
-    }
-  };
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      const newMuteState = !videoRef.current.muted;
-      videoRef.current.muted = newMuteState;
-      setIsMuted(newMuteState);
-    }
-  };
+  const idToSlug = {};
+  filmDetails.forEach((film) => {
+    idToSlug[film.id] = film.slug;
+  });
 
   return (
     <div className="relative w-full h-full overflow-hidden font-[VIPTrends]">
@@ -60,7 +45,12 @@ const Home = () => {
           <div
             key={movie.id}
             className="relative mb-2 w-fit cursor-pointer hover:opacity-80 transition"
-            onClick={() => navigate(`/film/${movie.id}`)}
+            onClick={() => {
+              const slug = idToSlug[movie.id];
+              if (slug) {
+                navigate(`/film/${slug}`);
+              }
+            }}
           >
             <span className="absolute -top-4 right-0 translate-x-6 text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
               {movie.year}
@@ -71,19 +61,6 @@ const Home = () => {
           </div>
         ))}
       </div>
-
-      {/* Volume Toggle Button */}
-      {/* <button
-        onClick={toggleMute}
-        className="fixed bottom-8 right-20 z-30 bg-transparent p-3 flex items-center justify-center hover:bg-opacity-60 transition"
-        aria-label={isMuted ? "Unmute" : "Mute"}
-      >
-        {isMuted ? (
-          <VolumeMute theme="outline" size="32" fill="#fff" />
-        ) : (
-          <VolumeNotice theme="outline" size="32" fill="#fff" />
-        )}
-      </button> */}
     </div>
   );
 };

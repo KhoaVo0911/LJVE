@@ -1,7 +1,7 @@
 const routes = {
   root: "/",
   home: "/home",
-  filmDetail: "/film/:id",
+  filmDetail: "/film/:slug",
   journals: "/journals",
   journalDetail: "/journals/:title",
   about: "/about",

@@ -190,6 +190,7 @@ export const filmDetails = [
   {
     id: 1,
     name: "THIM",
+    slug: "thim",
     genre: "Short Film",
     video: "/assets/film/thim/video1.mp4",
     images: [
@@ -240,7 +241,7 @@ export const filmDetails = [
           { names: ["Lê Tiến Đạt"] },
           { names: ["Phước Võ"] },
           { names: ["Bern (ORMINE)"] },
-          { names: ["LJVE NGUYEN (ORMINE)"] },
+          { names: ["LJVE NGUYEN (ORMINE)"], italic: true },
         ],
         italic: true,
       },
@@ -266,7 +267,7 @@ export const filmDetails = [
         section: "Lighting Assistant",
         items: [
           {
-            names: ["Quý Hoà"],
+            names: ["Quy Hoà"],
           },
           {
             names: ["Nguyễn Phúc Anh Khôi"],
@@ -277,6 +278,610 @@ export const filmDetails = [
           {
             names: ["Lê Tiến Đạt"],
           },
+        ],
+      },
+      {
+        section: "Best Boy",
+        items: [{ names: ["Khương Duy"] }, { names: ["Quốc Dũng"] }],
+      },
+      {
+        section: "SOUND DEPARTMENT",
+        items: [{ label: "Sound Recordist", names: ["Quang Huấn"] }],
+      },
+      {
+        section: "ART DEPARTMENT",
+        items: [
+          { label: "Art Director", names: ["Nguyễn Cao Thế Mỹ"] },
+          { label: "Set Decorator", names: ["Phúc Sâm"] },
+        ],
+      },
+      {
+        section: "Assistant Props",
+        items: [
+          { names: ["Phương Dung"] },
+          { names: ["Uyên Pu"] },
+          { names: ["Trung Thành"] },
+        ],
+      },
+      {
+        section: "STYLING & MAKEUP",
+        items: [
+          {
+            names: ["Stylist"],
+          },
+          {
+            names: ["Nguyễn Cao Thế Mỹ"],
+          },
+          {
+            names: ["Phạm Hồng Anh"],
+          },
+          {
+            names: ["Hải Yến"],
+          },
+          {
+            names: ["Makeup Artist"],
+          },
+          {
+            names: ["Chị Mộng (Nate)"],
+          },
+          {
+            names: ["Kim Thư"],
+          },
+        ],
+      },
+      {
+        section: "CAST SUPPORT",
+        items: [
+          {
+            names: ["Cast Assistants"],
+          },
+          {
+            names: ["Uyên Pu"],
+          },
+          {
+            names: ["Hồng Anh"],
+          },
+          {
+            names: ["Hoàng My"],
+          },
+        ],
+      },
+      {
+        section: "POST PRODUCTION",
+        items: [
+          { names: ["Editor"] },
+          { names: ["Ljve NGUYEN"], italic: true },
+          { names: ["Bern"] },
+        ],
+      },
+      {
+        section: "SFX:",
+        items: [{ names: ["Ljve NGUYEN"], italic: true }],
+      },
+      {
+        section: "Colorist",
+        items: [
+          { names: ["Chí Võ"] },
+          { names: ["Ljve NGUYEN"], italic: true },
+        ],
+      },
+      {
+        section: "BEHIND THE SCENES",
+        items: [
+          {
+            names: ["BTS Photographer"],
+          },
+          {
+            names: ["Nguyễn Huỳnh Mai Ngân"],
+          },
+          {
+            names: ["Bé My"],
+          },
+          {
+            names: ["Hồ Phương"],
+          },
+        ],
+      },
+      {
+        section: "ACCOUNTING",
+        items: [
+          {
+            names: ["Accountant"],
+          },
+          {
+            names: ["Linh Chan"],
+          },
+          { names: ["Hồ Minh Phương"] },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "KIM CHI NU",
+    slug: "kimchinu",
+    genre: "Short Film",
+    video: "/assets/film/kimchinu/video1.mp4",
+    images: [
+      "/assets/film/kimchinu/kimchinu1.png",
+      "/assets/film/kimchinu/kimchinu2.png",
+      "/assets/film/kimchinu/kimchinu3.png",
+      "/assets/film/kimchinu/kimchinu4.png",
+      "/assets/film/kimchinu/kimchinu5.png",
+    ],
+    credit: [
+      {
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"KIM CHI NU" SHORT FILM'] }],
+      },
+      {
+        section: "STARRING",
+        items: [
+          { label: null, names: ["Hải An: Trần Hằng Nghi"] },
+          { label: null, names: ["Dương: Ngô Thùy Tiên"] },
+          { label: null, names: ["Vy: De Ara Hiroshi/Hà Dương"] },
+          { label: null, names: ["Content Creator 1: Phương Anh"] },
+          { label: null, names: ["Content Creator 2: Tiến Phú Music Posting"] },
+          { label: null, names: ["Content Creator 3: Meow Âm Nhạc"] },
+        ],
+      },
+      {
+        section: "PRODUCTION DEPARTMENT",
+        items: [
+          { label: "Produced by", names: ["NHỮNG CÔ EM JUICY"] },
+          { label: "Producer", names: ["Trần Tiến Phú"] },
+          { label: "Director", names: ["Dương San"] },
+          { label: "Creative Director", names: ["Nguyễn Nhựt Khánh"] },
+          { label: "Script Writer", names: ["Phương Loan Nguyễn"] },
+          { label: "1st Assistance Director", names: ["Phương Loan Nguyễn"] },
+          { label: "Line Producer", names: ["Qui Rùa"] },
+        ],
+      },
+      {
+        section: "CAMERA DEPARTMENT",
+        items: [
+          { label: "Director Of Photography", names: ["Dewild"] },
+          {
+            names: ["Camera Operator: "],
+          },
+          { names: ["Ngô Văn Thi"] },
+          { names: ["Phúc Nguyễn"] },
+          { names: ["LJVE NGUYEN"], italic: true },
+        ],
+      },
+      {
+        section: "BOOM OPERATOR",
+        items: [{ label: null, names: ["Công"] }],
+      },
+      {
+        section: "Gaffer:",
+        items: [{ names: ["Lâm Trần"] }, { names: ["Quy Hoà"] }],
+      },
+      {
+        section: "BEHIND THE SCENES:",
+        items: [
+          {
+            names: ["Minh Ngọc"],
+          },
+          { names: ["Minh Hoài"] },
+          { names: ["Ngọc Thảo"] },
+          { names: ["Trần Tiến Phú"] },
+          { names: ["Đu Đủ Năng Động"] },
+        ],
+      },
+      {
+        section: "POST PRODUCTION",
+        items: [
+          {
+            label: "EDITOR",
+            names: ["Nguyễn Tuấn Khang", "Phúc Nguyễn"],
+          },
+          { label: "COLORIST", names: ["Nguyễn Tuấn Khang"] },
+          {
+            label: "SOUND ENGINEER",
+            names: ["Nguyễn Tuấn Khang"],
+            uppercase: true,
+          },
+        ],
+      },
+      {
+        section: "ART DEPARTMENT",
+        items: [
+          { label: "ART DIRECTOR", names: ["Nguyễn Nhựt Khánh"] },
+          { label: "PROPS MASTER", names: ["Bảo Hân"] },
+          { names: ["SET DESIGNER:"] },
+          {
+            names: ["Nguyễn Nhựt Khánh"],
+          },
+          { names: ["Bảo Hân"] },
+          { names: ["Dewild"] },
+          { names: ["Minh Hoài"] },
+          { names: ["Minh Ngọc"] },
+          { names: ["Ngọc Thảo"] },
+          { names: ["Toàn Lê"] },
+        ],
+      },
+      {
+        section: "STYLING",
+        items: [
+          { label: "STYLIST", names: ["Nguyễn Nhựt Khánh"] },
+          { label: "MAKEUP ARTIST", names: ["Phương Anh"] },
+          { label: "WARDROBE", names: ["Hướng Dương"] },
+        ],
+      },
+      {
+        section: "VOICE OVER",
+        items: [
+          { label: null, names: ["Bảo Hân - chị HR"] },
+          { label: null, names: ["Minh Ngọc - chị quản lý"] },
+          { label: null, names: ["Tiến Phú - khán giả quá khích 1"] },
+          { label: null, names: ["Phương Loan - khán giả quá khích 3"] },
+          { label: null, names: ["Nhựt Khánh - khán giả quá khích 4"] },
+          { label: null, names: ["Phạm Thu Hạnh - khán giả quá khích 5"] },
+          {
+            label: null,
+            names: ["Nguyễn Huỳnh Minh Ngọc - khán giả quá khích 6"],
+          },
+          {
+            label: null,
+            names: ["Nguyễn Trương Tấn Thông - khán giả quá khích 7"],
+          },
+          { label: null, names: ["Sử Hữu Hiển - khán giả quá khích 8"] },
+          { label: null, names: ["Ngô Lê Hoàng Phúc - khán giả quá khích 9"] },
+        ],
+      },
+      {
+        section: "CATERING",
+        items: [{ names: ["Tiến Phú"] }, { names: ["Nguyễn Cương"] }],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "CRTLZ",
+    slug: "ctrlz",
+    genre: "Short Film",
+    video: "/assets/film/ctrlz/video1.mp4",
+    images: [
+      "/assets/film/ctrlz/ctrlz1.png",
+      "/assets/film/ctrlz/ctrlz2.png",
+      "/assets/film/ctrlz/ctrlz3.png",
+      "/assets/film/ctrlz/ctrlz4.png",
+      "/assets/film/ctrlz/ctrlz5.png",
+    ],
+    credit: [
+      {
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"CTRL-Z" SHORT FILM'] }],
+      },
+      {
+        section: "PRODUCTION DEPARTMENT",
+        items: [
+          { label: "Producer", names: ["Phan Đức Công Anh"] },
+          { label: "Production Coordinator", names: ["Gia Ánh"] },
+        ],
+      },
+      {
+        section: "Assistant Producers:",
+        items: [
+          { names: ["Trung Thành"] },
+          { names: ["Tuấn Khải"] },
+          { names: ["Nhật Quang"] },
+        ],
+      },
+      {
+        section: "DIRECTION DEPARTMENT",
+        items: [
+          { label: "Director", names: ["Hizu"] },
+          { label: "Screenwriter", names: ["Huy"] },
+          { label: "1st Assistant Director", names: ["Linh Chan"] },
+          { label: "2nd Assistant Director", names: ["Hồ Minh Phương"] },
+          { label: "Script Supervisor", names: ["Nguyễn Khánh Hương"] },
+        ],
+      },
+      {
+        section: "CAMERA DEPARTMENT",
+        items: [{ label: "Director of Photography", names: ["Bern"] }],
+      },
+      {
+        section: "Camera Operators:",
+        items: [
+          { names: ["Lê Tiến Đạt"] },
+          { names: ["Phước Võ"] },
+          { names: ["Bern (ORMINE)"] },
+          {
+            names: ["LJVE NGUYEN"],
+            italic: true,
+          },
+        ],
+      },
+      {
+        section: "Assistant Camera:",
+        items: [{ names: ["Văn Thành Tiến"] }, { names: ["Chí Võ"] }],
+      },
+      {
+        section: "Technical:",
+        items: [
+          { names: ["Nguyễn Phúc Anh Khôi"] },
+          { names: ["Huỳnh Trúc Phương"] },
+        ],
+      },
+      {
+        section: "LIGHTING",
+        items: [{ label: "Gaffer", names: ["LJVE NGUYEN"], italic: true }],
+      },
+      {
+        section: "Lighting Assistant:",
+        items: [
+          { names: ["Quy Hoà"] },
+          { names: ["Nguyễn Phúc Anh Khôi"] },
+          { names: ["Chí Võ"] },
+          { names: ["Lê Tiến Đạt"] },
+        ],
+      },
+      {
+        section: "Best Boy:",
+        items: [{ names: ["Khương Duy"] }, { names: ["Quốc Dũng"] }],
+      },
+      {
+        section: "SOUND DEPARTMENT",
+        items: [{ label: "Sound Recordist", names: ["Quang Huấn"] }],
+      },
+      {
+        section: "ART DEPARTMENT",
+        items: [
+          { label: "Art Director", names: ["Nguyễn Cao Thế Mỹ"] },
+          { label: "Set Decorator", names: ["Phúc Sâm"] },
+        ],
+      },
+      {
+        section: "Assistant Props:",
+        items: [
+          { names: ["Phương Dung"] },
+          { names: ["Uyên Pu"] },
+          { names: ["Trung Thành"] },
+        ],
+      },
+      {
+        section: "STYLING & MAKEUP",
+        items: [
+          {
+            names: ["Stylist:"],
+          },
+          {
+            names: ["Nguyễn Cao Thế Mỹ"],
+          },
+          {
+            names: ["Phạm Hồng Anh"],
+          },
+          {
+            names: ["Hải Yến"],
+          },
+          {
+            names: ["Makeup Artist:"],
+          },
+          {
+            names: ["Chị Mộng (Nate)"],
+          },
+          {
+            names: ["Kim Thư"],
+          },
+        ],
+      },
+      {
+        section: "CAST SUPPORT",
+        items: [
+          {
+            names: ["Cast Assistants:"],
+          },
+          {
+            names: ["Uyên Pu"],
+          },
+          {
+            names: ["Hồng Anh"],
+          },
+          {
+            names: ["Hoàng My"],
+          },
+        ],
+      },
+      {
+        section: "POST PRODUCTION",
+        items: [
+          { names: ["Editor"] },
+          { names: ["LJVE NGUYEN"], italic: true },
+          { names: ["Bern"] },
+        ],
+      },
+      {
+        section: "SFX:",
+        items: [{ names: ["LJVE NGUYEN"], italic: true }],
+      },
+      {
+        section: "Colorist:",
+        items: [
+          { names: ["Chí Võ"] },
+          { names: ["LJVE NGUYEN"], italic: true },
+        ],
+      },
+      {
+        section: "BEHIND THE SCENES",
+        items: [
+          { names: ["BTS Photographer:"] },
+          { names: ["Nguyễn Huỳnh Mai Ngân"] },
+          { names: ["Bé My"] },
+          { names: ["Hồ Phương"] },
+        ],
+      },
+      {
+        section: "ACCOUNTING",
+        items: [
+          { names: ["Accoutant:"] },
+          { names: ["Linh Chan"] },
+          { names: ["Hồ Minh Phương"] },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "NEU LUC DO",
+    slug: "neulucdo",
+    genre: "MV Cover",
+    video: "/assets/film/neulucdo/video1.mp4",
+    images: [
+      "/assets/film/neulucdo/neulucdo1.png",
+      "/assets/film/neulucdo/neulucdo2.png",
+      "/assets/film/neulucdo/neulucdo3.png",
+      "/assets/film/neulucdo/neulucdo4.png",
+      "/assets/film/neulucdo/neulucdo5.png",
+    ],
+    credit: [
+      {
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"NEU LUC DO" MUSIC VIDEO COVER'] }],
+      },
+      {
+        section: "ORIGINAL SONG BY TLINH",
+        items: [
+          { label: "Artist", names: ["Lý Hoàn Trần"] },
+          { label: "Talent Assistance", names: ["Phạm Tuyết Nhi"] },
+        ],
+      },
+      {
+        section: "PRODUCTION DEPARTMENT",
+        items: [
+          { label: "Producer", names: ["Qui Rùa (ORMINE)"] },
+          { label: "Producer Assistant", names: ["Tấn Đạt"] },
+        ],
+      },
+      {
+        section: "DIRECTOR DEPARTMENT",
+        items: [
+          { label: "DIRECTOR", names: ["Dewild (ORMINE)"] },
+          { label: "ASSISTANT DIRECTOR", names: ["Anh Thư"] },
+        ],
+      },
+      {
+        section: "CAMERA DEPARTMENT",
+        items: [
+          { label: "DIRECTOR OF PHOTOGRAPHY", names: ["Ngô Văn Thi"] },
+          { label: "ASSISTANT CAMERAMAN", names: ["Bern (ORMINE)"] },
+          { label: "GAFFER", names: ["Lam Trần"] },
+          { label: "BEST BOY", names: ["Quy Hoà"] },
+          { label: "BTS PHOTOGRAPHER", names: ["Phúc Nguyễn"] },
+          { label: "BTS VIDEOGRAPHER", names: ["Bern (ORMINE)"] },
+        ],
+      },
+      {
+        section: "ART DEPARTMENT",
+        items: [
+          { label: "ART DIRECTOR", names: ["Bảo Hân (ORMINE)"] },
+          { label: "SET DESIGN JEANS", names: ["Hiếu Nghĩa", "Trúc Anh"] },
+        ],
+      },
+      {
+        section: "STYLING & MAKEUP",
+        items: [
+          { label: "MAKE UP ARTIST", names: ["Nguyễn Ngọc Yến Vân"] },
+          { label: "HAIR STYLIST", names: ["Thảo Nguyen"] },
+          { label: "FASHION DESIGNED BY", names: ["NESSIE"] },
+        ],
+      },
+      {
+        section: "POST PRODUCTION",
+        items: [
+          { label: "EDITOR", names: ["LJVE NGUYEN"], italic: true, bold: true },
+          {
+            label: "COLORIST",
+            names: ["LJVE NGUYEN"],
+            italic: true,
+            bold: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "EYESME",
+    slug: "eyesme",
+    genre: "Commercial",
+    video: "/assets/film/eyesme/video1.mp4",
+    images: [
+      "/assets/film/eyesme/eyesme1.png",
+      "/assets/film/eyesme/eyesme2.png",
+      "/assets/film/eyesme/eyesme3.png",
+      "/assets/film/eyesme/eyesme4.png",
+      "/assets/film/eyesme/eyesme5.png",
+    ],
+    credit: [
+      {
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"EYESME" TVC'] }],
+      },
+      {
+        section: "PRODUCTION DEPARTMENT",
+        items: [
+          { label: "Producer", names: ["Phan Đức Công Anh"] },
+          { label: "Production Coordinator", names: ["Gia Ánh"] },
+        ],
+      },
+      {
+        section: "Assistant Producers",
+        items: [
+          { names: ["Trung Thành"] },
+          { names: ["Tuấn Khải"] },
+          { names: ["Nhật Quang"] },
+        ],
+      },
+      {
+        section: "DIRECTION DEPARTMENT",
+        items: [
+          { label: "Director", names: ["Hizu"] },
+          { label: "Screenwriter", names: ["Huy"] },
+          { label: "1st Assistant Director", names: ["Linh Chan"] },
+          { label: "2nd Assistant Director", names: ["Hồ Minh Phương"] },
+          { label: "Script Supervisor", names: ["Nguyễn Khánh Hương"] },
+        ],
+      },
+      {
+        section: "CAMERA DEPARTMENT",
+        items: [{ label: "Director of Photography", names: ["Bern"] }],
+      },
+      {
+        section: "Camera Operators",
+        items: [
+          { names: ["Lê Tiến Đạt"] },
+          { names: ["Phước Võ"] },
+          { names: ["Bern (ORMINE)"] },
+          { names: ["LJVE NGUYEN (ORMINE)"] },
+        ],
+      },
+      {
+        section: "Assistant Camera",
+        items: [{ names: ["Văn Thành Tiến"] }, { names: ["Chí Võ"] }],
+      },
+      {
+        section: "Technical",
+        items: [
+          { names: ["Nguyễn Phúc Anh Khôi"] },
+          { names: ["Huỳnh Trúc Phương"] },
+        ],
+      },
+      {
+        section: "LIGHTING",
+        items: [
+          { label: "Gaffer", names: ["LJVE NGUYEN (ORMINE)"], italic: true },
+        ],
+      },
+      {
+        section: "Lighting Assistant",
+        items: [
+          { names: ["Quy Hoà"] },
+          { names: ["Nguyễn Phúc Anh Khôi"] },
+          { names: ["Chí Võ"] },
+          { names: ["Lê Tiến Đạt"] },
         ],
       },
       {
@@ -317,22 +922,18 @@ export const filmDetails = [
           {
             names: ["Hải Yến"],
           },
-          {
-            names: ["Makeup Artist:"],
-          },
-          {
-            names: ["Chị Mộng (Nate)"],
-          },
-          {
-            names: ["Kim Thư"],
-          },
         ],
+      },
+      {
+        section: "Makeup Artist",
+        uppercase: false,
+        items: [{ names: ["Chị Mộng (Nate)"] }, { names: ["Kim Thư"] }],
       },
       {
         section: "CAST SUPPORT",
         items: [
           {
-            names: ["Cast Assistants:"],
+            names: ["Cast Assistants"],
           },
           {
             names: ["Uyên Pu"],
@@ -348,7 +949,7 @@ export const filmDetails = [
       {
         section: "POST PRODUCTION",
         items: [
-          { names: ["Editor:"] },
+          { names: ["Editor"] },
           { names: ["Ljve NGUYEN"], italic: true },
           { names: ["Bern"] },
         ],
@@ -358,7 +959,7 @@ export const filmDetails = [
         items: [{ names: ["Ljve NGUYEN"], italic: true }],
       },
       {
-        section: "Colorist:",
+        section: "Colorist",
         items: [
           { names: ["Chí Võ"] },
           { names: ["Ljve NGUYEN"], italic: true },
@@ -368,7 +969,7 @@ export const filmDetails = [
         section: "BEHIND THE SCENES",
         items: [
           {
-            names: ["BTS Photographer:"],
+            names: ["BTS Photographer"],
           },
           {
             names: ["Nguyễn Huỳnh Mai Ngân"],
@@ -385,7 +986,7 @@ export const filmDetails = [
         section: "ACCOUNTING",
         items: [
           {
-            names: ["Accountant:"],
+            names: ["Accountant"],
           },
           {
             names: ["Linh Chan"],
@@ -396,534 +997,194 @@ export const filmDetails = [
     ],
   },
   {
-    id: 2,
-    name: "KIM CHI NU",
-    genre: "Short Film",
-    video: "/assets/film/kimchinu/video1.mp4",
+    id: 6,
+    name: "KHONG",
+    slug: "khong",
+    genre: "Music Video",
+    video: "/assets/film/khong/video1.mp4",
     images: [
-      "/assets/film/kimchinu/kimchinu1.png",
-      "/assets/film/kimchinu/kimchinu2.png",
-      "/assets/film/kimchinu/kimchinu3.png",
-      "/assets/film/kimchinu/kimchinu4.png",
-      "/assets/film/kimchinu/kimchinu5.png",
+      "/assets/film/khong/khong1.png",
+      "/assets/film/khong/khong2.png",
+      "/assets/film/khong/khong3.png",
+      "/assets/film/khong/khong4.png",
+      "/assets/film/khong/khong5.png",
     ],
     credit: [
       {
         section: "CREDIT",
-        items: [{ label: "Title", names: ['"KIM CHI NU" SHORT FILM'] }],
-      },
-      {
-        section: "STARRING",
         items: [
-          { label: null, names: ["Hải An: Trần Hằng Nghi"] },
-          { label: null, names: ["Dương: Ngô Thùy Tiên"] },
-          { label: null, names: ["Vy: De Ara Hiroshi/Hà Dương"] },
-          { label: null, names: ["Content Creator: Phương Anh"] },
-          { label: null, names: ["Content Creator: Tiến Phú Music Posting"] },
-          { label: null, names: ["Content Creator: Meow Âm Nhạc"] },
-        ],
-      },
-      {
-        section: "PRODUCTION DEPARTMENT",
-        items: [
-          { label: "Produced by", names: ["NHỮNG CÔ EM JUICY"] },
-          { label: "Producer", names: ["Trần Tiến Phú"] },
-          { label: "Creative Director", names: ["Nguyễn Nhựt Khánh"] },
-          { label: "Script Writer", names: ["Phương Loan Nguyễn"] },
-          { label: "1st Assistance Director", names: ["Phương Loan Nguyễn"] },
-          { label: "Line Producer", names: ["Qui Rùa"] },
-        ],
-      },
-      {
-        section: "CAMERA DEPARTMENT",
-        items: [
-          { label: "Director Of Photography", names: ["Dewild"] },
-          {
-            label: "Camera Operator",
-            names: ["Ngô Văn Thi", "Phúc Nguyễn", "LJVE NGUYEN"],
-            italic: true,
-          },
-        ],
-      },
-      {
-        section: "BOOM OPERATOR",
-        items: [{ label: null, names: ["Công"] }],
-      },
-      {
-        section: "LIGHTING",
-        items: [
-          { label: "Gaffer", names: ["Lâm Trần", "Quy Hoà"] },
-          { label: "Equipment", names: ["Phú Phương Nam"] },
-        ],
-      },
-      {
-        section: "BEHIND THE SCENES",
-        items: [
-          {
-            label: null,
-            names: [
-              "Minh Ngọc",
-              "Minh Hoài",
-              "Ngọc Thảo",
-              "Trần Tiến Phú",
-              "Đu Đủ Năng Động",
-            ],
-          },
-        ],
-      },
-      {
-        section: "POST PRODUCTION",
-        items: [
-          {
-            label: "Editor",
-            names: ["Nguyễn Tuấn Khang", "Phúc Nguyễn"],
-            italic: true,
-          },
-          { label: "Colorist", names: ["Nguyễn Tuấn Khang"], italic: true },
-          { label: "Sound Engineer", names: ["Nguyễn Tuấn Khang"] },
-        ],
-      },
-      {
-        section: "ART DEPARTMENT",
-        items: [
-          { label: "Art Director", names: ["Nguyễn Nhựt Khánh"] },
-          { label: "Props Master", names: ["Bảo Hân"] },
-          {
-            label: "Set Designer",
-            names: [
-              "Nguyễn Nhựt Khánh",
-              "Bảo Hân",
-              "Dewild",
-              "Minh Hoài",
-              "Minh Ngọc",
-              "Ngọc Thảo",
-              "Toàn Lê",
-            ],
-          },
-        ],
-      },
-      {
-        section: "STYLING",
-        items: [
-          { label: "Stylist", names: ["Nguyễn Nhựt Khánh"] },
-          { label: "Makeup Artist", names: ["Phương Anh"] },
-          { label: "Wardrobe", names: ["Hướng Dương"] },
-        ],
-      },
-      {
-        section: "VOICE OVER",
-        items: [
-          { label: null, names: ["Bảo Hân - chị HR"] },
-          { label: null, names: ["Minh Ngọc - chị quản lý"] },
-          { label: null, names: ["Tiến Phú - khán giả quá khích 1"] },
-          { label: null, names: ["Phương Loan - khán giả quá khích 3"] },
-          { label: null, names: ["Nhựt Khánh - khán giả quá khích 4"] },
-          { label: null, names: ["Phạm Thu Hạnh - khán giả quá khích 5"] },
-          {
-            label: null,
-            names: ["Nguyễn Huỳnh Minh Ngọc - khán giả quá khích 6"],
-          },
-          {
-            label: null,
-            names: ["Nguyễn Trương Tấn Thông - khán giả quá khích 7"],
-          },
-          { label: null, names: ["Sử Hữu Hiển - khán giả quá khích 8"] },
-          { label: null, names: ["Ngô Lê Hoàng Phúc - khán giả quá khích 9"] },
-        ],
-      },
-      {
-        section: "CATERING",
-        items: [{ label: null, names: ["Tiến Phú", "Nguyễn Cương"] }],
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "CRTLZ",
-    genre: "Short Film",
-    video: "/assets/film/ctrlz/video1.mp4",
-    images: [
-      "/assets/film/ctrlz/ctrlz1.png",
-      "/assets/film/ctrlz/ctrlz2.png",
-      "/assets/film/ctrlz/ctrlz3.png",
-      "/assets/film/ctrlz/ctrlz4.png",
-      "/assets/film/ctrlz/ctrlz5.png",
-    ],
-    credit: [
-      {
-        section: "CREDIT",
-        items: [{ label: "Title", names: ['"CTRL-Z" SHORT FILM'] }],
-      },
-      {
-        section: "PRODUCTION DEPARTMENT",
-        items: [
-          { label: "Producer", names: ["Phan Đức Công Anh"] },
-          { label: "Production Coordinator", names: ["Gia Ánh"] },
-        ],
-      },
-      {
-        section: "Assistant Producers",
-        items: [
-          { names: ["Trung Thành"] },
-          { names: ["Tuấn Khải"] },
-          { names: ["Nhật Quang"] },
-        ],
-      },
-      {
-        section: "DIRECTION DEPARTMENT",
-        items: [
-          { label: "Director", names: ["Hizu"] },
-          { label: "Screenwriter", names: ["Huy"] },
-          { label: "1st Assistant Director", names: ["Linh Chan"] },
-          { label: "2nd Assistant Director", names: ["Hồ Minh Phương"] },
-          { label: "Script Supervisor", names: ["Nguyễn Khánh Hương"] },
-        ],
-      },
-      {
-        section: "CAMERA DEPARTMENT",
-        items: [{ label: "Director of Photography", names: ["Bern"] }],
-      },
-      {
-        section: "CAMERA OPERATOR:",
-        items: [
-          { names: ["Lê Tiến Đạt"] },
-          { names: ["Phước Võ"] },
-          { names: ["Bern (ORMINE)"] },
-          {
-            names: ["LJVE NGUYEN"],
-            italic: true,
-          },
-        ],
-      },
-      {
-        section: "Assistant Camera:",
-        items: [{ names: ["Văn Thành Tiến"] }, { names: ["Chí Võ"] }],
-      },
-      {
-        section: "Technical:",
-        items: [
-          { names: ["Nguyễn Phúc Anh Khôi"] },
-          { names: ["Huỳnh Trúc Phương"] },
-        ],
-      },
-      {
-        section: "LIGHTING",
-        items: [
-          { label: "Gaffer", names: ["LJVE NGUYEN (ORMINE)"], italic: true },
-        ],
-      },
-      {
-        section: "Best Boy:",
-        items: [{ names: ["Khương Duy"] }, { names: ["Quốc Dũng"] }],
-      },
-      {
-        section: "Lighting Assistant:",
-        items: [
-          { names: ["Quy Hoà"] },
-          { names: ["Nguyễn Phúc Anh Khôi"] },
-          { names: ["Chí Võ"] },
-          { names: ["Lê Tiến Đạt"] },
-        ],
-      },
-      {
-        section: "SOUND DEPARTMENT",
-        items: [{ label: "Sound Recordist", names: ["Quang Huấn"] }],
-      },
-      {
-        section: "ART DEPARTMENT",
-        items: [
-          { label: "Art Director", names: ["Nguyễn Cao Thế Mỹ"] },
-          { label: "Set Decorator", names: ["Phúc Sâm"] },
-        ],
-      },
-      {
-        section: "Assistant Props",
-        items: [
-          { names: ["Phương Dung"] },
-          { names: ["Uyên Pu"] },
-          { names: ["Trung Thành"] },
-        ],
-      },
-      {
-        section: "STYLING & MAKEUP",
-        items: [
-          {
-            names: ["Stylist:"],
-          },
-          {
-            names: ["Nguyễn Cao Thế Mỹ"],
-          },
-          {
-            names: ["Phạm Hồng Anh"],
-          },
-          {
-            names: ["Hải Yến"],
-          },
-          {
-            names: ["Makeup Artist:"],
-          },
-          {
-            names: ["Chị Mộng (Nate)"],
-          },
-          {
-            names: ["Kim Thư"],
-          },
-        ],
-      },
-      {
-        section: "CAST SUPPORT",
-        items: [
-          {
-            names: ["Cast Assistants:"],
-          },
-          {
-            names: ["Uyên Pu"],
-          },
-          {
-            names: ["Hồng Anh"],
-          },
-          {
-            names: ["Hoàng My"],
-          },
-        ],
-      },
-      {
-        section: "POST PRODUCTION",
-        items: [
-          { names: ["Editor:"] },
-          { names: ["LJVE NGUYEN"], italic: true },
-          { names: ["Bern"] },
-        ],
-      },
-      {
-        section: "SFX:",
-        items: [{ names: ["LJVE NGUYEN"], italic: true }],
-      },
-      {
-        section: "Colorist:",
-        items: [
-          { names: ["Chí Võ"] },
-          { names: ["LJVE NGUYEN"], italic: true },
-        ],
-      },
-      {
-        section: "BEHIND THE SCENES",
-        items: [
-          { names: ["BTS Photographer:"] },
-          { names: ["Nguyễn Huỳnh Mai Ngân"] },
-          { names: ["Bé My"] },
-          { names: ["Hồ Phương"] },
-        ],
-      },
-      {
-        section: "ACCOUNTING",
-        items: [
-          { names: ["Accoutant:"] },
-          { names: ["Linh Chan"] },
-          { names: ["Hồ Minh Phương"] },
-        ],
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "NEU LUC DO",
-    genre: "MV Cover",
-    video: "/assets/film/neulucdo/video1.mp4",
-    images: [
-      "/assets/film/neulucdo/neulucdo1.png",
-      "/assets/film/neulucdo/neulucdo2.png",
-      "/assets/film/neulucdo/neulucdo3.png",
-      "/assets/film/neulucdo/neulucdo4.png",
-      "/assets/film/neulucdo/neulucdo5.png",
-    ],
-    credit: [
-      {
-        section: "CREDIT",
-        items: [{ label: "Title", names: ['"NEU LUC DO" MUSIC VIDEO COVER'] }],
-      },
-      {
-        section: "ORIGINAL SONG BY TLINH",
-        items: [
-          { label: "Artist", names: ["Lý Hoàn Trần"] },
-          { label: "Talent Assistance", names: ["Phạm Tuyết Nhi"] },
-        ],
-      },
-      {
-        section: "PRODUCTION DEPARTMENT",
-        items: [
-          { label: "Producer", names: ["Qui Rùa (ORMINE)"] },
-          { label: "Producer Assistant", names: ["Tấn Đạt"] },
-        ],
-      },
-      {
-        section: "DIRECTOR DEPARTMENT",
-        items: [
-          { label: "Director", names: ["Dewild (ORMINE)"] },
-          { label: "Assistant Director", names: ["Anh Thư"] },
-        ],
-      },
-      {
-        section: "CAMERA DEPARTMENT",
-        items: [
-          { label: "Director Of Photography", names: ["Ngô Văn Thi"] },
-          { label: "Assistant Cameraman", names: ["Bern (ORMINE)"] },
-          { label: "Gaffer", names: ["Lam Trần"] },
-          { label: "Best Boy", names: ["Quý Hoà"] },
-          { label: "BTS Photographer", names: ["Phúc Nguyễn"] },
-          { label: "BTS Videographer", names: ["Bern (ORMINE)"] },
-        ],
-      },
-      {
-        section: "ART DEPARTMENT",
-        items: [
-          { label: "Art Director", names: ["Bảo Hân (ORMINE)"] },
-          { label: "Set Design Jeans", names: ["Hiếu Nghĩa", "Trúc Anh"] },
-        ],
-      },
-      {
-        section: "STYLING & MAKEUP",
-        items: [
-          { label: "Make Up Artist", names: ["Nguyễn Ngọc Yến Vân"] },
-          { label: "Hair Stylist", names: ["Thảo Nguyen"] },
-          { label: "Fashion Designed By", names: ["NESSIE"] },
-        ],
-      },
-      {
-        section: "POST PRODUCTION",
-        items: [
-          { label: "Editor", names: ["LJVE NGUYEN"], italic: true },
-          { label: "Colorist", names: ["LJVE NGUYEN"], italic: true },
-        ],
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: "EYESME",
-    genre: "Commercial",
-    video: "/assets/film/eyesme/video1.mp4",
-    images: [
-      "/assets/film/eyesme/eyesme1.png",
-      "/assets/film/eyesme/eyesme2.png",
-      "/assets/film/eyesme/eyesme3.png",
-      "/assets/film/eyesme/eyesme4.png",
-      "/assets/film/eyesme/eyesme5.png",
-    ],
-    credit: [
-      {
-        section: "CREDIT",
-        items: [{ label: "Title", names: ['"EYESME" TVC'] }],
-      },
-      {
-        section: "PRODUCTION DEPARTMENT",
-        items: [
-          { label: "Producer", names: ["Phan Đức Công Anh"] },
-          { label: "Production Coordinator", names: ["Gia Ánh"] },
-          {
-            label: "Assistant Producers",
-            names: ["Trung Thành", "Tuấn Khải", "Nhật Quang"],
-          },
-        ],
-      },
-      {
-        section: "DIRECTION DEPARTMENT",
-        items: [
-          { label: "Director", names: ["Hizu"] },
-          { label: "Screenwriter", names: ["Huy"] },
-          { label: "1st Assistant Director", names: ["Linh Chan"] },
-          { label: "2nd Assistant Director", names: ["Hồ Minh Phương"] },
-          { label: "Script Supervisor", names: ["Nguyễn Khánh Hương"] },
-        ],
-      },
-      {
-        section: "CAMERA DEPARTMENT",
-        items: [
-          { label: "Director of Photography", names: ["Bern"] },
+          // { label: [""] },
+          { label: "Title", names: ['"KHONG" MUSIC VIDEO'] },
+          { label: "Direction", names: ["Bern (Ormine)"] },
+          { label: "Cast", names: ["Hai Yen"] },
           {
             label: "Camera Operators",
-            names: [
-              "Lê Tiến Đạt",
-              "Phước Võ",
-              "Bern (ORMINE)",
-              "LJVE NGUYEN (ORMINE)",
-            ],
+            names: ["Bern", "LJVE NGUYEN"],
+          },
+          {
+            label: "Flycam",
+            names: ["Mr.Ljve"],
+          },
+          {
+            label: "Editor",
+            names: ["Bern"],
+          },
+          {
+            label: "Colorist:",
+            names: ["LJVE NGUYEN"],
             italic: true,
+            bold: true,
           },
-          { label: "Assistant Camera", names: ["Văn Thành Tiến", "Chí Võ"] },
+          { label: "Adviser", names: ["Nguyen Phuc"] },
+          { label: "Prop team", names: ["Pham Hong Anh", "Hải Yến", "Diễm"] },
           {
-            label: "Technical",
-            names: ["Nguyễn Phúc Anh Khôi", "Huỳnh Trúc Phương"],
+            label: "Castering",
+            names: ["Hồng Anh", "Hải Yến", "Diễm"],
           },
+
+          {
+            label: "PA",
+            names: ["Mai Anh"],
+          },
+          { label: "Stylist", names: ["Hyen (Hải Yến)"] },
+          { label: "Composer & Vocal", names: ["Dewild (Ormine)"] },
+          { label: "Mix&Master", names: ["Blake.B"] },
         ],
       },
+    ],
+  },
+  {
+    id: 8,
+    name: "QLMT",
+    slug: "qlmt",
+    genre: "Music Video",
+    video: "/assets/film/qlmt/video1.mp4",
+    images: [
+      "/assets/film/qlmt/qlmt1.png",
+      "/assets/film/qlmt/qlmt2.png",
+      "/assets/film/qlmt/qlmt3.png",
+      "/assets/film/qlmt/qlmt4.png",
+      "/assets/film/qlmt/qlmt5.png",
+    ],
+    credit: [
       {
-        section: "LIGHTING",
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"QUEN MOT LOI THE" MUSIC VIDEO'] }],
+      },
+      {
+        section: "",
         items: [
-          { label: "Gaffer", names: ["LJVE NGUYEN (ORMINE)"], italic: true },
-          {
-            label: "Lighting Assistant",
-            names: ["Quý Hoà", "Nguyễn Phúc Anh Khôi", "Chí Võ", "Lê Tiến Đạt"],
-          },
-          { label: "Best Boy", names: ["Khương Duy", "Quốc Dũng"] },
+          { label: "Starring", names: ["Liên Bỉnh Phát"] },
+          { label: "Music", names: ["Quên Một Lời Thề"] },
+          { label: "Composer", names: ["Nhạc Hoa"] },
+          { label: "Lyrics", names: ["Nguyễn Thắng"] },
+          { label: "Music Producer", names: ["Đại Minh"] },
+          { label: "Recording", names: ["Ngô Minh Triết"] },
         ],
       },
       {
-        section: "SOUND DEPARTMENT",
-        items: [{ label: "Sound Recordist", names: ["Quang Huấn"] }],
+        section: "",
+        items: [
+          { label: "UFO Entertainment", names: [] },
+          { label: "Director", names: ["Luân Minh"] },
+          { label: "Executive Producer", names: ["Vũ Thành Luân"] },
+          { label: "Talent Assistant", names: ["Thuận Huỳnh"] },
+          { label: "Assistant Producer", names: ["Bảo Hân", "Nhựt Trường"] },
+        ],
+      },
+      {
+        section: "",
+        items: [
+          { label: "Director of Photography", names: ["Nghĩa Trà Đá"] },
+          { label: "Gaffer", names: ["Long Bụi"] },
+          { label: "Focus Puller", names: ["Nhân Nguyễn"] },
+          { label: "BTS", names: ["Bảo Hân"] },
+        ],
+      },
+      {
+        section: "",
+        items: [
+          { label: "Art Director", names: ["Lê Nhật Thanh"] },
+          {
+            label: "Set Decorator",
+            names: ["Rôn Tap", "Blackbull", "Minh Le"],
+          },
+          { label: "Makeup & Hair", names: ["Cherish Nguyen"] },
+        ],
+      },
+      {
+        section: "",
+        items: [
+          { label: "Post", names: ["UFO Entertainment"] },
+          { label: "Color Grading", names: ["LJVE NGUYEN"], italic: true },
+        ],
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "QLMT",
+    slug: "qlmt",
+    genre: "Music Video",
+    video: "/assets/film/qlmt/video1.mp4",
+    images: [
+      "/assets/film/qlmt/qlmt1.png",
+      "/assets/film/qlmt/qlmt2.png",
+      "/assets/film/qlmt/qlmt3.png",
+      "/assets/film/qlmt/qlmt4.png",
+      "/assets/film/qlmt/qlmt5.png",
+    ],
+    credit: [
+      {
+        section: "CREDIT",
+        items: [{ label: "Title", names: ['"QUEN MOT LOI THE" MUSIC VIDEO'] }],
+      },
+      {
+        section: "MUSIC",
+        items: [
+          { label: "Starring", names: ["Liên Bỉnh Phát"] },
+          { label: "Music", names: ["Quên Một Lời Thề"] },
+          { label: "Composer", names: ["Nhạc Hoa"] },
+          { label: "Lyrics", names: ["Nguyễn Thắng"] },
+          { label: "Music Producer", names: ["Đại Minh"] },
+          { label: "Recording", names: ["Ngô Minh Triết"] },
+        ],
+      },
+      {
+        section: "PRODUCTION",
+        items: [
+          { label: "UFO Entertainment", names: [] },
+          { label: "Director", names: ["Luân Minh"] },
+          { label: "Executive Producer", names: ["Vũ Thành Luân"] },
+          { label: "Talent Assistant", names: ["Thuận Huỳnh"] },
+          { label: "Assistant Producer", names: ["Bảo Hân", "Nhựt Trường"] },
+        ],
+      },
+      {
+        section: "CAMERA DEPARTMENT",
+        items: [
+          { label: "Director of Photography", names: ["Nghĩa Trà Đá"] },
+          { label: "Gaffer", names: ["Long Bụi"] },
+          { label: "Focus Puller", names: ["Nhân Nguyễn"] },
+          { label: "BTS", names: ["Bảo Hân"] },
+        ],
       },
       {
         section: "ART DEPARTMENT",
         items: [
-          { label: "Art Director", names: ["Nguyễn Cao Thế Mỹ"] },
-          { label: "Set Decorator", names: ["Phúc Sâm"] },
+          { label: "Art Director", names: ["Lê Nhật Thanh"] },
           {
-            label: "Assistant Props",
-            names: ["Phương Dung", "Uyên Pu", "Trung Thành"],
+            label: "Set Decorator",
+            names: ["Rôn Tap", "Blackbull", "Minh Le"],
           },
-        ],
-      },
-      {
-        section: "STYLING & MAKEUP",
-        items: [
-          {
-            label: "Stylist",
-            names: ["Nguyễn Cao Thế Mỹ", "Phạm Hồng Anh", "Hải Yến"],
-          },
-          { label: "Makeup Artist", names: ["Chị Mộng (Nate)", "Kim Thư"] },
-        ],
-      },
-      {
-        section: "CAST SUPPORT",
-        items: [
-          {
-            label: "Cast Assistants",
-            names: ["Uyên Pu", "Hồng Anh", "Hoàng My"],
-          },
+          { label: "Makeup & Hair", names: ["Cherish Nguyen"] },
         ],
       },
       {
         section: "POST PRODUCTION",
         items: [
-          { label: "Editor", names: ["LJVE NGUYEN"], italic: true },
-          { label: "SFX", names: ["LJVE NGUYEN"], italic: true },
-          { label: "Colorist", names: ["Chí Võ", "LJVE NGUYEN"], italic: true },
-          { label: "Bern", names: [] },
-        ],
-      },
-      {
-        section: "BEHIND THE SCENES",
-        items: [
-          {
-            label: "BTS Photographer",
-            names: ["Nguyễn Huỳnh Mai Ngân", "Bé My", "Hồ Phương"],
-          },
-        ],
-      },
-      {
-        section: "ACCOUNTING",
-        items: [
-          { label: "Accountant", names: ["Linh Chan", "Hồ Minh Phương"] },
+          { label: "Post", names: ["UFO Entertainment"] },
+          { label: "Color Grading", names: ["LJVE NGUYEN"], italic: true },
         ],
       },
     ],
