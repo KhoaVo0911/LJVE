@@ -40,7 +40,7 @@ const Home = () => {
         className="fixed top-0 left-0 w-full h-full object-cover z-0"
       />
 
-      <div className="absolute left-12 bottom-0 z-20 flex flex-col gap-2 items-start max-w-[1100px]">
+      <div className="fixed left-0 bottom-0 z-20 flex flex-col gap-2 items-start p-12 max-w-[1100px]">
         {listFilm.map((movie) => (
           <div
             key={movie.id}
