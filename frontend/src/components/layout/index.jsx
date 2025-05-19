@@ -1,7 +1,7 @@
 import React from "react";
-import { AppHeader } from "./Header";
-import { AppFooter } from "./footer";
-import { AppBody } from "./body";
+import { AppHeader } from "./header/index";
+import { AppFooter } from "./footer/index";
+import { AppBody } from "./body/index";
 
 export const Layout = () => {
   return (
