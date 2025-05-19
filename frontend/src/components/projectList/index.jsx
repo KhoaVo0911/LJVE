@@ -9,7 +9,6 @@ const bannerToFilmSlug = {
   "/assets/film/allProjects/3.jpg": "eyesme",
   "/assets/film/allProjects/2.jpg": "qlmt",
   "/assets/film/allProjects/4.jpg": "khong",
-  // ...
 };
 
 export const ProjectsListPage = ({ images }) => {
