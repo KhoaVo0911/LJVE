@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export const AppHeader = () => {
   const location = useLocation();
   const [hideHeader, setHideHeader] = useState(false);
-  const isHomePage = location.pathname === routes.home;
+  const isHomePage = location.pathname === routes.home || routes.root;
 
   useEffect(() => {
     const scrollThreshold = 50;
