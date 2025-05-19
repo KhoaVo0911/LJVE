@@ -51,7 +51,7 @@ export const NavigationBar = () => {
                 >
                   {({ isActive }) => (
                     <motion.span
-                      key={animationKey} // reset animation khi click link đang đứng
+                      key={animationKey} 
                       initial={{ x: -15, y: 15, opacity: 0 }}
                       animate={{
                         x: 0,
