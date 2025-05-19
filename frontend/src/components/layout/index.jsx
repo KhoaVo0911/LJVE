@@ -1,7 +1,7 @@
 import React from "react";
-import { AppHeader } from "./Header";
-import { AppFooter } from "./footer";
-import { AppBody } from "./body";
+import { AppHeader } from "./header/index";
+import { AppFooter } from "./footer/index";
+import { AppBody } from "./body/index";
 import { AnimatePresence } from "framer-motion";
 
 export const Layout = () => {
@@ -9,7 +9,7 @@ export const Layout = () => {
     <AnimatePresence mode="wait">
       <div className="site">
         <AppHeader />
-        <div className="pt-[22vh]"> {/* Push content down by header height */}
+        <div className="pt-[22vh]"> 
           <AppBody />
           <AppFooter />
         </div>
