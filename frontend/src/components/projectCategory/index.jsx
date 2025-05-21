@@ -10,7 +10,7 @@ import routes from "@/hooks/routes";
 
 export const ProjectCategory = () => {
   const navBarBaseClass =
-    "font-[Neogrotesk-NeoSCBlack] text-[20px] text-white px-[7vh] transition-all tracking-[0.1em] ";
+    "font-[Neogrotesk-NeoSCBlack] text-[20px] text-white px-[7vh] transition-all tracking-[0.1em] leading-relaxed break-words";
 
   const items = [
     { label: "ALL PROJECTS", to: `${routes.projects}/${routes.allProjects}` },
