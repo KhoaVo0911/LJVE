@@ -10,16 +10,14 @@ export const ProjectsComponents = ({ title, subTitle, slogan, images }) => {
           <p className="text-[60px] font-[Neogrotesk-AltBold] tracking-[0.1em]">
             {title}
           </p>
-          <p className="text-[13px] font-[Neogrotesk-AltBold] tracking-[0.3em]">
+          <p className="text-[13px] font-[Neogrotesk-AltBold] tracking-[0.3em] break-words">
             {subTitle}
           </p>
         </div>
-        <div className="flex flex-col items-end text-right max-w-[60vh] mr-30 leading-relaxed break-words text-[18px] font-[BeauSans]">
-          <div>
-            {slogan}
-            <br /> -- <br /> Feel free to contact me via Email, Phone number, or
-            Instagram.
-          </div>
+        <div className="flex flex-col items-end text-right max-w-[60vh] mr-30 text-[18px] font-[BeauSans] break-words whitespace-normal">
+          {slogan}
+          <br /> -- <br /> Feel free to contact me via Email, Phone number, or
+          Instagram.
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-20">

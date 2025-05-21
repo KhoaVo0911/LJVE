@@ -25,7 +25,7 @@ export const NavigationBar = () => {
     { label: "Projects", to: routes.projects },
   ];
 
- const handleClick = (to) => {
+  const handleClick = (to) => {
     if (location.pathname === to) {
       setDisableAnimation(true);
     } else {
@@ -51,8 +51,8 @@ export const NavigationBar = () => {
                 >
                   {({ isActive }) => (
                     <motion.span
-                      key={animationKey} 
-                      initial={{ x: -15, y: 15, opacity: 0 }}
+                      key={animationKey}
+                      initial={{}}
                       animate={{
                         x: 0,
                         y: 0,
@@ -63,17 +63,20 @@ export const NavigationBar = () => {
                           hoverIndex === index
                             ? "black"
                             : isActive
-                            ? "white"
+                            ? "orange"
                             : "white",
                         scale: hoverIndex === index ? 1.05 : 1,
                       }}
                       transition={{
-                        delay: hoverIndex === index ? 0 : index * 0.15,
-                        duration: hoverIndex === index ? 0.3 : 0.7,
+                        duration: hoverIndex === index ? 0.3 : 1,
                         ease: "backInOut",
                       }}
-                      onMouseEnter={() => !disableAnimation && setHoverIndex(index)}
-                      onMouseLeave={() => !disableAnimation && setHoverIndex(null)}
+                      onMouseEnter={() =>
+                        !disableAnimation && setHoverIndex(index)
+                      }
+                      onMouseLeave={() =>
+                        !disableAnimation && setHoverIndex(null)
+                      }
                       className={`${navBarBaseClass} ${
                         isActive ? "font-extrabold" : "font-normal"
                       }`}
@@ -90,7 +93,6 @@ export const NavigationBar = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  delay: index * 0.15 + 0.7,
                   duration: 0.5,
                   ease: "backInOut",
                 }}
