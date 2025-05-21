@@ -39,9 +39,9 @@ export const AppHeader = () => {
       style={{ willChange: "transform, opacity" }}
     >
       <motion.div
-        initial={{ x: -300, y: 300, opacity: 0 }}
+        initial={{ x: 0, y: 100, opacity: 0 }}
         animate={{ x: 0, y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute left-1/2 transform -translate-x-1/2 top-4 text-[96px] font-bold leading-none tracking-[11px]"
       >
         LJVE
@@ -51,7 +51,7 @@ export const AppHeader = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
+          transition={{  duration: 1 }}
           className="mt-8 ml-auto mr-10 flex space-x-7 px-4 py-3"
         >
           <InformationIcon />

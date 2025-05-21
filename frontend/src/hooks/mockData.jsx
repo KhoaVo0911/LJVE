@@ -1190,3 +1190,55 @@ export const filmDetails = [
     ],
   },
 ];
+
+export const bannerToFilmSlug = [
+  {
+    image: "/assets/film/allProjects/7.jpg",
+    slug: "thim",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/12.jpg",
+    slug: "kimchinu",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/6.jpg",
+    slug: "ctrlz",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/5.jpg",
+    slug: "neulucdo",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/3.jpg",
+    slug: "eyesme",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/2.jpg",
+    slug: "qlmt",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+  {
+    image: "/assets/film/allProjects/4.jpg",
+    slug: "khong",
+    releaseDate: "Oct 3, 2025",
+    director: "Benny Safdie",
+    stars: "Dwayne Johnson, Emily Blunt",
+  },
+];
