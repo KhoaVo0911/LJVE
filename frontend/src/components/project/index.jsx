@@ -4,10 +4,10 @@ import React from "react";
 
 export const ProjectsComponents = ({ title, subTitle, slogan, images }) => {
   return (
-    <div>
-      <div className="flex justify-between w-full items-start mt-20">
-        <div className="flex flex-col ml-30 ">
-          <p className="text-[60px] font-[Neogrotesk-AltBold] tracking-[0.1em]">
+    <div className="w-full sm:px-4 md:px-10 lg:px-30">
+      <div className="flex flex-col md:flex-row justify-between w-full items-start mt-10 md:mt-20 gap-6 md:gap-0">
+        <div className="flex flex-col md:ml-30 w-full">
+          <p className="text-2xl sm:text-4xl md:text-[60px] font-[Neogrotesk-AltBold] font-bold tracking-[0.1em] text-center md:text-left mb-2">
             {title}
           </p>
           <p className="text-[13px] font-[Neogrotesk-AltBold] tracking-[0.3em] break-words">
@@ -20,9 +20,9 @@ export const ProjectsComponents = ({ title, subTitle, slogan, images }) => {
           Instagram.
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-20">
-        <ProjectCategory></ProjectCategory>
-        <ProjectsListPage images={images}></ProjectsListPage>
+      <div className="flex flex-col items-center justify-center mt-10 md:mt-20">
+        <ProjectCategory />
+        <ProjectsListPage images={images} />
       </div>
     </div>
   );

@@ -15,15 +15,14 @@ export function CarouselPage() {
     <Carousel
       plugins={[Autoplay({ delay: 5000 })]}
       className="
-        mt-10 
-        h-[60vh] 
-        w-[300vh] 
-        max-w-[90vw] 
-        sm:max-w-[80vw] 
-        md:max-w-[70vw] 
-        lg:max-w-[60vw] 
-        xl:max-w-[50vw] 
-        mx-auto
+        mt-0
+        w-full
+        h-auto
+        max-w-full
+        sm:max-w-full
+        md:max-w-[70vw]
+        lg:max-w-[60vw]
+        xl:max-w-[50vw]
       "
     >
       <CarouselContent className="h-full">
@@ -31,14 +30,14 @@ export function CarouselPage() {
           <CarouselItem key={index} className="h-full">
             <Card
               className="bg-black border-black h-full w-full overflow-hidden p-0 m-0 "
-              style={{ borderRadius: "63px" }}
+              style={{ borderRadius: "32px" }}
             >
               <CardContent className="h-full w-full p-0 m-0">
                 <img
                   src={imageSrc}
                   alt={`Slide ${index + 1}`}
-                  className="h-full w-full object-cover block"
-                  style={{ borderRadius: "63px" }}
+                  className="w-full h-auto object-cover block rounded-xl"
+                  style={{ borderRadius: "32px" }}
                 />
               </CardContent>
             </Card>

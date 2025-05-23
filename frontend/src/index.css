@@ -166,3 +166,30 @@
 }
 
 @tailwind utilities;
+
+/* Responsive Utility Classes */
+@layer utilities {
+  .container-responsive {
+    @apply w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16;
+  }
+
+  .text-responsive {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  .heading-responsive {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  .spacing-responsive {
+    @apply space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10;
+  }
+
+  .padding-responsive {
+    @apply p-4 sm:p-6 md:p-8 lg:p-10;
+  }
+
+  .margin-responsive {
+    @apply m-4 sm:m-6 md:m-8 lg:m-10;
+  }
+}

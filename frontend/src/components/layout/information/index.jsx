@@ -1,13 +1,19 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-export const InformationIcon = () => {
+export const InformationIcon = ({ direction = "row", gap = "gap-4" }) => {
   const iconHeight = 42;
   const iconWidth = 42;
 
+  // Tailwind only works with static class names, so we must use a conditional
+  const flexDirectionClass = direction === "row" ? "flex-row" : direction;
+
   return (
-    <>
-      <a href="https://www.instagram.com/_.mr.ljve._/">
+    <div className={`flex ${flexDirectionClass} ${gap} items-center`}>
+      <a
+        href="https://www.instagram.com/_.mr.ljve._/"
+        className="hover:opacity-80 transition-opacity"
+      >
         <img
           src="https://img.icons8.com/ios/500/FFFFFF/instagram-new--v1.png"
           alt="Instagram"
@@ -15,7 +21,10 @@ export const InformationIcon = () => {
           height={iconWidth}
         />
       </a>
-      <a href="https://www.youtube.com/@KhangNguyenOrmine">
+      <a
+        href="https://www.youtube.com/@KhangNguyenOrmine"
+        className="hover:opacity-80 transition-opacity"
+      >
         <img
           src="https://img.icons8.com/ios-glyphs/480/FFFFFF/youtube-play.png"
           alt="youtube-play"
@@ -23,20 +32,26 @@ export const InformationIcon = () => {
           height={iconWidth}
         />
       </a>
-      <a href="https://vimeo.com/user221983360">
+      <a
+        href="https://vimeo.com/user221983360"
+        className="hover:opacity-80 transition-opacity"
+      >
         <img
           src="https://img.icons8.com/?size=100&id=9XPmX8KXgqvf&format=png&color=FFFFFF"
           width={iconHeight + 5}
           height={iconWidth + 5}
         />
       </a>
-      <a href="https://www.facebook.com/khang.nguyentuan.54/">
+      <a
+        href="https://www.facebook.com/khang.nguyentuan.54/"
+        className="hover:opacity-80 transition-opacity"
+      >
         <img
           src="https://img.icons8.com/ios-glyphs/480/FFFFFF/facebook-new.png"
           width={iconHeight}
           height={iconWidth}
         />
       </a>
-    </>
+    </div>
   );
 };
