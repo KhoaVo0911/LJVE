@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,7 +9,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import routes from "@/hooks/routes";
 
-// Simple hamburger icon
 const Hamburger = ({ open, onClick }) => (
   <button
     className="md:hidden flex flex-col justify-center items-center w-10 h-10 z-50"
@@ -34,12 +33,11 @@ const Hamburger = ({ open, onClick }) => (
   </button>
 );
 
-export const NavigationBar = () => {
+export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
   const location = useLocation();
-  const [animationKey, setAnimationKey] = useState(0);
-  const [hoverIndex, setHoverIndex] = useState(null);
-  const [disableAnimation, setDisableAnimation] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [animationKey, setAnimationKey] = React.useState(0);
+  const [hoverIndex, setHoverIndex] = React.useState(null);
+  const [disableAnimation, setDisableAnimation] = React.useState(false);
 
   const navBarBaseClass =
     "font-[Gilroy-Light] text-white text-lg sm:text-xl md:text-2xl px-3 sm:px-4 py-1 rounded-md transition-all";
@@ -58,15 +56,43 @@ export const NavigationBar = () => {
       setDisableAnimation(false);
       setAnimationKey((prev) => prev + 1);
     }
-    setMobileOpen(false); // Close mobile menu on click
+    if (setMobileOpen) setMobileOpen(false);
   };
 
   return (
     <>
-      {/* Hamburger for mobile */}
-      <div className="flex md:hidden justify-end w-full">
-        <Hamburger open={mobileOpen} onClick={() => setMobileOpen((v) => !v)} />
-      </div>
+      {typeof mobileOpen === "boolean" &&
+        typeof setMobileOpen === "function" && (
+          <div
+            className={`fixed left-0 top-0 h-full w-72 z-[100] transition-transform duration-500 ease-out transform md:hidden ${
+              mobileOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+            <div className="flex flex-col items-start h-full pt-24 pl-6 relative">
+              {items.map((item) => (
+                <NavLink
+                  key={item.label}
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `font-[Gilroy-Light] text-2xl sm:text-3xl w-full text-white px-6 py-4 transition-all duration-500 relative overflow-hidden group mb-2 ${
+                      isActive
+                        ? "font-bold bg-white/10 border-l-4 border-orange-400 text-orange-300"
+                        : "font-normal hover:bg-white/5 hover:text-orange-200"
+                    }`
+                  }
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <div className="absolute inset-0 bg-white/5 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <span className="relative z-10 transition-transform duration-500 group-hover:translate-x-2">
+                    {item.label}
+                  </span>
+                </NavLink>
+              ))}
+            </div>
+          </div>
+        )}
       {/* Desktop menu */}
       <NavigationMenu>
         <NavigationMenuList
@@ -138,27 +164,6 @@ export const NavigationBar = () => {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
-      {/* Mobile overlay menu */}
-      {mobileOpen && (
-        <div className="fixed inset-0 bg-black/90 z-40 flex flex-col items-center justify-center md:hidden transition-all">
-          {items.map((item, index) => (
-            <NavLink
-              key={item.label}
-              to={item.to}
-              onClick={() => handleClick(item.to)}
-              className={({ isActive }) =>
-                `block text-2xl font-bold mb-8 px-8 py-2 rounded transition-colors duration-200 ${
-                  isActive
-                    ? "text-orange-400"
-                    : "text-white hover:text-orange-300"
-                }`
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
-        </div>
-      )}
     </>
   );
 };
