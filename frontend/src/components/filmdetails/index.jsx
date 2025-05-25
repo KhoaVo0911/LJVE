@@ -16,7 +16,6 @@ const FilmDetails = () => {
       </div>
     );
 
-  // Tìm dòng Title trong credit
   const titleSection = film.credit.find((section) =>
     section.items.some((item) => item.label === "Title")
   );
@@ -27,20 +26,8 @@ const FilmDetails = () => {
 
   return (
     <div className="bg-black min-h-screen w-full font-[beauSans] pt-24 pb-12 px-2 sm:px-4">
-      {/* Video at the top */}
-      <div className="max-w-7xl mx-auto w-full mb-10 sm:mb-16">
-        <AspectRatio ratio={16 / 9}>
-          <video
-            src={film.video}
-            controls
-            className="w-full h-full object-cover bg-black m-0 p-0 rounded-none border-0"
-          />
-        </AspectRatio>
-      </div>
-      {/* Below: Credit and Images */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-16 items-start">
-        {/* Credit Section */}
-        <div className="w-full md:max-w-xs lg:max-w-sm md:sticky md:top-32 z-10 pt-2 md:pt-10 px-2 md:px-0">
+      <div className="max-w-[1600px] mx-auto flex flex-col md:grid md:grid-cols-[minmax(0,380px)_940px] gap-8 md:gap-16 items-start">
+        <div className="w-full md:pt-4 md:pr-8 md:max-w-none">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-normal text-white">
             {film.name}
           </h1>
@@ -95,8 +82,16 @@ const FilmDetails = () => {
             ))}
           </div>
         </div>
-        {/* Images Section */}
-        <div className="flex-1 w-full max-w-full md:max-w-3xl mx-auto md:mx-0">
+        <div className="w-full md:w-[940px] mx-auto md:mx-0">
+          <div className="mb-10 sm:mb-16 w-full">
+            <AspectRatio ratio={16 / 9}>
+              <video
+                src={film.video}
+                controls
+                className="w-full h-full object-cover bg-black m-0 p-0 rounded-none border-0"
+              />
+            </AspectRatio>
+          </div>
           {film.images.map((img, idx) => (
             <div key={idx} className="mb-10 sm:mb-16 w-full">
               <img
