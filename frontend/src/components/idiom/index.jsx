@@ -7,7 +7,7 @@ function randomChar() {
   return chars[Math.floor(Math.random() * chars.length)];
 }
 
-const DURATION_LINE = 2000; 
+const DURATION_LINE = 2000;
 
 const ShufflingLine = ({ text, active, duration = DURATION_LINE }) => {
   const [displayedText, setDisplayedText] = useState(() =>

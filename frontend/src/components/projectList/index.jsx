@@ -45,13 +45,10 @@ export const ProjectsListPage = ({ images }) => {
               return prev;
             });
           }
-          // If scrolling up into view, do nothing (don't fade out or fade in again)
         } else {
-          // Fade out only when scrolling up out of view
           if (scrollDirection.current === "up") {
             setVisibleIndexes((prev) => prev.filter((i) => i !== index));
           }
-          // If scrolling down out of view, do nothing
         }
       });
     }, options);
@@ -70,7 +67,7 @@ export const ProjectsListPage = ({ images }) => {
         <div className="w-full flex justify-center mt-20">
           <div
             ref={containerRef}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-12 p-4"
           >
             {images.map((url, index) => {
               const filmObj = bannerToFilmSlug.find(
@@ -86,7 +83,7 @@ export const ProjectsListPage = ({ images }) => {
               const content = (
                 <div
                   data-index={index}
-                  className="fade-item relative group w-[904px] h-[509px] rounded-3xl overflow-hidden border-2 border-white"
+                  className="fade-item relative group w-full max-w-[1200px] h-[350px] md:h-[400px] lg:h-[480px] rounded-3xl overflow-hidden border-2 border-white mx-auto"
                   style={{
                     opacity: shouldFadeIn ? (isVisible ? 1 : 0) : 1,
                     transform: shouldFadeIn
