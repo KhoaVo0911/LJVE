@@ -16,9 +16,9 @@ export function CarouselPage() {
       plugins={[Autoplay({ delay: 5000 })]}
       className="
         mt-6
-        h-[30vh] sm:h-[40vh] md:h-[60vh]
+        h-[30vh] sm:h-[40vh] md:h-[70vh]
         w-full
-        max-w-[95vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[50vw]
+        max-w-[95vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[70vw]
         mx-auto
       "
     >
