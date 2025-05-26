@@ -5,15 +5,15 @@ import React from "react";
 export const AboutMePage = () => {
   return (
     <div>
-      <div className="flex items-start">
-        <div className="flex flex-col items-start space-y-8">
+      <div className="flex flex-col md:flex-row items-start md:items-start">
+        <div className="flex flex-col items-center md:items-start space-y-8 w-full md:w-3/5">
           <div>
-            <div className="text-[64px] font-[Neogrotesk-AltBold]">
+            <div className="text-3xl sm:text-4xl md:text-[64px] font-[Neogrotesk-AltBold] text-center md:text-left">
               ABOUT ME
             </div>
           </div>
-          <div className="flex-1">
-            <div className="text-[18px] font-[BeauSans] leading-relaxed max-w-[210vh] whitespace-pre-line break-words hyphens-none text-justify mr-30">
+          <div className="flex-1 w-full">
+            <div className="text-base sm:text-lg md:text-[18px] font-[BeauSans] leading-relaxed max-w-full md:max-w-[210vh] whitespace-pre-line break-words hyphens-none text-justify md:mr-30 px-2 md:px-0">
               I’m Nguyen Tuan Khang, a Vietnamese cinematographer based in
               Saigon. My work explores the intersection between emotional
               storytelling and visual precision, where every frame is designed
@@ -40,7 +40,9 @@ export const AboutMePage = () => {
             <span>+84 98 5588 048</span>
           </div>
         </div>
-        <CarouselPage />
+        <div className="w-full md:w-2/5 flex justify-center md:justify-end mt-8 md:mt-0">
+          <CarouselPage />
+        </div>
       </div>
     </div>
   );

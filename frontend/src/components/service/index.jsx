@@ -93,17 +93,27 @@ export const ServicePage = () => {
     <div
       ref={sectionRef}
       className={`flex items-center justify-center mt-50 transition-opacity duration-700 ${
-        animate ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        animate
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
       }`}
     >
       <div className="flex flex-col w-full px-6">
         <div className="text-[64px] font-bold text-center mb-8 font-[BeauSansBold]">
-          <ShufflingWordByWord text="SERVICES" active={animate} duration={DURATION_TITLE} />
+          <ShufflingWordByWord
+            text="SERVICES"
+            active={animate}
+            duration={DURATION_TITLE}
+          />
         </div>
 
         <div className="flex flex-col items-start space-y-4">
           <div className={titleFont}>
-            <ShufflingWordByWord text="PRE PRODUCTION" active={animate} duration={DURATION_SECTION_TITLE} />
+            <ShufflingWordByWord
+              text="PRE PRODUCTION"
+              active={animate}
+              duration={DURATION_SECTION_TITLE}
+            />
           </div>
           <div className={descriptionFontLeftSide}>
             <ShufflingWordByWord
@@ -116,7 +126,11 @@ export const ServicePage = () => {
 
         <div className="flex flex-col items-end space-y-4 mt-8">
           <div className={titleFont}>
-            <ShufflingWordByWord text="PRODUCTION" active={animate} duration={DURATION_SECTION_TITLE} />
+            <ShufflingWordByWord
+              text="PRODUCTION"
+              active={animate}
+              duration={DURATION_SECTION_TITLE}
+            />
           </div>
           <div className={descriptionFontRightSide}>
             <ShufflingWordByWord
@@ -129,7 +143,11 @@ export const ServicePage = () => {
 
         <div className="flex flex-col items-start space-y-4 mt-10">
           <div className={titleFont}>
-            <ShufflingWordByWord text="POST PRODUCTION" active={animate} duration={DURATION_SECTION_TITLE} />
+            <ShufflingWordByWord
+              text="POST PRODUCTION"
+              active={animate}
+              duration={DURATION_SECTION_TITLE}
+            />
           </div>
           <div className={descriptionFontLeftSide}>
             <ShufflingWordByWord

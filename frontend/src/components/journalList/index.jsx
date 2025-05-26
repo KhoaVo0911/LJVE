@@ -22,26 +22,26 @@ export const JournalListPage = () => {
 
       {journalData.map((journal) => (
         <div key={journal.id} className="mb-20">
-          <div className="flex items-center gap-8 flex-nowrap">
-            <div className="shrink-0">
+          <div className="flex flex-wrap md:flex-nowrap items-center gap-8">
+            <div className="shrink-0 w-full md:w-auto">
               <img
                 src={journal.imageTitle}
                 alt={journal.imageTitle}
-                className="object-cover rounded-lg shadow-md w-[904px] h-[509px]"
+                className="object-cover rounded-lg shadow-md w-full max-w-[95vw] h-auto md:w-[904px] md:h-[509px] mb-6 md:mb-0"
               />
             </div>
-            <div className="flex flex-col items-start ml-20">
-              <div className="text-[60px] font-[Neogrotesk-AltBold] leading-relaxed mb-8 ">
+            <div className="flex flex-col items-start ml-0 md:ml-20 w-full md:w-auto">
+              <div className="text-2xl sm:text-4xl md:text-[60px] font-[Neogrotesk-AltBold] leading-relaxed mb-4 md:mb-8 ">
                 {formatTitleWithSansQuotes(journal.title)}
               </div>
 
-              <div className="text-[18px] font-[BeauSans] leading-relaxed break-words mb-15 text-justify">
+              <div className="text-base sm:text-lg md:text-[18px] font-[BeauSans] leading-relaxed break-words mb-6 md:mb-15 text-justify">
                 {journal.description}
               </div>
 
               <a
                 href="#"
-                className="text-[18px] font-[BeauSans] underline text-white cursor-pointer"
+                className="text-base sm:text-lg md:text-[18px] font-[BeauSans] underline text-white cursor-pointer"
               >
                 Read more
               </a>
