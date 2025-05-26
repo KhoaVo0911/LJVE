@@ -27,7 +27,7 @@ export const JournalListPage = () => {
               <img
                 src={journal.imageTitle}
                 alt={journal.imageTitle}
-                className="object-cover rounded-lg shadow-md w-full max-w-[95vw] h-auto md:w-[904px] md:h-[509px] mb-6 md:mb-0"
+                className="object-cover rounded-lg shadow-md w-full max-w-[95vw] h-auto md:w-[904px] md:h-[509px] mb-6 md:mb-0 border border-white"
               />
             </div>
             <div className="flex flex-col items-start ml-0 md:ml-20 w-full md:w-auto">
