@@ -63,7 +63,7 @@ export const NavigationBar = () => {
                           hoverIndex === index
                             ? "black"
                             : isActive
-                            ? "orange"
+                            ? "white"
                             : "white",
                         scale: hoverIndex === index ? 1.05 : 1,
                       }}
@@ -78,8 +78,15 @@ export const NavigationBar = () => {
                         !disableAnimation && setHoverIndex(null)
                       }
                       className={`${navBarBaseClass} ${
-                        isActive ? "font-extrabold" : "font-normal"
+                        isActive
+                          ? "font-black text-[28px] relative"
+                          : "font-normal"
                       }`}
+                      style={
+                        isActive
+                          ? { textShadow: "0 0 6px rgba(255, 255, 255, 0.9)" }
+                          : {}
+                      }
                     >
                       {item.label}
                     </motion.span>
