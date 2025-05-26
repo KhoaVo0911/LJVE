@@ -50,7 +50,7 @@ export const AboutPage = () => {
   }, [lastScrollY]);
 
   return (
-    <div className="mx-6 mt-10">
+    <div className="mt-10 mx-2 sm:mx-4 md:mx-10 lg:mx-30">
       <AboutMePage />
 
       <div ref={serviceSectionRef}>
