@@ -38,6 +38,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
   const [animationKey, setAnimationKey] = React.useState(0);
   const [hoverIndex, setHoverIndex] = React.useState(null);
   const [disableAnimation, setDisableAnimation] = React.useState(false);
+  const [projectDropdownOpen, setProjectDropdownOpen] = React.useState(false);
 
   const navBarBaseClass =
     "font-[Gilroy-Light] text-white text-lg sm:text-xl md:text-2xl px-3 sm:px-4 py-1 rounded-md transition-all";
@@ -47,6 +48,15 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
     { label: "About", to: routes.about },
     { label: "Home", to: routes.home },
     { label: "Projects", to: routes.projects },
+  ];
+
+  const projectSubItems = [
+    { label: "ALL PROJECTS", to: `${routes.projects}/${routes.allProjects}` },
+    { label: "DOCUMENTARY", to: `${routes.projects}/${routes.documentary}` },
+    { label: "MUSIC VIDEO", to: `${routes.projects}/${routes.musicVideo}` },
+    { label: "ORIGINAL", to: `${routes.projects}/${routes.original}` },
+    { label: "SHORT FILM", to: `${routes.projects}/${routes.shortFilm}` },
+    { label: "COMMERCIAL", to: `${routes.projects}/${routes.commercial}` },
   ];
 
   const handleClick = (to) => {
@@ -70,26 +80,93 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
             <div className="flex flex-col items-start h-full pt-24 pl-6 relative">
-              {items.map((item) => (
-                <NavLink
-                  key={item.label}
-                  to={item.to}
-                  className={({ isActive }) =>
-                    `font-[Gilroy-Light] text-2xl sm:text-3xl w-full text-white px-6 py-4 transition-all duration-500 relative overflow-hidden group mb-2 ${
-                      isActive
-                        ? "font-bold bg-white/10 border-l-4 border-orange-400 text-orange-300"
-                        : "font-normal hover:bg-white/5 hover:text-orange-200"
-                    }`
-                  }
-                  onClick={() => setMobileOpen(false)}
-                >
-                  <div className="absolute inset-0 bg-white/5 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <span className="relative z-10 transition-transform duration-500 group-hover:translate-x-2">
-                    {item.label}
-                  </span>
-                </NavLink>
-              ))}
+              {items.map((item) =>
+                item.label === "Projects" ? (
+                  <div key={item.label} className="w-full">
+                    <button
+                      className={`font-[Gilroy-Light] text-2xl sm:text-3xl w-full text-white px-6 py-4 transition-all duration-500 relative overflow-hidden group mb-2 flex items-center justify-between ${
+                        location.pathname.startsWith(routes.projects)
+                          ? "font-bold bg-white/10 border-l-4 border-orange-400 text-orange-300"
+                          : "font-normal hover:bg-white/5 hover:text-orange-200"
+                      }`}
+                      onClick={() => setProjectDropdownOpen((v) => !v)}
+                      aria-expanded={projectDropdownOpen}
+                      aria-controls="project-submenu"
+                      type="button"
+                    >
+                      <span className="relative z-10 transition-transform duration-500 group-hover:translate-x-2">
+                        {item.label}
+                      </span>
+                      <svg
+                        className={`ml-2 w-5 h-5 transition-transform duration-300 ${
+                          projectDropdownOpen ? "rotate-180" : "rotate-0"
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      id="project-submenu"
+                      className={`overflow-hidden transition-all duration-500 bg-black/80 ${
+                        projectDropdownOpen
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0"
+                      }`}
+                      style={{
+                        transitionProperty: "max-height, opacity",
+                      }}
+                    >
+                      {projectSubItems.map((sub, idx) => (
+                        <NavLink
+                          key={sub.label}
+                          to={sub.to}
+                          className={({ isActive }) =>
+                            `block text-lg w-full text-white px-10 py-3 transition-all duration-300 ${
+                              isActive
+                                ? "font-bold text-orange-300 bg-white/10"
+                                : "font-normal hover:bg-white/5 hover:text-orange-200"
+                            }`
+                          }
+                          onClick={() => {
+                            setMobileOpen(false);
+                            setProjectDropdownOpen(false);
+                          }}
+                        >
+                          {sub.label}
+                        </NavLink>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <NavLink
+                    key={item.label}
+                    to={item.to}
+                    className={({ isActive }) =>
+                      `font-[Gilroy-Light] text-2xl sm:text-3xl w-full text-white px-6 py-4 transition-all duration-500 relative overflow-hidden group mb-2 ${
+                        isActive
+                          ? "font-bold bg-white/10 border-l-4 border-orange-400 text-orange-300"
+                          : "font-normal hover:bg-white/5 hover:text-orange-200"
+                      }`
+                    }
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    <div className="absolute inset-0 bg-white/5 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100 origin-left"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <span className="relative z-10 transition-transform duration-500 group-hover:translate-x-2">
+                      {item.label}
+                    </span>
+                  </NavLink>
+                )
+              )}
             </div>
           </div>
         )}

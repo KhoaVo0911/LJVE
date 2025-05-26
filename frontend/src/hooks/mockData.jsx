@@ -1030,7 +1030,7 @@ export const filmDetails = [
             names: ["Bern"],
           },
           {
-            label: "Colorist:",
+            label: "Colorist",
             names: ["LJVE NGUYEN"],
             italic: true,
             bold: true,

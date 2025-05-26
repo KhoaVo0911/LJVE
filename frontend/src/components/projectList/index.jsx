@@ -67,7 +67,7 @@ export const ProjectsListPage = ({ images }) => {
         <div className="w-full flex justify-center mt-20">
           <div
             ref={containerRef}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-12 p-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-2"
           >
             {images.map((url, index) => {
               const filmObj = bannerToFilmSlug.find(
@@ -83,7 +83,7 @@ export const ProjectsListPage = ({ images }) => {
               const content = (
                 <div
                   data-index={index}
-                  className="fade-item relative group w-full max-w-[1200px] h-[350px] md:h-[400px] lg:h-[480px] rounded-3xl overflow-hidden border-2 border-white mx-auto"
+                  className="fade-item relative group w-full h-[350px] md:h-[400px] lg:h-[480px] rounded-3xl overflow-hidden border-2 border-white"
                   style={{
                     opacity: shouldFadeIn ? (isVisible ? 1 : 0) : 1,
                     transform: shouldFadeIn
