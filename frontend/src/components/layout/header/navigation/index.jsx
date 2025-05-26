@@ -200,7 +200,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
                             hoverIndex === index
                               ? "black"
                               : isActive
-                              ? "orange"
+                              ? "white"
                               : "white",
                           scale: hoverIndex === index ? 1.05 : 1,
                         }}
@@ -217,6 +217,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
                         className={`${navBarBaseClass} ${
                           isActive ? "font-extrabold" : "font-normal"
                         }`}
+                        style={{ fontSize: isActive ? "2rem" : undefined }}
                       >
                         {item.label}
                       </motion.span>
