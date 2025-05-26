@@ -22,7 +22,7 @@ export const ProjectCategory = () => {
   ];
 
   return (
-    <div className="hidden md:block w-full max-w-full overflow-x-auto touch-pan-x md:overflow-x-visible border-b border-white/20 shadow-sm pb-1 bg-black sticky top-0 z-20">
+    <div className="hidden md:block w-full max-w-full overflow-x-auto touch-pan-x md:overflow-x-visible border-b border-white/20 shadow-sm pb-1 bg-black">
       <NavigationMenu>
         <NavigationMenuList className="flex items-center whitespace-nowrap scroll-smooth gap-2 sm:gap-4 md:gap-8 py-2 md:pl-0 snap-x snap-mandatory overscroll-x-contain w-full">
           <div className="w-1 h-0 pointer-events-none" aria-hidden="true" />
