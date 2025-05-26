@@ -44,7 +44,7 @@ const Home = () => {
         {listFilm.map((movie) => (
           <div
             key={movie.id}
-            className="relative mb-2 w-fit cursor-pointer hover:opacity-80 transition"
+            className="relative mb-2 sm:mb-3 md:mb-4 w-fit cursor-pointer hover:opacity-80 transition"
             onClick={() => {
               const slug = idToSlug[movie.id];
               if (slug) {
@@ -52,10 +52,10 @@ const Home = () => {
               }
             }}
           >
-            <span className="absolute -top-4 right-0 translate-x-6 text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
+            <span className="absolute -top-3 sm:-top-4 right-0 translate-x-4 sm:translate-x-6 text-[10px] sm:text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
               {movie.year}
             </span>
-            <span className="block uppercase text-4xl md:text-4xl lg:text-6xl leading-none text-white drop-shadow-lg">
+            <span className="block uppercase text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-none text-white drop-shadow-lg">
               {movie.name} - {movie.genre}
             </span>
           </div>
