@@ -52,17 +52,17 @@ export const AppHeader = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="hidden md:flex mt-8 ml-auto mr-10 space-x-7 px-4 py-3"
+          className="hidden md:flex mt-7 ml-auto mr-10 space-x-7 px-4 py-3"
         >
           <InformationIcon />
         </motion.div>
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 70 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.3 }}
-        className="mt-[20px] flex justify-center"
+        className="flex justify-center"
       >
         <NavigationBar />
       </motion.div>

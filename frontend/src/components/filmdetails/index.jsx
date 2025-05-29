@@ -85,7 +85,7 @@ const FilmDetails = () => {
         <div className="w-full md:w-[940px] mx-auto md:mx-0">
           <div className="mb-10 sm:mb-16 w-full">
             <AspectRatio ratio={16 / 9}>
-              <video
+              <iframe
                 src={film.video}
                 controls
                 className="w-full h-full object-cover bg-black m-0 p-0 rounded-none border-0"
