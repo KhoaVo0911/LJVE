@@ -217,7 +217,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
                         className={`${navBarBaseClass} ${
                           isActive ? "font-extrabold" : "font-normal"
                         }`}
-                        style={{ fontSize: isActive ? "2rem" : undefined }}
+                        style={{ fontSize: isActive ? "1.4rem" : "1.2rem" }}
                       >
                         {item.label}
                       </motion.span>
