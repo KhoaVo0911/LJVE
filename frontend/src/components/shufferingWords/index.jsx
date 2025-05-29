@@ -12,91 +12,99 @@ const ShufflingWordByWord = ({ text, active, reverse, duration = 4000 }) => {
   const frameIdRef = useRef(null);
   const startTimeRef = useRef(null);
   const currentTextRef = useRef(text.replace(/\S/g, " "));
+  const animationModeRef = useRef<"none" | "show" | "hide">("none");
 
-  useEffect(() => {
-    if (!active && !reverse) {
+useEffect(() => {
+  let animationFrameId;
+
+  if (!active && !reverse) {
+    currentTextRef.current = text.replace(/\S/g, " ");
+    setDisplayedText(currentTextRef.current);
+    return;
+  }
+
+  const letters = text.split("");
+  const totalDuration = duration;
+  const letterDuration = totalDuration / letters.length;
+
+  const reset = () => {
+    startTimeRef.current = null;
+    if (animationFrameId) cancelAnimationFrame(animationFrameId);
+  };
+
+  const animateShow = (time) => {
+    if (!startTimeRef.current) startTimeRef.current = time;
+    const elapsed = time - startTimeRef.current;
+
+    const newText = letters
+      .map((char, index) => {
+        const letterStart = letterDuration * index;
+        if (elapsed > letterStart + letterDuration) {
+          return char;
+        } else if (elapsed > letterStart) {
+          return char === " " ? " " : randomChar();
+        } else {
+          return " ";
+        }
+      })
+      .join("");
+
+    currentTextRef.current = newText;
+    setDisplayedText(newText);
+
+    if (elapsed < totalDuration + letterDuration) {
+      animationFrameId = requestAnimationFrame(animateShow);
+    } else {
+      currentTextRef.current = text;
+      setDisplayedText(text);
+      reset();
+    }
+  };
+
+  const animateHide = (time) => {
+    if (!startTimeRef.current) startTimeRef.current = time;
+    const elapsed = time - startTimeRef.current;
+
+    const currentLetters = currentTextRef.current.split("");
+
+    const newText = letters
+      .map((char, index) => {
+        const letterEnd = letterDuration * index;
+        if (elapsed > letterEnd + letterDuration) {
+          return " ";
+        } else if (elapsed > letterEnd) {
+          return currentLetters[index] === " " ? " " : randomChar();
+        } else {
+          return currentLetters[index];
+        }
+      })
+      .join("");
+
+    currentTextRef.current = newText;
+    setDisplayedText(newText);
+
+    if (elapsed < totalDuration + letterDuration) {
+      animationFrameId = requestAnimationFrame(animateHide);
+    } else {
       currentTextRef.current = text.replace(/\S/g, " ");
       setDisplayedText(currentTextRef.current);
-      return;
+      reset();
     }
+  };
 
-    const letters = text.split("");
-    const totalDuration = duration;
-    const letterDuration = totalDuration / letters.length;
+  if (active && !reverse) {
+    reset();
+    animationFrameId = requestAnimationFrame(animateShow);
+  } else if (reverse) {
+    reset();
+    animationFrameId = requestAnimationFrame(animateHide);
+  }
 
-    function animateShow(time) {
-      if (!startTimeRef.current) startTimeRef.current = time;
-      const elapsed = time - startTimeRef.current;
+  return () => {
+    reset();
+  };
+}, [active, reverse, text, duration]);
 
-      const newText = letters
-        .map((char, index) => {
-          const letterStart = letterDuration * index;
-          if (elapsed > letterStart + letterDuration) {
-            return char;
-          } else if (elapsed > letterStart) {
-            return char === " " ? " " : randomChar();
-          } else {
-            return " ";
-          }
-        })
-        .join("");
-
-      currentTextRef.current = newText;
-      setDisplayedText(newText);
-
-      if (elapsed < totalDuration + letterDuration) {
-        frameIdRef.current = requestAnimationFrame(animateShow);
-      } else {
-        currentTextRef.current = text;
-        setDisplayedText(text);
-        startTimeRef.current = null;
-      }
-    }
-
-    function animateHide(time) {
-      if (!startTimeRef.current) startTimeRef.current = time;
-      const elapsed = time - startTimeRef.current;
-
-      const currentLetters = currentTextRef.current.split("");
-
-      const newText = letters
-        .map((char, index) => {
-          const letterEnd = letterDuration * index;
-          if (elapsed > letterEnd + letterDuration) {
-            return " ";
-          } else if (elapsed > letterEnd) {
-            return currentLetters[index] === " " ? " " : randomChar();
-          } else {
-            return currentLetters[index];
-          }
-        })
-        .join("");
-
-      currentTextRef.current = newText;
-      setDisplayedText(newText);
-
-      if (elapsed < totalDuration + letterDuration) {
-        frameIdRef.current = requestAnimationFrame(animateHide);
-      } else {
-        currentTextRef.current = text.replace(/\S/g, " ");
-        setDisplayedText(currentTextRef.current);
-        startTimeRef.current = null;
-      }
-    }
-
-    if (active && !reverse) {
-      startTimeRef.current = null;
-      frameIdRef.current = requestAnimationFrame(animateShow);
-    } else if (reverse) {
-      startTimeRef.current = null;
-      frameIdRef.current = requestAnimationFrame(animateHide);
-    }
-
-    return () => {
-      if (frameIdRef.current) cancelAnimationFrame(frameIdRef.current);
-      startTimeRef.current = null;
-    };
-  }, [active, reverse, text, duration]);
 
   return <span>{displayedText}</span>;
 };
