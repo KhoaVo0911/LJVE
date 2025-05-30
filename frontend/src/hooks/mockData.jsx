@@ -16,42 +16,43 @@ export const journalData = [
     title: 'The making process of "KHONG"',
     description:
       "Discover the story about my first Music Video that shooting outdoor and find out how did I manage to get most of the shot in the morning.",
-    imageTitle: "assets/film/journal/1.jpg",
+    imageTitle: "/assets/film/journal/1.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 2,
     title: 'The making process of "EYESME" TVC',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/2.jpg",
+    imageTitle: "/assets/film/journal/2.jpg",
   },
   {
     id: 3,
     title: 'The making process of "CRTLZ"',
     description:
       "The story about my first short film after coming back to Vietnam. 3 days shooting nonstop, alot of sleepless night and the project make me improve alot.",
-    imageTitle: "assets/film/journal/3.jpg",
+    imageTitle: "/assets/film/journal/3.jpg",
   },
   {
     id: 4,
     title: 'The making process of "NEU LUC DO"',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/4.jpg",
+    imageTitle: "/assets/film/journal/4.jpg",
   },
   {
     id: 5,
     title: 'The making process of "KIM CHI NU"',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/5.png",
+    imageTitle: "/assets/film/journal/5.png",
   },
   {
     id: 6,
     title: 'The making process of "THIM"',
     description:
       "Behind-The-Scene of my first short film as a DOP. The story about how me and my crew can be managed to finish within 2 weeks for a whole production process.",
-    imageTitle: "assets/film/journal/6.jpg",
+    imageTitle: "/assets/film/journal/6.jpg",
   },
 ];
 
@@ -1121,7 +1122,7 @@ export const QMLTInfo = {
   ],
 };
 
-export const filmDetails = [
+export const journalDetails = [
   thimInfo,
   kimChiNuInfo,
   CRTLZInfo,
