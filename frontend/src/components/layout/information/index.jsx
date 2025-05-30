@@ -1,8 +1,8 @@
 import React from "react";
 
 export const InformationIcon = ({ direction = "row", gap = "gap-7" }) => {
-  const iconHeight = 35;
-  const iconWidth = 35;
+  const iconHeight = 30;
+  const iconWidth = 30;
 
   // Tailwind only works with static class names, so we must use a conditional
   const flexDirectionClass = direction === "row" ? "flex-row" : direction;
