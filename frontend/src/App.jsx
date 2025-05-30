@@ -5,11 +5,11 @@ import { Layout } from "./components/layout";
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("G-7NN26FCWCX"); // ← Replace with your real ID
-    ReactGA.send("pageview");
+    ReactGA.initialize("G-7NN26FCWCX");
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
   }, []);
 
-  return <Layout></Layout>;
+  return <Layout />;
 }
 
 export default App;
