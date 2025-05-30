@@ -18,6 +18,11 @@ export const journalData = [
       "Discover the story about my first Music Video that shooting outdoor and find out how did I manage to get most of the shot in the morning.",
     imageTitle: "/assets/film/journal/1.jpg",
     imageDetail: ["/assets/film/khong/khong2.png"],
+    script: [
+      '"Không" is a no-budget music video that seeks to visually represent a sense of existential uncertainty. Centered around a lone female protagonist, the MV delves into themes of impermanence and aimlessness, an emotional drift through vast, ungraspable landscapes. It was shot entirely in natural light over the course of a single day at Hồ Đá, a rugged stone lake nestled within the university village of Ho Chi Minh City.',
+      "Before reading, if you have not seen this yet, this is the link",
+      "“Không” arrived at a pivotal moment in my life, just after I had returned from Vietnam, trying to recalibrate not only my creative process but also my sense of self. It became a playground for discovery: a low-budget, high-risk experiment where the only constraints were time, location, and our own bodies. In a way, it felt like filming with nothing but instinct and dust.",
+    ],
   },
   {
     id: 2,
@@ -26,7 +31,6 @@ export const journalData = [
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/2.jpg",
     imageDetail: ["/assets/film/eyesme/eyesme6.png"],
-  
   },
   {
     id: 3,
