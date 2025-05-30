@@ -24,7 +24,7 @@ export const JournalListPage = () => {
         {journalData.map((journal) => (
           <div
             key={journal.id}
-            className="flex flex-wrap md:flex-nowrap gap-8 mb-20"
+            className="flex flex-wrap md:flex-nowrap gap-8 mb-20 items-center"
           >
             <img
               src={journal.imageTitle}
