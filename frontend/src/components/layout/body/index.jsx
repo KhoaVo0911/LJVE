@@ -6,6 +6,7 @@ import { ProjectsPage } from "@/pages/projects";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import FilmDetails from "@/components/filmdetails";
+import { JournalDetailsPage } from "@/components/journalList/journalDetail";
 
 export const AppBody = () => {
   return (
@@ -16,6 +17,7 @@ export const AppBody = () => {
       <Route path={routes.journals} element={<JournalPage />} />
       <Route path={`${routes.projects}/*`} element={<ProjectsPage />} />
       <Route path="/film/:id" element={<FilmDetails />} />
+      <Route path={`${routes.journals}/:id`} element={<JournalDetailsPage />} />
     </Routes>
   );
 };
