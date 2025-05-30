@@ -41,7 +41,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
   const [projectDropdownOpen, setProjectDropdownOpen] = React.useState(false);
 
   const navBarBaseClass =
-    "font-[Gilroy-Light] text-white text-lg sm:text-xl md:text-2xl px-3 sm:px-4 py-1 rounded-md transition-all";
+    "font-[Gilroy-Light] text-white text-lg sm:text-xl md:text-lg px-3 sm:px-4 py-1 rounded-md transition-all";
 
   const items = [
     { label: "Journal", to: routes.journals },
@@ -217,7 +217,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
                         className={`${navBarBaseClass} ${
                           isActive ? "font-extrabold" : "font-normal"
                         }`}
-                        style={{ fontSize: isActive ? "1.4rem" : "1.2rem" }}
+                        style={{ fontSize: isActive ? "1.2rem" : "1.0rem" }}
                       >
                         {item.label}
                       </motion.span>
@@ -234,7 +234,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
                     duration: 0.5,
                     ease: "backInOut",
                   }}
-                  className="h-[1px] w-[32px] md:w-[48px] !bg-white mx-1"
+                  className="h-[1px] w-[32px] md:w-[48px] !bg-white"
                   aria-hidden="true"
                 />
               )}
