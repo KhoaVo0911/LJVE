@@ -25,6 +25,8 @@ export const journalData = [
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/2.jpg",
+    imageDetail: ["/assets/film/eyesme/eyesme6.png"],
+  
   },
   {
     id: 3,
@@ -32,6 +34,8 @@ export const journalData = [
     description:
       "The story about my first short film after coming back to Vietnam. 3 days shooting nonstop, alot of sleepless night and the project make me improve alot.",
     imageTitle: "/assets/film/journal/3.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 4,
@@ -39,6 +43,7 @@ export const journalData = [
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/4.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 5,
@@ -46,6 +51,7 @@ export const journalData = [
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/5.png",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 6,
@@ -53,6 +59,7 @@ export const journalData = [
     description:
       "Behind-The-Scene of my first short film as a DOP. The story about how me and my crew can be managed to finish within 2 weeks for a whole production process.",
     imageTitle: "/assets/film/journal/6.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
 ];
 

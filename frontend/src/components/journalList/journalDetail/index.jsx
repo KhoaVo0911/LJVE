@@ -40,10 +40,10 @@ export const JournalDetailsPage = () => {
             <img
               src={journal.imageDetail[0]}
               alt={journal.title}
-              className="w-full md:w-[95%] object-cover"
+              className="w-full md:w-[85%] object-cover"
             />
 
-            <div className="absolute top-1/2 right-[-20vh] transform -translate-y-1/2 bg-white p-6 shadow-lg rounded-md max-w-[50vh] h-[40vh] overflow-y-auto">
+            <div className="absolute top-1/2 right-[5vh] transform -translate-y-1/2 bg-white p-6 shadow-lg rounded-md max-w-[50vh] h-[40vh] overflow-y-auto">
               <div className="text-gray-800 text-base font-[BeauSans] leading-relaxed">
                 {journal.description}
               </div>
