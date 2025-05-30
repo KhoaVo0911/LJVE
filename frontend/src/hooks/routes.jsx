@@ -3,7 +3,7 @@ const routes = {
   home: "/home",
   filmDetail: "/film/:slug",
   journals: "/journals",
-  journalDetail: "/journals/:title",
+  journalDetail: ":id",
   about: "/about",
   projects: "/projects",
   allProjects: "allProjects",

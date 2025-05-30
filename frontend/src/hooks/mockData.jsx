@@ -16,42 +16,53 @@ export const journalData = [
     title: 'The making process of "KHONG"',
     description:
       "Discover the story about my first Music Video that shooting outdoor and find out how did I manage to get most of the shot in the morning.",
-    imageTitle: "assets/film/journal/1.jpg",
+    imageTitle: "/assets/film/journal/1.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
+    script: [
+      '"Không" is a no-budget music video that seeks to visually represent a sense of existential uncertainty. Centered around a lone female protagonist, the MV delves into themes of impermanence and aimlessness, an emotional drift through vast, ungraspable landscapes. It was shot entirely in natural light over the course of a single day at Hồ Đá, a rugged stone lake nestled within the university village of Ho Chi Minh City.',
+      "Before reading, if you have not seen this yet, this is the link",
+      "“Không” arrived at a pivotal moment in my life, just after I had returned from Vietnam, trying to recalibrate not only my creative process but also my sense of self. It became a playground for discovery: a low-budget, high-risk experiment where the only constraints were time, location, and our own bodies. In a way, it felt like filming with nothing but instinct and dust.",
+    ],
   },
   {
     id: 2,
     title: 'The making process of "EYESME" TVC',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/2.jpg",
+    imageTitle: "/assets/film/journal/2.jpg",
+    imageDetail: ["/assets/film/eyesme/eyesme6.png"],
   },
   {
     id: 3,
     title: 'The making process of "CRTLZ"',
     description:
       "The story about my first short film after coming back to Vietnam. 3 days shooting nonstop, alot of sleepless night and the project make me improve alot.",
-    imageTitle: "assets/film/journal/3.jpg",
+    imageTitle: "/assets/film/journal/3.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 4,
     title: 'The making process of "NEU LUC DO"',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/4.jpg",
+    imageTitle: "/assets/film/journal/4.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 5,
     title: 'The making process of "KIM CHI NU"',
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
-    imageTitle: "assets/film/journal/5.png",
+    imageTitle: "/assets/film/journal/5.png",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 6,
     title: 'The making process of "THIM"',
     description:
       "Behind-The-Scene of my first short film as a DOP. The story about how me and my crew can be managed to finish within 2 weeks for a whole production process.",
-    imageTitle: "assets/film/journal/6.jpg",
+    imageTitle: "/assets/film/journal/6.jpg",
+    imageDetail: ["/assets/film/khong/khong2.png"],
   },
 ];
 
@@ -1104,7 +1115,7 @@ export const QMLTInfo = {
   ],
 };
 
-export const filmDetails = [
+export const journalDetails = [
   thimInfo,
   kimChiNuInfo,
   CRTLZInfo,

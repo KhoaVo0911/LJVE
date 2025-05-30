@@ -51,7 +51,7 @@ export const NavigationBar = ({ mobileOpen, setMobileOpen }) => {
   ];
 
   const projectSubItems = [
-    { label: "ALL PROJECTS", to: `${routes.projects}/${routes.allProjects}` },
+    { label: "ALL", to: `${routes.projects}/${routes.allProjects}` },
     { label: "DOCUMENTARY", to: `${routes.projects}/${routes.documentary}` },
     { label: "MUSIC VIDEO", to: `${routes.projects}/${routes.musicVideo}` },
     { label: "ORIGINAL", to: `${routes.projects}/${routes.original}` },

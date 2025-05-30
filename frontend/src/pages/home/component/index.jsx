@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import videoBg from "../../../assets/videoBg.mp4";
-import { listFilm, filmDetails } from "../../../hooks/mockData";
+import { listFilm, journalDetails } from "../../../hooks/mockData";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
   }, [isMuted]);
 
   const idToSlug = {};
-  filmDetails.forEach((film) => {
+  journalDetails.forEach((film) => {
     idToSlug[film.id] = film.slug;
   });
 
