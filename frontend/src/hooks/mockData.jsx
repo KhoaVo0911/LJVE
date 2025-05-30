@@ -94,7 +94,7 @@ export const listProjects = [
     title: "ALL PROJECTS",
     subTitle: "WITHIN EVERY FRAME LIES A STORY",
     slogan:
-      "I tackle every genre, from documentaries and music videos to commercials and experimental pieces. Bring your vision, and I’ll deliver polished, on-time videos that hit the mark every time.",
+      "I tackle every genre, from documentaries and music videos to commercials and experimental pieces. Bring your vision, and I'll deliver polished, on-time videos that hit the mark every time.",
     images: [
       "/assets/film/allProjects/1.jpg",
       "/assets/film/allProjects/2.jpg",
@@ -122,7 +122,7 @@ export const listProjects = [
     title: "DOCUMENTARY",
     subTitle: "ÉCLAIRER LA VÉRITÉ EN IMAGES AUTHENTIQUES.",
     slogan:
-      "I capture raw, authentic moments that tell powerful stories. Whether it’s social issues or personal journeys, my visuals will immerse viewers and spark real emotion.",
+      "I capture raw, authentic moments that tell powerful stories. Whether it's social issues or personal journeys, my visuals will immerse viewers and spark real emotion.",
     images: null,
   },
   {
@@ -146,7 +146,7 @@ export const listProjects = [
   {
     id: 4,
     title: "ORIGINAL",
-    subTitle: "LIBÉREZ L’IMPRÉVISIBLE",
+    subTitle: "LIBÉREZ L'IMPRÉVISIBLE",
     slogan:
       "For boundary-pushing, experimental work. I turn your boldest ideas into striking visuals, no limits, no holds barred, just pure creative exploration.",
     images: [
@@ -164,7 +164,7 @@ export const listProjects = [
     title: "SHORT FILM",
     subTitle: "EMOZIONI INTENSE IN BREVI RACCONTI",
     slogan:
-      "Ideal for filmmakers looking for same vision: concise storytelling packed with feeling. From script support to final grade, I’ll help you create memorable films on any budget.",
+      "Ideal for filmmakers looking for same vision: concise storytelling packed with feeling. From script support to final grade, I'll help you create memorable films on any budget.",
     images: [
       "/assets/film/allProjects/1.jpg",
       "/assets/film/allProjects/6.jpg",
@@ -178,9 +178,9 @@ export const listProjects = [
   {
     id: 6,
     title: "COMMERCIAL",
-    subTitle: "D’UN PRODUIT, UNE LÉGENDE",
+    subTitle: "D'UN PRODUIT, UNE LÉGENDE",
     slogan:
-      "Recall the moment you caught your favorite brand in a perfect way. That’s the power I bring to commercials: follow brand story and deliver it to audience with heart-touched story.",
+      "Recall the moment you caught your favorite brand in a perfect way. That's the power I bring to commercials: follow brand story and deliver it to audience with heart-touched story.",
     images: [
       "/assets/film/allProjects/3.jpg",
       "/assets/film/allProjects/9.jpg",
@@ -1011,45 +1011,28 @@ export const khongInfo = {
     {
       section: "CREDIT",
       items: [
-        // { label: [""] },
-        { label: "Title", names: ['"KHONG" MUSIC VIDEO'] },
-        { label: "Direction", names: ["Bern (Ormine)"] },
+        { label: "Director", names: ["Bern (Ormine)"] },
         { label: "Cast", names: ["Hai Yen"] },
-        {
-          label: "Camera Operators",
-          names: ["Bern", "LJVE NGUYEN"],
-        },
-        {
-          label: "Flycam",
-          names: ["Mr.Ljve"],
-        },
-        {
-          label: "Editor",
-          names: ["Bern"],
-        },
-        {
-          label: "Colorist",
-          names: ["LJVE NGUYEN"],
-          italic: true,
-          bold: true,
-        },
+        { label: "Cinematographer", names: ["Bern", "Khang Nguyen (Ljve)"] },
+        { label: "Flycam", names: ["Khang Nguyen"] },
+        { label: "Editor", names: ["Bern"] },
+        { label: "Colorist", names: ["Khang Nguyen"] },
         { label: "Adviser", names: ["Nguyen Phuc"] },
         { label: "Prop team", names: ["Pham Hong Anh", "Hải Yến", "Diễm"] },
-        {
-          label: "Castering",
-          names: ["Hồng Anh", "Hải Yến", "Diễm"],
-        },
-
-        {
-          label: "PA",
-          names: ["Mai Anh"],
-        },
+        { label: "Catering", names: ["Hồng Anh", "Hải Yến", "Diễm"] },
+        { label: "PA", names: ["Mai Anh"] },
         { label: "Stylist", names: ["Hyen (Hải Yến)"] },
         { label: "Composer & Vocal", names: ["Dewild (Ormine)"] },
         { label: "Mix&Master", names: ["Blake.B"] },
       ],
     },
   ],
+  information: {
+    client: "Personal Project",
+    year: "2025",
+    services: ["Cinematographer", "Colorist"],
+    category: "Music Video",
+  },
 };
 
 export const QMLTInfo = {
@@ -1130,77 +1113,6 @@ export const filmDetails = [
   khongInfo,
   QMLTInfo,
 ];
-
-// export const filmDetails = [
-//   {
-//     id: 8,
-//     name: "QMLT",
-//     slug: "qmlt",
-//     genre: "Music Video",
-//     video: "https://www.youtube.com/embed/VVxjbZs3W34?si=4P9pX5tBtgBxIeg5",
-//     images: [
-//       "/assets/film/qlmt/qlmt1.png",
-//       "/assets/film/qlmt/qlmt2.png",
-//       "/assets/film/qlmt/qlmt3.png",
-//       "/assets/film/qlmt/qlmt4.png",
-//       "/assets/film/qlmt/qlmt5.png",
-//     ],
-//     credit: [
-//       {
-//         section: "CREDIT",
-//         items: [{ label: "Title", names: ['"QUEN MOT LOI THE" MUSIC VIDEO'] }],
-//       },
-//       {
-//         section: "",
-//         items: [
-//           { label: "Starring", names: ["Liên Bỉnh Phát"] },
-//           { label: "Music", names: ["Quên Một Lời Thề"] },
-//           { label: "Composer", names: ["Nhạc Hoa"] },
-//           { label: "Lyrics", names: ["Nguyễn Thắng"] },
-//           { label: "Music Producer", names: ["Đại Minh"] },
-//           { label: "Recording", names: ["Ngô Minh Triết"] },
-//         ],
-//       },
-//       {
-//         section: "",
-//         items: [
-//           { label: "UFO Entertainment", names: [] },
-//           { label: "Director", names: ["Luân Minh"] },
-//           { label: "Executive Producer", names: ["Vũ Thành Luân"] },
-//           { label: "Talent Assistant", names: ["Thuận Huỳnh"] },
-//           { label: "Assistant Producer", names: ["Bảo Hân", "Nhựt Trường"] },
-//         ],
-//       },
-//       {
-//         section: "",
-//         items: [
-//           { label: "Director of Photography", names: ["Nghĩa Trà Đá"] },
-//           { label: "Gaffer", names: ["Long Bụi"] },
-//           { label: "Focus Puller", names: ["Nhân Nguyễn"] },
-//           { label: "BTS", names: ["Bảo Hân"] },
-//         ],
-//       },
-//       {
-//         section: "",
-//         items: [
-//           { label: "Art Director", names: ["Lê Nhật Thanh"] },
-//           {
-//             label: "Set Decorator",
-//             names: ["Rôn Tap", "Blackbull", "Minh Le"],
-//           },
-//           { label: "Makeup & Hair", names: ["Cherish Nguyen"] },
-//         ],
-//       },
-//       {
-//         section: "",
-//         items: [
-//           { label: "Post", names: ["UFO Entertainment"] },
-//           { label: "Color Grading", names: ["LJVE NGUYEN"], italic: true },
-//         ],
-//       },
-//     ],
-//   },
-// ];
 
 export const bannerToFilmSlug = [
   {
