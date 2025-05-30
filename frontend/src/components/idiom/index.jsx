@@ -1,25 +1,13 @@
-import React from "react";
-import ShufflingWordByWord from "../shufferingWords";
+import { useShuffler } from "../shufferingWords/index2";
 
 export const IdiomPage = ({ animate, reverse }) => {
-  const lines = [
-    "“Cinema is not what I see. It’s what I make others feel.",
-    "Let’s turn your vision into frames worth remembering.”",
-  ];
+  const idiom = `“Cinema is not what I see. It’s what I make others feel.\nLet’s turn your vision into frames worth remembering.”`;
+  const shuffledText = useShuffler(idiom, animate, reverse);
 
   return (
-    <div className="flex flex-col items-center mt-[50vh] mb-[40vh] text-[20px]">
-      <div className="font-[beauSansItalic] whitespace-pre-line text-center max-w-3xl px-6">
-        {lines.map((line, idx) => (
-          <div key={idx} className="mb-2">
-            <ShufflingWordByWord
-              text={line}
-              active={animate}
-              reverse={reverse}
-              duration={4000}
-            />
-          </div>
-        ))}
+    <div className="flex flex-col items-center mt-[50vh] mb-[40vh] md:text-lg text-[10px]">
+      <div className="font-[beauSansItalic] whitespace-pre-line text-center max-w-4xl px-6">
+        {shuffledText}
       </div>
     </div>
   );
