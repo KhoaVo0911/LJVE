@@ -1,26 +1,39 @@
-import { AboutMePage } from "@/components/aboutMe";
-import { IdiomPage } from "@/components/idiom";
-import { ServicePage } from "@/components/service";
 import React, { useEffect, useRef, useState } from "react";
+import { AboutMePage } from "@/components/aboutMe";
+import { ServicePage } from "@/components/service";
+import { IdiomPage } from "@/components/idiom";
 
 export const AboutPage = () => {
   const [animateService, setAnimateService] = useState(false);
   const [reverseService, setReverseService] = useState(false);
   const [animateIdiom, setAnimateIdiom] = useState(false);
   const [reverseIdiom, setReverseIdiom] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
   const serviceSectionRef = useRef(null);
   const idiomSectionRef = useRef(null);
 
+  const animateServiceRef = useRef(false);
+  const reverseServiceRef = useRef(false);
+  const animateIdiomRef = useRef(false);
+  const reverseIdiomRef = useRef(false);
+
+  const lastScrollY = useRef(0);
+
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
-    setLastScrollY(currentScrollY);
+    const scrollDirection =
+      currentScrollY > lastScrollY.current ? "down" : "up";
+    lastScrollY.current = currentScrollY;
 
     const windowHeight = window.innerHeight;
 
-    const checkAndUpdate = (sectionRef, setAnimate, setReverse) => {
+    const checkAndUpdate = (
+      sectionRef,
+      setAnimate,
+      setReverse,
+      animateRef,
+      reverseRef
+    ) => {
       const section = sectionRef.current;
       if (!section) return;
 
@@ -28,26 +41,42 @@ export const AboutPage = () => {
       const isInView =
         rect.top <= windowHeight * 0.75 && rect.bottom >= windowHeight * 0.25;
 
-      if (isInView && scrollDirection === "down") {
+      if (isInView && scrollDirection === "down" && !animateRef.current) {
         setAnimate(true);
         setReverse(false);
+        animateRef.current = true;
+        reverseRef.current = false;
       }
 
-      if (rect.bottom < 0 && scrollDirection === "up") {
+      if (!isInView && scrollDirection === "up" && !reverseRef.current) {
         setAnimate(false);
         setReverse(true);
+        animateRef.current = false;
+        reverseRef.current = true;
       }
     };
 
-    checkAndUpdate(serviceSectionRef, setAnimateService, setReverseService);
-    checkAndUpdate(idiomSectionRef, setAnimateIdiom, setReverseIdiom);
+    checkAndUpdate(
+      serviceSectionRef,
+      setAnimateService,
+      setReverseService,
+      animateServiceRef,
+      reverseServiceRef
+    );
+    checkAndUpdate(
+      idiomSectionRef,
+      setAnimateIdiom,
+      setReverseIdiom,
+      animateIdiomRef,
+      reverseIdiomRef
+    );
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial check
+    handleScroll(); // initial call
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <div className="mt-10 mx-2 sm:mx-4 md:mx-10 lg:mx-30">

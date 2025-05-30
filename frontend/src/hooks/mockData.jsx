@@ -2,9 +2,12 @@ export const imagesAboutMe = [
   "assets/film/about/1.jpg",
   "assets/film/about/2.jpg",
   "assets/film/about/3.jpg",
+  "assets/film/about/7.JPG",
   "assets/film/about/4.jpg",
   "assets/film/about/5.jpg",
   "assets/film/about/6.jpg",
+  "assets/film/about/9.JPG",
+  "assets/film/about/10.JPG",
 ];
 
 export const journalData = [

@@ -55,7 +55,7 @@ const Home = () => {
             <span className="absolute -top-3 sm:-top-4 right-0 translate-x-4 sm:translate-x-6 text-[10px] sm:text-xs font-[Gilroy-Light] text-white opacity-80 select-none">
               {movie.year}
             </span>
-            <span className="block uppercase text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-none text-white drop-shadow-lg">
+            <span className="block uppercase text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-none text-white drop-shadow-lg">
               {movie.name} - {movie.genre}
             </span>
           </div>

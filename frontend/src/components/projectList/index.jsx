@@ -64,7 +64,7 @@ export const ProjectsListPage = ({ images }) => {
   return (
     <>
       {images && images.length > 0 ? (
-        <div className="w-full flex justify-center mt-20">
+        <div className="w-full flex justify-center mt-7">
           <div
             ref={containerRef}
             className="grid grid-cols-1 sm:grid-cols-2 gap-2"
@@ -152,7 +152,7 @@ export const ProjectsListPage = ({ images }) => {
           </div>
         </div>
       ) : (
-        <div className="flex items-center justify-center h-screen text-center text-[48px] font-[Neogrotesk-Bold] px-[30vh] tracking-[0.3em] leading-relaxed break-words">
+        <div className="flex items-center justify-center h-screen text-center text-[42px] font-[Neogrotesk-Bold] px-[30vh] tracking-[0.3em] leading-relaxed break-words">
           FUTURE WORKS ARE ON PROCESS YOU COULD MAKE IT HAPPEN CONTACT ME
         </div>
       )}

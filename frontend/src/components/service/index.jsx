@@ -6,15 +6,15 @@ const DURATION_SECTION_TITLE = 4500;
 const DURATION_DESCRIPTION = 7000;
 
 export const ServicePage = ({ animate, reverse }) => {
-  const titleFont = "font-semibold text-[64px] font-[BeauSansBold]";
+  const titleFont = "font-extrabold text-lg md:text-3xl font-[BeauSansBold]";
   const descriptionFontLeftSide =
-    "text-left max-w-4xl whitespace-pre-line break-words hyphens-none text-[20px] font-[beauSansItalic]";
+    "text-left max-w-2xl whitespace-pre-line break-words hyphens-none font-[beauSansItalic] text-accent text-[11px] md:text-[16px]";
   const descriptionFontRightSide =
-    "text-right max-w-4xl whitespace-pre-line break-words hyphens-none text-[20px] font-[beauSansItalic]";
+    "text-right max-w-2xl whitespace-pre-line break-words hyphens-none font-[beauSansItalic] text-accent text-[11px] md:text-[16px]";
 
   return (
-    <div className="flex flex-col w-full px-6 mt-[30vh]">
-      <div className="text-[64px] font-bold text-center mb-8 font-[BeauSansBold]">
+    <div className="flex flex-col w-full mt-[30vh]">
+      <div className="text-2xl md:text-4xl font-extrabold text-center mb-8 font-[BeauSansBold] ">
         <ShufflingWordByWord
           text="SERVICES"
           active={animate}
