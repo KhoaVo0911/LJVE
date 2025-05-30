@@ -35,7 +35,6 @@ export const journalData = [
       "The story about my first short film after coming back to Vietnam. 3 days shooting nonstop, alot of sleepless night and the project make me improve alot.",
     imageTitle: "/assets/film/journal/3.jpg",
     imageDetail: ["/assets/film/khong/khong2.png"],
-    imageDetail: ["/assets/film/khong/khong2.png"],
   },
   {
     id: 4,
