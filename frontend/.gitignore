@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 .env
 /frontend/*.json
+frontend/brave-streamer-342407-4232ce4d9b4c.json
