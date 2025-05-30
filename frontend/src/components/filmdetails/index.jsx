@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { filmDetails } from "../../hooks/mockData";
+import { journalDetails } from "../../hooks/mockData";
 import { AspectRatio } from "../ui/aspect-ratio";
 
 const specialItalicLabels = ["Gaffer", "SFX", "Editor", "Colorist"];
 
 const FilmDetails = () => {
   const { slug } = useParams();
-  const film = filmDetails.find((f) => f.slug === slug);
+  const film = journalDetails.find((f) => f.slug === slug);
 
   if (!film)
     return (

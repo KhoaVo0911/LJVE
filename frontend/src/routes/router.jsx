@@ -14,6 +14,7 @@ import { ShortFilmPage } from "@/pages/projects/shortFilm";
 import { CommercialPage } from "@/pages/projects/commercial";
 import { AllProjectsPage } from "@/pages/projects/allProject";
 import FilmDetails from "@/components/filmdetails";
+import { JournalDetailsPage } from "@/components/journalList/journalDetail";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,12 @@ export const router = createBrowserRouter([
       {
         path: routes.journals,
         element: <JournalPage />,
+        children: [
+          {
+            path: routes.journalDetail,
+            element: <JournalDetailsPage />,
+          },
+        ],
       },
       {
         path: routes.filmDetail,

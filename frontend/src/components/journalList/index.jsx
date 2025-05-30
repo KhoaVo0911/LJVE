@@ -1,5 +1,7 @@
 import { journalData } from "@/hooks/mockData";
+import routes from "@/hooks/routes";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const JournalListPage = () => {
   const formatTitleWithSansQuotes = (title) => {
@@ -33,18 +35,18 @@ export const JournalListPage = () => {
             />
 
             <div className="flex flex-col justify-start text-left md:w-[45%]">
-              <h2 className="text-2xl md:text-4xl font-[Neogrotesk-AltBold] mb-4">
+              <div className="text-2xl md:text-4xl font-[Neogrotesk-AltBold] mb-4">
                 {formatTitleWithSansQuotes(journal.title)}
-              </h2>
-              <p className="text-base md:text-lg font-[BeauSans] mb-4 leading-relaxed">
+              </div>
+              <div className="text-base md:text-lg font-[BeauSans] mb-4 leading-relaxed">
                 {journal.description}
-              </p>
-              <a
-                href="#"
+              </div>
+              <Link
+                to={routes.journalDetail.replace(":id", journal.id)}
                 className="text-base md:text-lg font-[BeauSans] underline text-white"
               >
                 Read more
-              </a>
+              </Link>
             </div>
           </div>
         ))}
