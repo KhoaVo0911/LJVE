@@ -64,6 +64,7 @@ export const JournalDetailsPage = () => {
         </FadeInWhenVisible>
       );
     }
+    
     return (
       <FadeInWhenVisible>
         <p
