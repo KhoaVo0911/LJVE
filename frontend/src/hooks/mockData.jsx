@@ -22,9 +22,9 @@ export const journalData = [
     script: [
       `Before reading, if you have not seen this yet, this is the link.`,
 
-      `“Không” arrived at a pivotal moment in my life, just after I had returned from Vietnam, trying to recalibrate not only my creative process but also my sense of self. It became a playground for discovery: a low-budget, high-risk experiment where the only constraints were time, location, and our own bodies. 
+      `"Không" arrived at a pivotal moment in my life, just after I had returned from Vietnam, trying to recalibrate not only my creative process but also my sense of self. It became a playground for discovery: a low-budget, high-risk experiment where the only constraints were time, location, and our own bodies. 
       In a way, it felt like filming with nothing but instinct and dust.
-      This project wasn’t just about capturing beautiful images, it was about making peace with the idea of not knowing what comes next. It mirrored the exact state I was in: floating between projects, between countries, between emotional certainties. Every shot felt like a search for something I couldn’t name yet. And that’s precisely why KHÔNG means so much to me. It reminded me that the best way to find your voice is to get lost first.
+      This project wasn't just about capturing beautiful images, it was about making peace with the idea of not knowing what comes next. It mirrored the exact state I was in: floating between projects, between countries, between emotional certainties. Every shot felt like a search for something I couldn't name yet. And that's precisely why KHÔNG means so much to me. It reminded me that the best way to find your voice is to get lost first.
       `,
 
       `Camera and Lighting Equipment List
@@ -36,7 +36,7 @@ We worked with minimal gear, pushing ourselves to strip away technical crutches 
 This gear setup forced me to be nimble and responsive, reacting to the shifting light and textures throughout the day.`,
 
       `Lighting Diagram & Location Challenges
-      We structured the shoot around three main locations, each echoing a different layer of the protagonist’s emotional void:`,
+      We structured the shoot around three main locations, each echoing a different layer of the protagonist's emotional void:`,
 
       `Location 1: The Cliff at Hồ Đá`,
 
@@ -48,7 +48,7 @@ This gear setup forced me to be nimble and responsive, reacting to the shifting 
       `This location gave us a natural chiaroscuro—the interplay of light and shadow between trees made it a perfect metaphor for inner turmoil. The protagonist walks through layers of branches and filtered sunlight, the camera gliding gently behind her like a ghost.`,
 
       `Location 3: Grass Field`,
-      `Soft, pastel, and strange—this location added a dreamy, almost surreal texture to the final act of the MV. The grass swayed like waves, and we used slow drone movements to emphasize the character’s smallness within the frame.
+      `Soft, pastel, and strange—this location added a dreamy, almost surreal texture to the final act of the MV. The grass swayed like waves, and we used slow drone movements to emphasize the character's smallness within the frame.
 
       Lighting Note: Sunset served as our only light source. We had exactly 20 minutes of perfect warm tones before the sky turned grey-blue.`,
     ],
@@ -386,6 +386,8 @@ export const kimChiNuInfo = {
         {
           label: "Camera Operator",
           names: ["Ngô Văn Thi", "Phúc Nguyễn", "Khang Nguyen (Ljve)"],
+          italic: true,
+          bold: true,
         },
         { label: "Boom Operator", names: ["Công"] },
         { label: "Gaffer", names: ["Lâm Trần"] },
@@ -747,28 +749,33 @@ export const eyesmeInfo = {
     "/assets/film/eyesme/eyesme5.png",
   ],
   credit: [
-    { section: "CREDIT", items: [] },
-    { section: "Cast", items: [{ names: ["Ngân Ngân"] }] },
-    { section: "Director", items: [{ names: ["Dewild (Ormine)"] }] },
-    { section: "Producer", items: [{ names: ["Turtle (Ormine)"] }] },
-    { section: "Producer Assistant", items: [{ names: ["Jessie (Ormine)"] }] },
     {
-      section: "DOP",
-      items: [{ names: ["Khang Nguyen (Ljve)"], italic: true, bold: true }],
-    },
-    { section: "Camera Operator", items: [{ names: ["Bern (Ormine)"] }] },
-    { section: "Art Director", items: [{ names: ["Bao Han (Ormine)"] }] },
-    {
-      section: "Editor",
+      section: "CREDIT",
       items: [
-        { names: ["Bern (Ormine)"] },
-        { names: ["Ljve Nguyen (Ormine)"], italic: true, bold: true },
+        { label: "Cast", names: ["Ngân Ngân"] },
+        { label: "Director", names: ["Dewild (Ormine)"] },
+        { label: "Producer", names: ["Turtle (Ormine)"] },
+        { label: "Producer Assistant", names: ["Jessie (Ormine)"] },
+        {
+          label: "DOP",
+          names: ["Khang Nguyen (Ljve)"],
+          italic: true,
+          bold: true,
+        },
+        { label: "Camera Operator", names: ["Bern (Ormine)"] },
+        { label: "Art Director", names: ["Bao Han (Ormine)"] },
+        {
+          label: "Editor",
+          names: ["Bern (Ormine)", "Ljve Nguyen (Ormine)"],
+          italic: true,
+          bold: true,
+        },
+        { label: "Colorist", names: ["Logghito"] },
+        { label: "Gaffer", names: ["Trần Lâm"] },
+        { label: "Best boy", names: ["Tấn Đạt"] },
+        { label: "BTS Cameraman", names: ["Tấn Đạt"] },
       ],
     },
-    { section: "Colorist", items: [{ names: ["Logghito"] }] },
-    { section: "Gaffer", items: [{ names: ["Trần Lâm"] }] },
-    { section: "Best boy", items: [{ names: ["Tấn Đạt"] }] },
-    { section: "BTS Cameraman", items: [{ names: ["Tấn Đạt"] }] },
   ],
   information: {
     client: "EYESME Korean Contactlens",

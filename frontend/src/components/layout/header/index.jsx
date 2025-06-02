@@ -47,7 +47,7 @@ export const AppHeader = () => {
         LJVE
       </motion.div>
 
-    <div className="flex justify-between items-start">
+      <div className="flex justify-between items-start">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
