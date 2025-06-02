@@ -5,7 +5,7 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import routes from "@/hooks/routes";
 
 export const ProjectCategory = () => {
@@ -24,15 +24,15 @@ export const ProjectCategory = () => {
   return (
     <div className="hidden md:flex justify-center border-b border-white/20 shadow-sm pb-1 bg-black">
       <NavigationMenu>
-        <NavigationMenuList className="flex items-center gap-2 sm:gap-4 md:gap-8 py-2">
-          <div className="w-1 h-0 pointer-events-none" aria-hidden="true" />
+        <NavigationMenuList className="flex items-center gap-2 sm:gap-4 md:gap-8 py-2 space-x-8">
+          <div className="w-1 h-0 pointer-events-none " aria-hidden="true" />
           {items.map((item, index) => (
             <React.Fragment key={item.label}>
               <NavigationMenuItem>
                 <NavLink to={item.to}>
                   {({ isActive }) => (
                     <NavigationMenuLink
-                      className={`${navBarBaseClass} text-base sm:text-lg md:text-xl whitespace-nowrap snap-start ${
+                      className={`${navBarBaseClass} text-base sm:text-lg md:text-xl whitespace-nowrap snap-start  ${
                         isActive
                           ? "font-normal text-white/60"
                           : "font-extrabold text-white"

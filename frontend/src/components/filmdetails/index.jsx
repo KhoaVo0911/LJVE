@@ -70,11 +70,8 @@ const FilmDetails = () => {
           </div>
         </div>
       )}
-      {/* GRID 2 CỘT + INFORMATION BÊN PHẢI */}
       <div className="relative w-full max-w-full flex flex-col md:flex-row items-start px-8 gap-8 md:gap-0">
-        {/* 2 CỘT CHÍNH */}
         <div className="flex-1 flex flex-col md:grid md:grid-cols-[minmax(0,300px)_720px] gap-8 md:gap-16 items-start md:pr-0">
-          {/* CREDIT COLUMN */}
           <div
             className="w-full md:pt-4 md:pr-8 md:max-w-none md:pl-6"
             style={{ maxWidth: "300px" }}
@@ -160,7 +157,6 @@ const FilmDetails = () => {
               ))}
             </div>
           </div>
-          {/* MEDIA COLUMN */}
           <div className="w-full md:w-[720px] mx-auto md:mx-0 justify-self-center">
             <div className="mb-10 sm:mb-16 w-full">
               <AspectRatio ratio={16 / 9}>
@@ -182,7 +178,6 @@ const FilmDetails = () => {
             ))}
           </div>
         </div>
-        {/* INFORMATION COLUMN BÊN PHẢI */}
         {film.information && (
           <div className="hidden md:flex flex-col items-end text-white font-[beauSans] w-[200px] ml-8 pt-4 self-stretch">
             <div

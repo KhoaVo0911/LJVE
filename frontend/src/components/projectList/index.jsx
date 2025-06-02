@@ -106,26 +106,26 @@ export const ProjectsListPage = ({ images }) => {
                     {filmInfo && filmInfo.name ? (
                       <>
                         <div>
-                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                          <p className="text-[26px] text-gray-400 font-semibold tracking-wider">
                             PROJECT NAME
                           </p>
-                          <p className="text-[20px] font-semibold">
+                          <p className="text-[24px] font-semibold">
                             {filmInfo.name}
                           </p>
                         </div>
                         <div>
-                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                          <p className="text-[26px] text-gray-400 font-semibold tracking-wider">
                             YEAR
                           </p>
-                          <p className="text-[20px] font-semibold">
+                          <p className="text-[24px] font-semibold">
                             {filmInfo.year}
                           </p>
                         </div>
                         <div>
-                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                          <p className="text-[26px] text-gray-400 font-semibold tracking-wider">
                             CATEGORY
                           </p>
-                          <p className="text-[20px] font-semibold">
+                          <p className="text-[24px] font-semibold">
                             {filmInfo.category}
                           </p>
                         </div>
