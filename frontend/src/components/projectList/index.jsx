@@ -103,30 +103,30 @@ export const ProjectsListPage = ({ images }) => {
                   />
 
                   <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-3xl text-white text-left p-12 flex flex-col justify-start space-y-4">
-                    {hasInfo ? (
+                    {filmInfo && filmInfo.name ? (
                       <>
                         <div>
                           <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            RELEASE DATE
+                            PROJECT NAME
                           </p>
                           <p className="text-[18px] font-semibold">
-                            {filmInfo.releaseDate || "COMING SOON"}
+                            {filmInfo.name}
                           </p>
                         </div>
                         <div>
                           <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            WRITTEN AND DIRECTED BY
+                            YEAR
                           </p>
                           <p className="text-[18px] font-semibold">
-                            {filmInfo.director || "COMING SOON"}
+                            {filmInfo.year}
                           </p>
                         </div>
                         <div>
                           <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            STARRING
+                            CATEGORY
                           </p>
                           <p className="text-[18px] font-semibold">
-                            {filmInfo.stars || "COMING SOON"}
+                            {filmInfo.category}
                           </p>
                         </div>
                       </>

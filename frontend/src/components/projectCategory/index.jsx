@@ -13,7 +13,7 @@ export const ProjectCategory = () => {
     "font-[Neogrotesk-NeoSCBlack] text-[20px] text-white px-2 md:px-4 transition-all tracking-[0.1em] leading-relaxed break-words flex-shrink-0";
 
   const items = [
-    { label: "ALL PROJECTS", to: `${routes.projects}/${routes.allProjects}` },
+    { label: "ALL", to: `${routes.projects}/${routes.allProjects}` },
     { label: "DOCUMENTARY", to: `${routes.projects}/${routes.documentary}` },
     { label: "MUSIC VIDEO", to: `${routes.projects}/${routes.musicVideo}` },
     { label: "ORIGINAL", to: `${routes.projects}/${routes.original}` },

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { journalDetails } from "../../hooks/mockData";
 import { AspectRatio } from "../ui/aspect-ratio";
@@ -8,6 +8,10 @@ const specialItalicLabels = ["Gaffer", "SFX", "Editor", "Colorist"];
 const FilmDetails = () => {
   const { slug } = useParams();
   const film = journalDetails.find((f) => f.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!film)
     return (
@@ -75,9 +79,14 @@ const FilmDetails = () => {
             className="w-full md:pt-4 md:pr-8 md:max-w-none md:pl-6"
             style={{ maxWidth: "300px" }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-normal text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-2 tracking-normal text-white">
               {film.name}
             </h1>
+            {film.information?.categoryTitle && (
+              <div className="text-white text-lg sm:text-xl font-[beauSans] mb-1">
+                {film.information.categoryTitle}
+              </div>
+            )}
             <div className="text-white text-lg sm:text-xl font-[beauSans] mb-1">
               {filmTitle}
             </div>
@@ -89,13 +98,17 @@ const FilmDetails = () => {
                     {section.section}
                   </div>
                   <div>
-                    {section.items.map((item, i) =>
-                      item.label === "Title" ? null : (
-                        <div key={i} className="mb-1">
-                          {item.label ? (
-                            <div className="text-white text-base sm:text-lg font-[beauSans]">
-                              {item.label}
-                              {item.names.length > 0 && (
+                    {section.items &&
+                      section.items.map((item, i) =>
+                        item.label ? (
+                          <div
+                            key={i}
+                            className="text-white text-base sm:text-lg font-[beauSans]"
+                          >
+                            <span className="font-semibold">{item.label}</span>
+                            {item.names &&
+                              item.names.length > 0 &&
+                              (item.names.length === 0 ? (
                                 <>
                                   {": "}
                                   <span
@@ -105,25 +118,43 @@ const FilmDetails = () => {
                                         : "font-light"
                                     }
                                   >
-                                    {item.names.join(", ")}
+                                    {item.names[0]}
                                   </span>
                                 </>
-                              )}
-                            </div>
-                          ) : (
-                            <div
-                              className={
-                                item.italic
-                                  ? "italic text-white text-base sm:text-lg "
-                                  : "text-white text-base sm:text-lg "
-                              }
-                            >
-                              {item.names.join(", ")}
-                            </div>
-                          )}
-                        </div>
-                      )
-                    )}
+                              ) : (
+                                <>
+                                  {": "}
+                                  <br />
+                                  {item.names.map((n, idx2) => (
+                                    <div
+                                      key={idx2}
+                                      className={
+                                        n === "Khang Nguyen (Ljve)"
+                                          ? "font-bold italic text-white text-base sm:text-lg font-[beauSans]"
+                                          : item.italic
+                                          ? "italic font-light text-white text-base sm:text-lg font-[beauSans]"
+                                          : "font-light text-white text-base sm:text-lg font-[beauSans]"
+                                      }
+                                    >
+                                      {n}
+                                    </div>
+                                  ))}
+                                </>
+                              ))}
+                          </div>
+                        ) : (
+                          <div
+                            key={i}
+                            className={
+                              (item.bold ? "font-bold " : "") +
+                              (item.italic ? "italic " : "") +
+                              "text-white text-base sm:text-lg font-light"
+                            }
+                          >
+                            {item.names ? item.names.join(", ") : null}
+                          </div>
+                        )
+                      )}
                   </div>
                 </div>
               ))}
@@ -210,7 +241,9 @@ const FilmDetails = () => {
                   style={{ fontSize: "1.18rem", lineHeight: "1.3" }}
                 >
                   {Array.isArray(film.information.services)
-                    ? film.information.services.join(", ")
+                    ? film.information.services.map((s, idx) => (
+                        <div key={idx}>{s}</div>
+                      ))
                     : film.information.services}
                 </div>
               </div>
