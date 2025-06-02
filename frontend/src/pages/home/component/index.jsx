@@ -1,43 +1,56 @@
 import React, { useEffect, useRef, useState } from "react";
-import videoBg from "../../../assets/videoBg.mp4";
+// import videoBg from "../../../assets/videoBg.mp4";
 import { listFilm, journalDetails } from "../../../hooks/mockData";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const videoRef = useRef(null);
+  const [currentVideo, setCurrentVideo] = useState(
+    "/assets/film/video/SHOWREEL.mp4"
+  );
   const [isMuted, setIsMuted] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const playVideo = async () => {
-      try {
-        if (videoRef.current) {
-          videoRef.current.muted = isMuted;
-          videoRef.current.volume = 1.0;
-          await videoRef.current.play();
-        }
-      } catch (err) {
-        console.log("Autoplay failed:", err);
-        setAutoplayError(true);
-      }
-    };
-
-    playVideo();
-  }, [isMuted]);
+    if (videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play();
+      videoRef.current.muted = isMuted;
+      videoRef.current.volume = 1.0;
+    }
+  }, [currentVideo, isMuted]);
 
   const idToSlug = {};
   journalDetails.forEach((film) => {
     idToSlug[film.id] = film.slug;
   });
 
+  const handleMouseEnter = (movie) => {
+    if (movie.videoLocal) {
+      setCurrentVideo(movie.videoLocal);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentVideo("/assets/film/video/SHOWREEL.mp4");
+  };
+
   return (
     <div className="relative w-full h-full overflow-hidden font-[VIPTrends]">
       <video
         ref={videoRef}
-        src={videoBg}
+        src={currentVideo}
         autoPlay
         loop
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
+        muted
+        playsInline
+        preload="none"
+        className="fixed top-0 left-0 w-full h-full object-cover z-0 bg-video"
+        controls={false}
+        disablePictureInPicture
+        controlsList="nodownload nofullscreen noremoteplayback noplaybackrate"
+        tabIndex={-1}
+        style={{ pointerEvents: "none", userSelect: "none" }}
       />
 
       <div className="fixed left-0 bottom-0 z-20 flex flex-col gap-2 items-start p-12 max-w-[1100px]">
@@ -45,6 +58,8 @@ const Home = () => {
           <div
             key={movie.id}
             className="relative mb-2 sm:mb-3 md:mb-4 w-fit cursor-pointer hover:opacity-80 transition"
+            onMouseEnter={() => handleMouseEnter(movie)}
+            onMouseLeave={handleMouseLeave}
             onClick={() => {
               const slug = idToSlug[movie.id];
               if (slug) {
