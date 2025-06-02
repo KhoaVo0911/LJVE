@@ -1,5 +1,5 @@
-import React from "react";
 import { JournalListPage } from "@/components/journalList";
+import React from "react";
 
 export const JournalPage = () => {
   return (

@@ -1,6 +1,6 @@
 import { ProjectCategory } from "@/components/projectCategory";
-import { ProjectsListPage } from "@/components/projectList";
 import React from "react";
+import { ProjectsListPage } from "../projectList";
 
 export const ProjectsComponents = ({ title, subTitle, slogan, images }) => {
   return (
