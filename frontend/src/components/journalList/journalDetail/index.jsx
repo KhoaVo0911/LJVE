@@ -7,26 +7,6 @@ export const JournalDetailsPage = () => {
   const { id } = useParams();
   const journal = journalData.find((film) => film.id === Number(id));
 
-  const boldWordsForSceneDescriptions = [
-    ["Challenge", "Solution"],
-    ["Challenge", "Solution"],
-    ["Diffusion", "Key Light", "Fill Light", "Hair Light", "Bonus"],
-    ["Nanlite T4C", "Aputure 300C", "Light wrap effects"],
-    [
-      "Ngân Ngân",
-      "Dewild (Ormine)",
-      "Turtle (Ormine)",
-      "Jessie (Ormine)",
-      "Khang Nguyen (Ljve)",
-      "Bern (Ormine)",
-      "Bao Han (Ormine)",
-      "Ljve Nguyen (Ormine)",
-      "Logghito",
-      "Trần Lâm",
-      "Tấn Đạt",
-    ],
-  ];
-
   if (!journal || !Array.isArray(journal.script)) {
     return (
       <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black bg-opacity-50 pointer-events-none">
@@ -36,17 +16,6 @@ export const JournalDetailsPage = () => {
       </div>
     );
   }
-
-  const formatTitleWithSansQuotes = (title) =>
-    title.split(/(")/g).map((part, idx) =>
-      part === '"' ? (
-        <span key={idx} className="font-sans">
-          "
-        </span>
-      ) : (
-        <span key={idx}>{part}</span>
-      )
-    );
 
   const renderScriptParagraph = (paragraph, key, boldWords = []) => {
     const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -138,7 +107,7 @@ export const JournalDetailsPage = () => {
       <div className="px-1 sm:px-2 md:px-10 lg:px-20">
         <FadeInWhenVisible>
           <h2 className="text-xl sm:text-2xl md:text-4xl font-[Neogrotesk-AltBold] mb-2 sm:mb-4">
-            {formatTitleWithSansQuotes(journal.title)}
+            Production Journal: {journal.subTitle}
           </h2>
         </FadeInWhenVisible>
 
@@ -152,7 +121,7 @@ export const JournalDetailsPage = () => {
           <div className="w-full flex flex-col md:flex-row justify-start mt-8 sm:mt-10 mb-6 sm:mb-5 relative gap-4 md:gap-0">
             <img
               src={journal.imageDetail[0]}
-              alt={journal.title}
+              alt={journal.subTitle}
               className="w-full md:w-[75%] object-cover rounded-2xl shadow-md mb-3 sm:mb-0 transition-all duration-200"
             />
             <div className="block md:hidden w-full text-center bg-white bg-opacity-60 p-4 mt-0 rounded-2xl text-black text-base font-semibold shadow-md transition-all duration-200">
@@ -184,6 +153,8 @@ export const JournalDetailsPage = () => {
               )}
             </li>
           ))}
+          <br/>
+          <div>{journal.gear[2]}</div>
         </ul>
 
         <FadeInWhenVisible>
@@ -217,7 +188,7 @@ export const JournalDetailsPage = () => {
               {renderScriptParagraph(
                 journal.sceneDescription[0],
                 0,
-                boldWordsForSceneDescriptions[0]
+                journal.boldText[0]
               )}
 
               <FadeInWhenVisible>
@@ -269,7 +240,7 @@ export const JournalDetailsPage = () => {
                   {renderScriptParagraph(
                     journal.sceneDescription[1],
                     1,
-                    boldWordsForSceneDescriptions[1]
+                    journal.boldText[1]
                   )}
                 </div>
               </FadeInWhenVisible>
@@ -300,7 +271,7 @@ export const JournalDetailsPage = () => {
               {renderScriptParagraph(
                 journal.sceneDescription[2],
                 2,
-                boldWordsForSceneDescriptions[2]
+                journal.boldText[2]
               )}
 
               <FadeInWhenVisible>
@@ -352,7 +323,7 @@ export const JournalDetailsPage = () => {
                   {renderScriptParagraph(
                     journal.sceneDescription[3],
                     3,
-                    boldWordsForSceneDescriptions[3]
+                    journal.boldText[3]
                   )}
                 </div>
               </FadeInWhenVisible>
@@ -367,7 +338,7 @@ export const JournalDetailsPage = () => {
               {renderScriptParagraph(
                 journal.cast,
                 4,
-                boldWordsForSceneDescriptions[4]
+                journal.boldText[4]
               )}
             </div>
           </FadeInWhenVisible>
