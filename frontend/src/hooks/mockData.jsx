@@ -56,10 +56,121 @@ This gear setup forced me to be nimble and responsive, reacting to the shifting 
   {
     id: 2,
     title: 'The making process of "EYESME" TVC',
+    video: "https://www.youtube.com/embed/h2ldAppsw6k?si=7I-xz5qGSkLPboWM",
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/2.jpg",
     imageDetail: ["/assets/film/eyesme/eyesme6.png"],
+    slogan: `"Không" is a no-budget music video that seeks to visually represent a sense of existential uncertainty. Centered around a lone female protagonist, the MV delves into themes of impermanence and aimlessness, an emotional drift through vast, ungraspable landscapes. It was shot entirely in natural light over the course of a single day at Hồ Đá, a rugged stone lake nestled within the university village of Ho Chi Minh City.`,
+    script: [
+      `Before reading, if you have not seen this yet, this is the link.`,
+
+      `This was my first time working as a Director of Photography on a commercial project—a milestone I’d been anticipating for years. Although it was a rushed production with just one week of prep time, the final output turned out to be visually polished and emotionally resonant, proving that with the right planning and team coordination, constraints can become creative strengths.
+      
+      As a filmmaker transitioning from passion projects to commissioned work, EYESME marked my entry into the world of visual storytelling under real-world pressure. The project pushed me to think like a problem-solver, not just a visual artist. With brand expectations, time limits, and logistical challenges all at play, I had to make quick, effective decisions—balancing artistic vision with practical execution.
+
+      More importantly, EYESME allowed me to explore Korean-style visual aesthetics: soft lighting, pastel tones, and intentional framing. It gave me a space to apply my theoretical lighting knowledge in high-pressure, real-life conditions. I walked away with more than a reel-worthy TVC—I left with a sharper eye and stronger confidence in my DP instincts.
+      `,
+    ],
+    gear: [
+      `We kept our gear compact but powerful—everything needed to execute both indoor and outdoor setups within a single day:`,
+      [
+        { item: "Camera: Sony A7 IV." },
+        {
+          item: "Lens: Sony 24–70mm GM II – perfect for quickly reframing during dynamic gimbal shots and tight studio setups.",
+        },
+        {
+          item: "Drone: DJI Mavic Air 3 – used to capture the expansive, surreal landscapes surrounding the protagonist.",
+        },
+        {
+          item: "Lighting:",
+          subitems: [
+            "1x Aputure 600x (Key + Sun Simulation)",
+            "2x Aputure 300C (Fill & Backlight)",
+            "1x Nanlite T4C Tube (Accent & Mood)",
+            "1x ARRI M18 (Outdoor Hair Light)",
+            "8x8 Diffusion Frame",
+          ],
+        },
+        {
+          item: "Grip:",
+          subitems: [
+            "Focus Puller system for indoor crash zoom shot",
+            "Poly reflectors for fill",
+          ],
+        },
+      ],
+    ],
+    scene: [
+      `Scene 1: Morning Bedroom – Simulating Daylight Indoors`,
+      `Scene 2: Outdoor Tennis Court & Dome Structure`,
+      `Scene 3: Outdoor Tennis Court & Dome Structure`,
+      `Scene 4: Night Vanity – Party Prep in the Dark`,
+    ],
+    sceneDescription: [
+      `Set in a tiny studio room located on the second floor of a building, this scene required us to fake morning sunlight streaming through the window—despite shooting in the afternoon.
+      
+      Challenge: No windows large enough to simulate the sun from inside.
+     
+      Solution: The studio owner allowed us to use the third floor to position an Aputure 600x outside the window, angled downward to mimic natural sunlight piercing through sheer curtains. It worked like a charm.
+
+      Inside, I choreographed a crash zoom effect, which required precise lens movement and focal control—so I rented a dedicated focus puller rig for the scene. It was a small touch, but one that elevated the narrative energy in a big way.
+     `,
+      `This was a delicate scene with the protagonist facing the mirror, prepping for her day. The goal: create soft, uplifting morning lighting that felt real and cozy—but in reality, we were racing the clock at around 4:30 PM.
+
+      Challenge: Prevent late-afternoon shadows from betraying the “morning” feel.
+
+      Solution: We bounced a 300C through a large diffuser to create a gentle frontal keylight. At the same time, the T4C tube hidden along the bottom edge of the mirror added a subtle warm glow that mimicked indoor bounce.
+
+      To avoid any high contrast or harsh shadows on her face, we kept fill levels even using white bounce cards. It was tight, but the illusion worked beautifully.`,
+
+      `With full sun expected on shoot day, we had to carefully manage exposure and softness for the lead actress.
+
+      • Diffusion: An 8x8 frame was used to soften the harsh sunlight. Though it wasn’t large enough to cover every angle, it still did a decent job of protecting skin tones and maintaining a soft, dreamy look.
+      • Key Light: Aputure 600x placed on the edge of the frame, acting as a fill-in source to balance light on the subject’s face.
+      • Fill Light: Large polyboard reflector positioned opposite the key light.
+      • Hair Light: From a distance, an ARRI M18 created separation between subject and background.
+
+      Bonus: Several shots required gimbal movement across uneven court surfaces under the hot sun, but my CamOp and Gaffer managed the entire routing and setup efficiently. Smooth teamwork saved the day.`,
+
+      `For the final scene, the mood shifted to evening. The protagonist looks into a mirror, preparing for a night out—requiring a balance between moody glamour and emotional 
+      intimacy.
+
+      We used:
+      • Nanlite T4C with custom RGB tone to give off a subtle party hue,
+      • Aputure 300C with softbox modifier for key,
+      • Light wrap effects on the mirror’s edge to preserve facial features without flattening them.
+
+      This scene played with reflections, layering depth and distortion for a more stylized cinematic feel.`,
+    ],
+    SceneImages: {
+      1: "/assets/film/journal/Eyesme/DSC_0528.JPG",
+      2: "/assets/film/eyesme/eyesme4.png",
+      3: "/assets/film/journal/Eyesme/DSC_0522.JPG",
+      4: "/assets/film/eyesme/eyesme1.png",
+      5: "/assets/film/journal/Eyesme/DSC_0340.JPG",
+      6: "/assets/film/eyesme/eyesme5.png",
+      7: "/assets/film/journal/Eyesme/DSC_0595.JPG",
+      8: "/assets/film/eyesme/Master Timline_01_01_47_10.jpg",
+    },
+    startImages: [
+      "/assets/film/journal/Eyesme/DSC_0522.JPG",
+      "/assets/film/journal/Eyesme/DSC_0512.JPG",
+      "/assets/film/journal/Eyesme/DSC_0528.JPG",
+    ],
+    middleImages: [
+      "/assets/film/journal/Eyesme/DSC_0339.JPG",
+      "/assets/film/journal/Eyesme/DSC_0428.JPG",
+      "/assets/film/journal/Eyesme/DSC_0413.JPG",
+    ],
+    endImages: [
+      "/assets/film/journal/Eyesme/DSC_0543.JPG",
+      "/assets/film/journal/Eyesme/DSC_0408.JPG",
+      "/assets/film/journal/Eyesme/DSC_0537.JPG",
+      "/assets/film/journal/Eyesme/DSC_0461.JPG",
+      "/assets/film/journal/Eyesme/DSC_0599.JPG",
+    ],
+    cast: `Cast: Ngân Ngân, Director: Dewild (Ormine), Producer: Turtle (Ormine), Producer Assistant: Jessie (Ormine), DOP: Khang Nguyen (Ljve), Camera Operator: Bern (Ormine) ,Art Director: Bao Han (Ormine), Editor: Bern (Ormine), Ljve Nguyen (Ormine), Colorist: Logghito, Gaffer: Trần Lâm, Best boy: Tấn Đạt, BTS Cameraman: Tấn Đạt`,
   },
   {
     id: 3,
@@ -90,8 +201,8 @@ This gear setup forced me to be nimble and responsive, reacting to the shifting 
     title: 'The making process of "THIM"',
     description:
       "Behind-The-Scene of my first short film as a DOP. The story about how me and my crew can be managed to finish within 2 weeks for a whole production process.",
-    imageTitle: "/assets/film/journal/6.jpg",
-    imageDetail: ["/assets/film/khong/khong2.png"],
+    imageTitle: "/assets/film/thim/thim3.png",
+    imageDetail: ["/assets/film/thim/thim3.png"],
   },
 ];
 
