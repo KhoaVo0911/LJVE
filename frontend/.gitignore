@@ -22,7 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+.env
+=======
 
 # .gitignore
 .env
 brave-streamer-342407-d99aacabe0fc.json
+>>>>>>> 8d257f75fc2c16269d8893ac615dfd5898ae3afd

@@ -103,30 +103,30 @@ export const ProjectsListPage = ({ images }) => {
                   />
 
                   <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-3xl text-white text-left p-12 flex flex-col justify-start space-y-4">
-                    {hasInfo ? (
+                    {filmInfo && filmInfo.name ? (
                       <>
                         <div>
-                          <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            RELEASE DATE
+                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                            PROJECT NAME
                           </p>
-                          <p className="text-[18px] font-semibold">
-                            {filmInfo.releaseDate || "COMING SOON"}
-                          </p>
-                        </div>
-                        <div>
-                          <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            WRITTEN AND DIRECTED BY
-                          </p>
-                          <p className="text-[18px] font-semibold">
-                            {filmInfo.director || "COMING SOON"}
+                          <p className="text-[20px] font-semibold">
+                            {filmInfo.name}
                           </p>
                         </div>
                         <div>
-                          <p className="text-[18px] text-gray-400 font-semibold tracking-wider">
-                            STARRING
+                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                            YEAR
                           </p>
-                          <p className="text-[18px] font-semibold">
-                            {filmInfo.stars || "COMING SOON"}
+                          <p className="text-[20px] font-semibold">
+                            {filmInfo.year}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-[22px] text-gray-400 font-semibold tracking-wider">
+                            CATEGORY
+                          </p>
+                          <p className="text-[20px] font-semibold">
+                            {filmInfo.category}
                           </p>
                         </div>
                       </>
