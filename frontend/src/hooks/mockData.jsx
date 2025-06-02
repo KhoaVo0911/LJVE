@@ -20,7 +20,7 @@ export const journalData = [
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
     imageTitle: "/assets/film/journal/2.jpg",
     imageDetail: ["/assets/film/eyesme/eyesme6.png"],
-    slogan: `"Không" is a no-budget music video that seeks to visually represent a sense of existential uncertainty. Centered around a lone female protagonist, the MV delves into themes of impermanence and aimlessness, an emotional drift through vast, ungraspable landscapes. It was shot entirely in natural light over the course of a single day at Hồ Đá, a rugged stone lake nestled within the university village of Ho Chi Minh City.`,
+    slogan: `"EYESME is a commercial TVC centered around the discomfort of wearing glasses and the liberating beauty of contact lenses. With a distinctly Korean aesthetic, the spot aims to present a fresh, stylish, and emotionally engaging narrative within just a few scenes.`,
     script: [
       `Before reading, if you have not seen this yet, this is the link.`,
 
