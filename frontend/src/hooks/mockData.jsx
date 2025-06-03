@@ -694,27 +694,32 @@ export const journalData = [
       `Scene 4: Corridor Scene – Cloudy Surprise`,
     ],
     sceneDescription: [
-      `Originally planned at a different location, we were denied shooting permission just before the scene. Panic mode? Hell yeah. But after an hour of scouting in the dark, we found a quiet alternative spot.
+      `Originally, this night scene was meant to be shot at a well-scouted public location with a clear layout for blocking, lighting, and movement. But just hours before setup, we were denied shooting permission. No negotiation, no time for backup. Panic mode? Hell yeah. With a skeleton crew and nightfall creeping in, we had one hour to find a new location or lose the entire sequence.
+
+      We quickly adapted the blocking, reimagining the emotional beat of the scene in this new space. With no practicals or ambient streetlights, we relied solely on what we had.
 
       Gear Used:
       • 2x T4C tubes only
       • No practicals, no ambient light
 
-      Result: Despite the minimal setup, the scene turned out surprisingly cinematic—dark, moody, intimate. A reminder that desperation breeds creativity.
+      The result? Surprisingly cinematic.
       `,
 
       `Shot in a tiny, dim bathroom, this sequence relied on mirror reflections and heavy internal tension.
+
       Challenges:
       • Little space for lights or crew
       • Weak built-in bathroom lights
+
       Solution:
       • Gaffer used ventilation holes to rig lights from above
       • A 300C was bounced discreetly to lift exposure
       • Shot required precise blocking to avoid reflections of the crew
+
       Post-Production: I added a spiraling bokeh effect in post to suggest the character’s inner instability—one of my favorite stylistic touches.
       `,
 
-      `Most of the story takes place in a small rented room. Building its cinematic identity was key.
+      `Most of the story unfolds in a small, low-rent room—bare walls, one bed, a window that barely lets in light. But this wasn’t just a physical space. It was the emotional container of the film. Every glance, every hesitation, every shift in mood had to echo through the shadows of this room. Building its cinematic identity was crucial.
 
       We designed lighting that could shift subtly between emotional tones, from cold isolation to warm memory.
 
@@ -725,7 +730,7 @@ export const journalData = [
       Favorite Shot: A quiet mid-shot of the protagonist alone at the edge of the bed. Still. Breathing. Framed by pink neon reflections and soft rim light.
       `,
 
-      `On the tech scout day, the corridor had perfect golden sunlight. On the shoot day? Gray skies and flat light. We had to fix it.
+      `We had scouted the corridor days before the shoot. It was late afternoon, and the sun poured in just right, golden, warm, full of possibility. The plan was simple: use the natural sunlight as a soft key, let the textures of the corridor walls and the reflective floor do the rest. But on shoot day, the sky had other plans. We arrived ready to roll, and instead found ourselves under a heavy, overcast sky, the sun buried behind a wall of clouds. All our pre-lighting notes went out the window. What was meant to be an easy, natural-light scene now looked flat, dull, and emotionally off-tone.
 
       Solution:
       • Used an Aputure 200x outside the frame to simulate sunlight
