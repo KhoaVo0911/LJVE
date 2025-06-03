@@ -13,11 +13,18 @@ const Home = () => {
   const [currentVideo, setCurrentVideo] = useState(
     "/assets/film/video/SHOWREEL.mp4"
   );
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(isMobile());
   const navigate = useNavigate();
 
   useEffect(() => {
     // Không cần overlay nữa
+  }, []);
+
+  useEffect(() => {
+    if (isMobile() && videoRef.current) {
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {});
+    }
   }, []);
 
   useEffect(() => {
@@ -49,9 +56,9 @@ const Home = () => {
       <video
         ref={videoRef}
         src={currentVideo}
-        autoPlay
+        autoPlay="autoplay"
         loop
-        muted={isMobile() ? true : isMuted}
+        muted
         playsInline
         preload="auto"
         className="fixed top-0 left-0 w-full h-full object-cover z-0 bg-video"

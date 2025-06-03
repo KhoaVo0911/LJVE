@@ -1152,7 +1152,7 @@ export const kodakInfo = {
   id: 11,
   name: "Kodak TVC",
   slug: "kodak",
-  genre: "Commercial Clip",
+  genre: "Commercial Video",
   video:
     "https://player.vimeo.com/video/836080868?badge=0&autopause=0&player_id=0&app_id=58479",
   images: [
@@ -1167,7 +1167,7 @@ export const kodakInfo = {
     client: "Kodak",
     year: "2023",
     services: ["Camera Operator"],
-    category: "Commercial Clip",
+    category: "Commercial Video",
     categoryTitle: "Kodak TVC",
   },
 };
@@ -1400,7 +1400,7 @@ export const chivongInfo = {
     client: "Tổ Cận",
     year: "2022",
     services: ["Camera Operator"],
-    category: "Commercial Clip",
+    category: "Short Film",
     categoryTitle: '"CHI VONG" SHORT FILM',
   },
 };
@@ -1715,7 +1715,7 @@ export const bannerToFilmSlug = [
     slug: "kodak",
     name: "Kodak TVC",
     year: 2023,
-    category: "Commercial Clip",
+    category: "Commercial Video",
   },
   {
     image: "/assets/film/allProjects/13.jpg",
@@ -1736,7 +1736,7 @@ export const bannerToFilmSlug = [
     slug: "chivong",
     name: "CHÌ VỌNG",
     year: 2022,
-    category: "Commercial Clip",
+    category: "Short Film",
   },
   {
     image: "/assets/film/allProjects/16.jpg",
