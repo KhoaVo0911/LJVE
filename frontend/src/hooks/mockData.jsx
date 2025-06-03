@@ -495,7 +495,7 @@ export const journalData = [
   {
     id: 4,
     title: 'The making process of "KIM CHI NU"',
-    subTitle: "Kim Chỉ Nữ – Finding My Voice in Color",
+    subTitle: "Kim Chi Nu – Finding My Voice in Color",
     video: "https://www.youtube.com/embed/y_UFrF0rD5s?si=i1gKPK4AX53JEyOM",
     description:
       "Behind-The-Scene of my first Commercial job as a DOP. How did we manage to shoot in the middle of the sunny day. How to plan up with only 3 days prep.",
@@ -704,16 +704,13 @@ export const journalData = [
       `,
 
       `Shot in a tiny, dim bathroom, this sequence relied on mirror reflections and heavy internal tension.
-
       Challenges:
       • Little space for lights or crew
       • Weak built-in bathroom lights
-
       Solution:
       • Gaffer used ventilation holes to rig lights from above
       • A 300C was bounced discreetly to lift exposure
       • Shot required precise blocking to avoid reflections of the crew
-
       Post-Production: I added a spiraling bokeh effect in post to suggest the character’s inner instability—one of my favorite stylistic touches.
       `,
 
